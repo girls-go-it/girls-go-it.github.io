@@ -421,3 +421,20 @@ footer {
     color:#444;
   }
 }
+
+.sidebar {
+  position: relative;
+  top: 180px;
+  width: 250px;
+  margin-right: 25px;
+}
+.sidebar ul {
+  list-style: none;
+}
+
+#sidenav a {
+} 
+.sidebar li {
+  line-height: 1.3em;
+  margin: 0 0 10px 0;
+}
