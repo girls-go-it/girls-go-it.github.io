@@ -1,7 +1,6 @@
 highlighter: pygments
 github: [Repository metadata]
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-source: ./lessons/
 
 gems:
   - jemoji
