@@ -1,4 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+#Ubutuntu Quest
+##Ce este un sistem de operare?
+Zi de zi ne folosim de calculatoare, telfeoane, televizoare. Acestea sunt un set de piese electronice legate între ele. Ceia ce ne permite interacțiunea cu aceste gadgeturi este un **program** care contrololează dispozitivul. Și odată ce acest **program** devine destul de complex noi îl putem numi sistem de operare.
+
+Un exemplu bun ar fi **Android**. Acesta este un **sistem de operare** care ne permite să utilizăm majoritatea smartfonurilor. Un alt exemplu este **Windows**. Toți ați auzit de el și știeți ce face :smiley_cat:
+![](http://www.datalogics.com/images/windows-store.png)
+
+
+## Ce este Ubuntu?
+Ubuntu este și el un **sistem de operare** care ne permite să interacționăm cu calculatorul.
+Avantajele utilizării acestuia sunt următoarele:
+- Este fără plată
+- Majoritatea programelor istalate la fel sunt fără plată (Dacă nu știați pentru a utiliza MicrosoftWord aveți nevoie de fapt să îl cumpărați :moneybag: )
+- Este mult mai comod de îl folosit din perspectiva unui programator (de ce vom afla în curând).
+- ESTE FĂRĂ PLĂTĂ!!!!!!!!!
+![](https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png)
 
 /* MeyerWeb Reset */
 
@@ -427,6 +443,7 @@ footer {
   top: 180px;
   width: 250px;
   margin-right: 25px;
+  position: fixed;
 }
 .sidebar ul {
   list-style: none;
@@ -437,4 +454,11 @@ footer {
 .sidebar li {
   line-height: 1.3em;
   margin: 0 0 10px 0;
+}
+
+.custom-image {
+  text-align:center
+}
+.custom-image img {
+  border: none;
 }
