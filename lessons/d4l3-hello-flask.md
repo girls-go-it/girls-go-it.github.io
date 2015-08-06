@@ -10,12 +10,11 @@ Imaginați-vă că v-aș ruga să tăiați o bucată de hârtie cu dimensiunile 
 În acest capitol veți învăța cum să instalați și utilizați **Flask**-ul. Tot de ce este nevoie este un computer cu Python instalat pe el.
 
 ###Utilizarea ”Mediului Virtual” *(Virtual Environments)*
-Cea mai convenabilă metodă de a instala Flask-ul este printr-un mediu virtual. Acum vă întrebați: "ce este un mediu virtual" *(virtual environment)*, ...nu? Hmm, oricum o să vă explic:
-Un mediu virtual, în contextul respectiv, ar putea fi asociat cu hainele și lucrurile pe care la aveți la voi în dependență de  unde plecați:
+Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, haideți să facem o analogie cu viața reală. Gândiți-vă la un mediu virtual ca la hainele și lucrurile pe care le-ați lua cu voi în dependență de unde plecați:
 
 > imagine
 
-Așa e și cu mediu virtual, instalezi doar ceea de ce ai nevoie.
+Așa e și cu mediul virtual, instalezi doar ceea de ce ai nevoie.
 Pentru început, să verificăm dacă acest program de creare a mediilor virtuale este instalat. Rulați următoarea instrucțiune:
 
 ```bash

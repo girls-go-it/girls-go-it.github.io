@@ -3,7 +3,7 @@ layout: default
 title: Ubuntu Quest
 ---
 
-#Ubutuntu Quest
+#Ubutun Quest
 ##Ce este un sistem de operare?
 Zi de zi ne folosim de calculatoare, telfeoane, televizoare. Acestea sunt un set de piese electronice legate între ele. Ceia ce ne permite interacțiunea cu aceste gadgeturi este un **program** care contrololează dispozitivul. Și odată ce acest **program** devine destul de complex noi îl putem numi sistem de operare.
 
@@ -29,8 +29,4 @@ Modul primar de interacționare cu acest sistem de operare este similar cu Windo
 <div class="custom-image"><img src="http://2.bp.blogspot.com/-omfXnS75kuM/TjK-YxLqAZI/AAAAAAAACRQ/v3-g6RFsgEY/s1600/PCMan+file+manager+in+ubuntu+11.04.png" /></div>
 
 ##Ce este un fișier?
-Un fișier este un bloc de informație identificată după o denumire. De exemplu în cântec, sau o poză. Pentru un sistem de operare ele reprezintă una și același lucru, fișier. Însă sunt deja programe speciale care permit ascultarea cântecului, sau vizualizarea pozei. Un exemplu de **nume** a unui fișier arată în următorul fel `song352.mp3` . Textul până la punct reprezintă numele propriu zis, iar textul după punct reprezintă numele formatului fișierului (adică este poză, sau film, sau cântec, sau text). Aceasta nu este nimic altecva decât o convenție pentru a face totul mai simplu
-
-```python
-import flask from Flask
-```
+Un fișier este un bloc de informație identificată după o denumire. De exemplu în cântec, sau o poză. Pentru un sistem de operare ele reprezintă una și același lucru, fișier. Însă sunt deja programe speciale care permit ascultarea cântecului, sau vizualizarea pozei. Un exemplu de **nume** a unui fișier arată în următorul fel `song352.mp3` . Textul până la punct reprezintă numele propriu zis, iar textul după punct reprezintă numele formatului fișierului (adică este poză, sau film, sau cântec, sau text). Aceasta nu este nimic altecva decât o convenție pentru a face totul mai simplu.
