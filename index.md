@@ -4,4 +4,4 @@ title: Hello People
 ---
 
 ## Hello
-Salut fete și băieți. Aceasta este îndrumătorul vostru pe parcursul cursului vorstu Girls Go IT 2015. Mult success :+1:!!!
+Salut fete și băieți. Aceasta este îndrumarul vostru pe parcursul cursului Girls Go IT 2015. Mult success :+1:!!!

@@ -2,5 +2,11 @@ highlighter: pygments
 github: [Repository metadata]
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+markdown: redcarpet
+# redcarpet:
+#   extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
+permalink: pretty
+
 gems:
   - jemoji

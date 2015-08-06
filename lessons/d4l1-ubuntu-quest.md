@@ -30,3 +30,7 @@ Modul primar de interacționare cu acest sistem de operare este similar cu Windo
 
 ##Ce este un fișier?
 Un fișier este un bloc de informație identificată după o denumire. De exemplu în cântec, sau o poză. Pentru un sistem de operare ele reprezintă una și același lucru, fișier. Însă sunt deja programe speciale care permit ascultarea cântecului, sau vizualizarea pozei. Un exemplu de **nume** a unui fișier arată în următorul fel `song352.mp3` . Textul până la punct reprezintă numele propriu zis, iar textul după punct reprezintă numele formatului fișierului (adică este poză, sau film, sau cântec, sau text). Aceasta nu este nimic altecva decât o convenție pentru a face totul mai simplu
+
+```python
+import flask from Flask
+```
