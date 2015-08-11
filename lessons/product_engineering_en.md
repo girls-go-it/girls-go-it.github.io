@@ -26,17 +26,17 @@ _[After we have the descriptions, all together we'll have to find the similariti
 ### The client-server relation
 
 
-![Client - Server Diagram](Client-server-model.png)
+![Client - Server Diagram](../images/lessons/Client-server-model.png)
 
 The client model was presented in previous session by Dorin. Now let's go quickly through it again with some examples.
 
 Let's open our browsers and access your favorite site, [www.google.com](www.google.com), this will be your favorite site for the next two weeks! :) 
 
-![google](Screenshot 2015-08-07 16.29.42.png) 
+![google](../images/lessons/Screenshot 2015-08-07 16.29.42.png) 
 
 Now, press `Ctrl+Shift+I` or press right click and choose `Inspect Element`.
 
-![inspect Element](Screenshot 2015-08-07 16.33.54.png)
+![inspect Element](../images/lessons/Screenshot 2015-08-07 16.33.54.png)
 
 You'll see the source code of the page, or in other words, you'll see how servers respond to borwsers requests.
 
@@ -47,14 +47,14 @@ If we think of your solutions, what you will have to do is actually implement th
 
 So on the first image, when you've typed `www.google.com` you have made a request to google's server, and the thing you've seen in Inspect Element was it's response to your request.
 
-![request response](request-response.jpg)
+![request response](../images/lessons/request-response.jpg)
 
 
 ### Request Response Cycle
 
 So, now if we take a look what happens on the server.
 
-![cnsns](cncpt240.gif)
+![cnsns](../images/lessons/cncpt240.gif)
 
 1. The clients talk to the server via network
 2. The server communicates the Database that they have to exchange some info(basically making another request-response cycle)
