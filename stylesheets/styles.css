@@ -444,5 +444,16 @@ footer {
   text-align:center
 }
 .custom-image img {
+  width: auto;
   border: none;
 }
+
+.custom-image-shadow {
+  text-align:center
+}
+.custom-image-shadow img {
+  width: auto;
+  border: none;
+  box-shadow: 7px 7px 5px #888888;
+}
+
