@@ -40,6 +40,27 @@ For a more detailed description of this feature see [Guido's Decision](https://w
 
 `Flask` gives you absolute freedom at this chapter. You could put your entire application in one file, or have it spread across multiple packages. Still I'd consider the following patterns.
 
+##### __3.0. Virtualenv__
+
+The virtual env has to be situated inside the top project directory. The virtualenv will create a hardlink to the default python interpreter, I suggest in to be python2.7.
+
+To create a virtualenv:
+	
+	mkdir myapp
+	cd myapp
+	virtualenv env
+
+To activate the virtualenv, use the following:
+	
+	cd myapp
+	source env/bin/activate
+
+To deactivate the virtualenv:
+
+	deactivate
+
+I think that these commands are enough to run the summer camp. 
+
 ##### __3.1.1. Single Module__
 
 If we're talking about a quick minimal project this is your best choice. 
