@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hello Flask
+title: Basic HTML and CSS
 ---
 
 #Basic HTML
