@@ -1,3 +1,8 @@
+---
+layout: default
+title: Conventions
+---
+
 # Conventions 
 
 There is a number of conventions that are used to format your `Python` code. I will briefly list them below. This document contains a combination of general purpose `Python` conventions, as well as `Flask` specific ones.

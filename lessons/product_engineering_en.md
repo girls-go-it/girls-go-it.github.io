@@ -1,3 +1,8 @@
+---
+layout: default
+title: Product Engineering
+---
+
 # Product Engineering
 
 As the definition suggests, product engineering is the process of developing a product from the ground up. This implies designing the prototype of the product, researching the market, surveing the potential customers, revising the existing prototype in order to improve it, creating the MVP of the product and testing it in real world environment. After that you have to continue asking your customers for feedback seeking for ways to improve the product, at the same time you test the product, fix the bugs, improve the product, maybe add new features, and make a new release, and so on.
