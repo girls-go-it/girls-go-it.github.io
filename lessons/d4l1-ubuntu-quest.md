@@ -3,7 +3,7 @@ layout: default
 title: Ubuntu Quest
 ---
 
-#Ubutun Quest
+#Ubuntu Quest
 ##Ce este un sistem de operare?
 Zi de zi ne folosim de calculatoare, telfeoane, televizoare. Acestea sunt un set de piese electronice legate între ele. Ceia ce ne permite interacțiunea cu aceste gadgeturi este un **program** care contrololează dispozitivul. Și odată ce acest **program** devine destul de complex noi îl putem numi sistem de operare.
 
