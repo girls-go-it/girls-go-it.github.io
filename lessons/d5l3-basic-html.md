@@ -32,6 +32,7 @@ $ subl index.html
 
 Salvează modificările făcute în documentul index.html. Dezchizând din nou terminalul, scrie:
 
+
 ```bash
 $ sensible-browser index.html
 ```
@@ -56,6 +57,7 @@ $ sensible-browser index.html
 
 Începem totorialul de învățare cu clasicul : ”Hello, world!”. Pentru asta, scrie textul: “Hello, world!” între taguru, ca-n exemplu
 
+
 ```html
 <body>Hello, world!</body>
 ```
@@ -67,11 +69,13 @@ Mergi în browser și fă refresh la pagină, apăsând F5.
 
 Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile 
 
+
 ```html
 <p></p>
 ```
 
 precum în exemplul de mai jos:
+
 
 ```html
 <p>Vulpile sunt cele mai frumoase creaturi.</p>
@@ -81,6 +85,7 @@ precum în exemplul de mai jos:
 
 
 Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți cum se scriu așa numitele titluri, sau ”headings”. Pentru a scrie un heading, trebuie să incluzi între taguri denumirea acestuia. Reține, tagurile pentru heading încep de la 1 până la 6, iar dimensiunea este descrescătoare odată cu mărirea numărului de pe lângă h. Deci, pentru a vedea diferența, scrie următoarele rânduri în fișirul .html:
+
 
 ```html
 <h1>Acesta este titlul cu dimensiunea 1.</h1>
@@ -94,6 +99,7 @@ Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți c
 <div class="custom-image"><img src="https://41.media.tumblr.com/b34f48e4dc817447e64763b7afc125bb/tumblr_nswmvmhWVH1udztn8o3_540.jpg" /></div>
 
 Poți la fel de bine să incluzi și câteva paragrafe, după titlul pe care l-ai scris. Drept exemplu îți servește porțiunea de cod scrisă mai jos:
+
 
 ```html
 <h1>Vulpile.</h1>
@@ -139,6 +145,7 @@ Dacă curiozitatea este atributul tău principal, atunci poți să încerci și 
     <dd>Curajos</dd>
 </dl>
 ```
+
 <div class="custom-image"><img src="https://41.media.tumblr.com/069c725f13eb18d46eab1d275525401c/tumblr_nswmvmhWVH1udztn8o1_400.jpg" /></div>
 
 Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului 
