@@ -10,7 +10,7 @@ title: Basic Html
 
 Html sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-Aici vei învăța cum să creezi propria pagină html. Pentru început trebuie doar să deschizi terminalul în directoria proiectului. Scrie în terminal următorul rând:
+Aici vei învăța cum să creezi propria pagină html. Pentru început trebuie doar să deschizi terminalul în directoria proiectului, in folderul `static`. Scrie în terminal următorul rând:
 
 ```bash
 $ subl index.html
@@ -32,7 +32,6 @@ $ subl index.html
 
 Salvează modificările făcute în documentul index.html. Dezchizând din nou terminalul, scrie:
 
-
 ```bash
 $ sensible-browser index.html
 ```
@@ -42,21 +41,20 @@ Spre exemplu:
 
 
 ```html
-<title>Pagina mea</title>
+<title>My page</title>
 ```
 
-Salvează modificările făcute în documentul index.html. Apoi poți vedea că titlul s-a schimbat scriind din nou în terminal comanda:</p>
+Salvează modificările făcute în documentul index.html. Apoi poți vedea că titlul s-a schimbat scriind din nou în terminal comanda:
 
 
 ```bash
 $ sensible-browser index.html
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/fba61613287c284b5f58579395b34b3a/tumblr_nswmvmhWVH1udztn8o10_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/f24c47044eb096aa26d351646ae7e47c/tumblr_nt175dbOWZ1udztn8o1_1280.png" /></div>
 
 
-Începem totorialul de învățare cu clasicul : ”Hello, world!”. Pentru asta, scrie textul: “Hello, world!” între taguru, ca-n exemplu
-
+Începem totorialul de învățare cu clasicul : ”Hello, world!”. Pentru asta, scrie textul: “Hello, world!” între taguri, precum în exemplu
 
 ```html
 <body>Hello, world!</body>
@@ -64,116 +62,74 @@ $ sensible-browser index.html
 
 Mergi în browser și fă refresh la pagină, apăsând F5.
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/fe7658f88c2817ab5b7a3fc3eefaa7eb/tumblr_nswmvmhWVH1udztn8o4_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/608939367baa09e1eff7587c72bf58f3/tumblr_nt16zrdU6x1udztn8o1_1280.png" /></div>
 
 
-Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile 
-
-
-```html
-<p></p>
-```
-
-precum în exemplul de mai jos:
-
+Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile `<p></p>`, precum în exemplul de mai jos:
 
 ```html
-<p>Vulpile sunt cele mai frumoase creaturi.</p>
+<p>Foxes are cute.</p>
 ```
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/848b15514e78182321c1a98a0b715f12/tumblr_nswmvmhWVH1udztn8o8_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/5d496b8089f4414be4737c9226741ba9/tumblr_nt16ck2kYt1udztn8o1_500.png" /></div>
 
 
 Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți cum se scriu așa numitele titluri, sau ”headings”. Pentru a scrie un heading, trebuie să incluzi între taguri denumirea acestuia. Reține, tagurile pentru heading încep de la 1 până la 6, iar dimensiunea este descrescătoare odată cu mărirea numărului de pe lângă h. Deci, pentru a vedea diferența, scrie următoarele rânduri în fișirul .html:
 
-
 ```html
-<h1>Acesta este titlul cu dimensiunea 1.</h1>
-<h2>Acesta este titlul cu dimensiunea 2.</h2>
-<h3>Acesta este titlul cu dimensiunea 3.</h3>
-<h4>Acesta este titlul cu dimensiunea 4.</h4>
-<h5>Acesta este titlul cu dimensiunea 5.</h5>
-<h6>Acesta este titlul cu dimensiunea 6.</h6>
+<h1>Heading h1.</h1>
+<h2>Heading h2.</h2>
+<h3>Heading h3.</h3>
+<h4>Heading h4.</h4>
+<h5>Heading h5.</h5>
+<h6>Heading h6.</h6>
 ```
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/b34f48e4dc817447e64763b7afc125bb/tumblr_nswmvmhWVH1udztn8o3_540.jpg" /></div>
+<div class="custom-image"><img src="https://36.media.tumblr.com/eba3814ee9a7c5b7dc68672bd6c5e96a/tumblr_nt0uauzmlx1udztn8o4_250.jpg" /></div>
 
 Poți la fel de bine să incluzi și câteva paragrafe, după titlul pe care l-ai scris. Drept exemplu îți servește porțiunea de cod scrisă mai jos:
 
-
 ```html
-<h1>Vulpile.</h1>
-<p>Vulpile sunt cele mai frumoase creaturi.</p>
-<p>Vulpile sunt cele mai frumoase creaturi.</p>
-<h2>Lupii</h2>
-<p>Vulpile oricum sunt cele mai frumoase creaturi.</p>
+<h1>Fox</h1>
+<p>Foxes are beautiful.</p>
+<p>Foxes are beautiful.</p>
+<h2>Wolf</h2>
+<p>I like foxes, anyway.</p>
 ```
 
-Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate cât și neordonate, sau de definiție.
+<div class="custom-image"><img src="https://40.media.tumblr.com/2ba8a24223e6efd66d6ec6b7267bd229/tumblr_nt0uauzmlx1udztn8o3_250.jpg" /></div>
+
+Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate, neordonate cât și definiție.
 
 Liste ordonate sunt extrem de simple. Un exemplu îl ai chiar în față:
 
 ```html
-<h1>Vulpile sunt:</h1>
+<h1>Foxes are: </h1>
 <ol>
-	<li>roscate</li>
-	<li>frumoase</li>
-	<li>sirete</li>
+	<li>beautiful</li>
+	<li>cute</li>
+	<li>pretty</li>
 </ol>
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/c079532c3660045ce0c1e3d72b417af2/tumblr_nswmvmhWVH1udztn8o7_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/3982548b1ee4467c84a4459a9e88c5ec/tumblr_nt0uauzmlx1udztn8o2_250.jpg" /></div>
 
-Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor 
-
-```html
-<ol></ol>
-```
-cu
-
-```html
-<ul></ul>
-```
+Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`. 
 
 Dacă curiozitatea este atributul tău principal, atunci poți să încerci și listele de definiție.
 
 ```html
 <dl>
-    <dt>Vulpe</dt>
-    <dd>Frumoasa</dd>
-    <dt>Lup</dt>
-    <dd>Curajos</dd>
+    <dt>Fox</dt>
+    <dd>beautiful</dd>
+    <dd>smart</dd>
+    <dt>Wolf</dt>
+    <dd>sturdy</dd>
 </dl>
 ```
+<div class="custom-image"><img src="https://36.media.tumblr.com/23b60d2a2ecca5af6b00217dcee74629/tumblr_nt0uauzmlx1udztn8o1_250.jpg" /></div>
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/069c725f13eb18d46eab1d275525401c/tumblr_nswmvmhWVH1udztn8o1_400.jpg" /></div>
-
-Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului 
-
-```html
-<table>
-```
-
-Tabele se împart în rânduri prin intermediul tag-urilor 
-
-```html
-<tr>
-```
-
-Rândurile se împart în datele tabelului, cu ajutorul 
-tagului 
-
-```html
-<td>
-```
-
-Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul 
-
-```html
-<th>
-```
-
-Pentru a face lucrurile mai clare, analizează codul de mai jos: 
+Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos: 
 
 ```html
 <table>
@@ -200,30 +156,20 @@ Pentru a face lucrurile mai clare, analizează codul de mai jos:
 </table>
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/4101ae25d1490623e4a3dbf139061198/tumblr_nswmvmhWVH1udztn8o9_1280.jpg" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/e92c1c50400a708d115ada579a929654/tumblr_nt17f7AVKN1udztn8o1_1280.png" /></div>
 
-Acum că ai însușit paragrafele, titlurile (header), tabelele și listele, poți să faci loc și link-urilor. În HTML link-urile sunt definite prin intermediul tag-ului.
-	
-```html
-<a>
-```
-
-sub forma: 
-
-```html
-<a href="url">link text</a>
-```
+Acum că ai însușit paragrafele, titlurile (header), tabelele și listele, poți să faci loc și link-urilor. În HTML link-urile sunt definite prin intermediul tag-ului `<a>` sub forma: `<a href="url">link text</a>`.
 
 Exemplu:
 
 ```html
-<a href="http://fanny-pictures-site.com/wp-content/uploads/2014/11/internet-meme-red-fox_1.jpg">Vulpe</a>
+<a href="http://girls-go-it.github.io/lessons/aaa_vocabulary/">Vocabular tehnic</a>
 ```
 
 Mai mult decât atât, dacă vrei să adaugi o imagine pe pagina ta, poți să utilizezi: 
 
 ```html
-<img src="url " alt="Textul in cazul neaparitiei imaginii">
+<img src="url " alt="Textul in cazul neaparitiei imaginii"/>
 ```
 
 Exemplu:
@@ -233,74 +179,78 @@ Exemplu:
 ```
 
 Un pas la fel de simplu și interactiv este învățarea și aplicarea în practică a id-urilor și claselor. 
-Ud este folosit pentru a identifica un singur tag dintr-o pagină. Acesta poate fi asemănat cu CNP-ul unei persone, este unic. Cum arata un id definit?
+Un id este folosit pentru a identifica un singur tag dintr-o pagină. Acesta poate fi asemănat cu IDNP-ul unei persone, este unic. Cum arată un id definit?
 
 
 ```html
-<div id="numeId">Acesta este un id</div>
+<div id="id-name">This is an id</div>
 ```
 
-Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri html. Prin se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferenta între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, folosim un punct, ex: “.”, iar în interiorul tagului html în loc de id, scriem class=”numele-clasei”. Să presupunem, că este o nuanță a culorii roșii și am căutat odata codul hexa pentru nuanța respectivă, și vrem să folosim această culoare și in paragrafe, și în titluri “headind”, etc. Tot ce trebuie să facem, este să definim o clasă pentru această culoare. Exemplu:
+Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri html. Prin asta se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferență între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, în css, folosim un “.”(punct), iar în interiorul tagului html în loc de id, scriem class. 
 
 ```html
-<div class="numeClasa">Aceasta este o clasa.</div>
+<div class="class-name">This is a class.</div>
 ```
 
-Înțelegerea claselor și a Id-urile pare destul de cețoasă. De aceea, aici se face un nou pas – introducerea CSS-ului. Ce reprezintă? CSS este acronimul pentru Cascading Style Sheets. CSS este un limbaj (style language) care definește "layout-ul" pentru documentele HTML. CSS acoperă culori, font-uri, margini (borders), linii, înălțime, lățime, imagini de fundal, poziții avansate și multe alte opțiuni. În câteva cuvinte, CSS te ajută să-ți stilizezi pagina după propriul plac.
+Înțelegerea claselor și a id-urilor pare destul de cețoasă. De aceea, aici se face un nou pas – introducerea CSS-ului. Ce reprezintă? CSS este acronimul pentru Cascading Style Sheets. CSS este un limbaj (style language) care definește "layout-ul" pentru documentele HTML. Acesta acoperă culori, font-uri, margini (borders), linii, înălțime, lățime, imagini de fundal, poziții avansate și multe alte opțiuni. În câteva cuvinte, CSS te ajută să stilizezi pagina după propriul plac.
 
-Deschide terminalul și, în directoria proiectului, creează un nou fișier cu extensia .css:
+Deschide terminalul și, în directoria proiectului, în folderul static, creează un fișier cu extensia .css:
 
 ```bash
-$ subl main.css
+$ subl layout.css
 ```
 
-Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul .html. Pentru a include main.css în index.html, în head-ul fișierului din urmă scrie: 
+Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul .html. Pentru a include layout.css în index.html, în head-ul fișierului din urmă scrie: 
 
 ```html
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="layout.css">
 ```
 
 Următorul pas este crearea unui id și a unei clase. Pentru asta, ghidează-te după exemplul ce urmează:
 
 ```html
-<div id="box-id">
-	Cutia numarul 1.
-	Cutia numarul 2.
-	Cutia numarul 3.
+<div id="id-name">
+	Statement number 1<br/>
+	Statement number 2<br/>
+	Statement number 3
 </div>
+
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/9882fc80fc19e872c0aed58002be6d46/tumblr_nsworwarJe1udztn8o1_540.jpg" /></div>
+<div class="custom-image"><img src="https://41.media.tumblr.com/7467ee203f42d312c89937970b9f130a/tumblr_nt1867Qx7k1udztn8o1_1280.png" /></div>
 
-Acum, în fișierul main.css stilizează acest id după propriu plac. Pentru a stiliza un id, folosește #numeId înaintea acoladelor cu conținutul care stilizează:
+Tagul `<br/>` este pentru a trece în linie nouă.
+Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a stiliza un id, folosește #id-name înaintea acoladelor cu conținutul care stilizează:
 
 ```css
-#box-id {
+#id-name {
 }
 ```
 
 În interior poți deja să scrii și să stilizezi diferite proprietăți. Un exemplu ar fi:
 
 ```css
-#box-id { 
+#id-name { 
 	margin: 40px; 
 	background-color: #ABC; 
-	border: 10px solid #006; 
+	border-width: 10px;
 	overflow: hidden; 
+	border-style: solid;
+	border-color: #006;
 }
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/a217a2e18e38acbe1f1d88a666986d9b/tumblr_nswmvmhWVH1udztn8o5_1280.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/dc1245c8e054cdd10b07d85766a30eeb/tumblr_nt16oyX6wh1udztn8o1_1280.png" /></div>
 
 Există mult mai multe trucuri pe care le poți folosi și la care vei reveni ulterior. 
 
 După ce ai înțeles cum să definești un id, continuă să studiezi clasele. O clasă se definește asemeni id-ului, cum a fost specificat mai sus. Deci, poți să exersezi în a învăța clasele, exact ca în model: 
 
 ```html
-<div id="box-id"> 
-	<div class="box-class">Cutia numarul 1.</div> 
-	<div class="box-class">Cutia numarul 2</div> 
-	<div class="box-class">Cutia numarul 3.</div> 
+<div id="id-name"> 
+	<div class="class-name"> Statement number 1</div> 
+	<div class="class-name"> Statement number 2</div> 
+	<div class="class-name"> Statement number 3</div> 
 </div>
 ```
 
@@ -309,31 +259,33 @@ După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le 
 Poți utiliza exemplul de mai jos.
 
 ```css
-.box-class{ 
+.class-name{ 
 	width: 100px; 
 	height: 100px; 
-	border:2px solid red; 
+	border-width:2px;
+	border-style: solid;
+	border-color: red; 
 	margin: 20px; 
 	float: left; 
 }
 ```
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/40e88eecebf69cb2f723e928535d4bb0/tumblr_nswpk0FDnX1udztn8o1_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/bfd1448af43e9ec7cf59fa389a782d0b/tumblr_nt16skLDhT1udztn8o1_1280.png" /></div>
 
 Aceleași proprietăți ale clasei pot fi aplicate și daca avem un al id. Drept provocare, creeaza un alt id, cu alte proprietati include in interior elemente din clasa creata anterior. Exemplu: 
 
 ```html
-<div id="box-second-id"> 
-	<div class="cutie">Cutia numarul 1.</div> 
-	<div class="cutie cool">Cutia numarul 2</div> 
-	<div class="cutie cool">Cutia numarul 3.</div> 
+<div id="id-name-second"> 
+	<div class="class-name"> Statement number 1.</div> 
+	<div class="class-name"> Statement number 2</div> 
+	<div class="class-name"> Statement number 3.</div> 
 </div>
 ```
 
-În fișierul main.css, include:
+În fișierul layout.css, include:
 
 ```css
-#box-second-id { 
+#id-name-second { 
 	margin: 40px; 
 	background-color: blue; 
 	border: 10px solid #006; 
@@ -341,39 +293,39 @@ Aceleași proprietăți ale clasei pot fi aplicate și daca avem un al id. Drept
 } 
 ```
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/b5b6bcbf0e90a58f2bcabc1922edd725/tumblr_nswpoy4Mv41udztn8o1_540.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/52f8c9d99c5249ce122a14e86f224392/tumblr_nt180hpumI1udztn8o1_1280.png" /></div>
 
-Acum că știi cum se lucrează cu un id, cu o clasă, fii liber să încerci orice altle trucuri. Iată cateva trucuri simple, care-ți sunt recomandate:
+Acum că știi cum se lucrează cu un id, cu o clasă, fii liber să încerci orice alte trucuri. Iată câteva trucuri simple, care-ți sunt recomandate:
 
-- color – setează culoarea textului
+- `color` – setează culoarea textului
 
-- background-color – specifică culoarea fundalului
+- `background-color` – specifică culoarea fundalului
 
-- background-image – indică imaginea de fundal a unui element
+- `background-image` – indică imaginea de fundal a unui element
 
-- background-size – specifică dimensiunea imaginii de fundal
+- `background-size` – specifică dimensiunea imaginii de fundal
 
-- border – setează proprietățile marginilor/frontierelor
+- `border` – setează proprietatile marginilor/frontierelor
 
-- border-color –setează culoarea marginii
+- `border-color` –setează culoarea marginii
 
-- border-radius – setează curbura colțurilor unei casete
+- `border-radius` – setează curbura colțurilor unei casete
 
-- position – specifică metoda poziționării unui element  (static, absolute, relative sau fixed)
+- `position` – specifică metoda poziționării unui element  (static, absolute, relative sau fixed)
 
-- text-shadow – adaugă umbre textului
+- `text-shadow` – adaugă umbre textului
 
-- font-family – specifică familia textului
+- `font-family` – specifică familia textului
 
-- font-size – specifică mărimea textului.
+- `font-size` – specifică mărimea textului.
 
-- font-style – specifică stilul textului
+- `font-style` – specifică stilul textului
 
 Selectori css:
 
 `.class-name` - selectează elementul class, cu denumirea **class-name**
 
-`css#id-name` - selectează elementele având valoarea id-ului ***id-name***,
+`css#id-name` - selectează elementele având val9oarea id-ului ***id-name***,
 
 `p` - selectează toate elementele `<p>`
 
@@ -381,4 +333,114 @@ Selectori css:
 
 `div p` - selectează toate elementele `<p>` care se află în interiorul elementelor `<div>`
 
-`:hover` - seletează elementele pe care se află poziționat mouse-ul
+`:hover` - seleteaza elementele pe care se afla pozitionat șoricelul
+
+Exercițiu:
+Aici vei simula prima ta pagină web. Urmează instrucțiunile.
+
+Într-o directorie aparte creează fișierul index.html și fișierul main.css. Nu uita să le relaționezi.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+</body>
+</html>
+```
+
+Pune un titlu paginii, spre exemplu: "My Page".
+
+Creează o clasă cu numele ”class-name” și include în interiorul acesteia un header cu cea mai mare dimensiune(h1).
+
+```html
+<div class="class-name">
+	<h1>This is my first web page</h1>
+</div>
+```
+
+Stilizează această clasă în main.css, dându-i proprietățile: 
+
+```css
+.class-name {
+	text-align: center;
+	margin: 50px;
+	height: 890px;
+	background-color: #F8F8FF;
+	font-family: Ubuntu;
+}
+```
+
+Stilizează și heading-ul:
+
+```css
+h1 {
+	color: #696969;
+	font-family: Ubuntu;
+	font-size: 48px;
+}
+```
+Include în clasa ”class-name” o listă neordonată ce conține o clasă cu valoarea class=”navigation-bar”. Elementele listei vor fi ”page1”, ”page2” și ”page3”. Codul tău, la moment, trebuie să arate așa:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="class-name">
+		<h1>This is my first web page</h1>
+		<hr>
+		<ul class="navigation-bar">
+			<li>page1</li>
+			<li>page2</li>
+			<li>page3</li>
+		</ul>
+	</div>
+</body>
+</html>
+```
+
+Stilizează elementele listei neordonale, în fișierul main.css, dându-i proprietățile:
+
+```css
+ul li {
+	display: inline-block;
+	padding-left: 20px;
+}
+```
+
+Desenează o nouă linie orizontală, după care, îndată după tagul `<hr>`, include un id cu valoarea id=”cover-photo”, în interiorul căruia vei introduce o imagine.
+
+```html
+<hr>
+<div id="cover-photo">
+	<img src="http://mms.businesswire.com/media/20140930005373/en/434160/5/Thunderbolt-Express-Dock-HD-Office-Mac-PC.jpg">
+</div>
+```
+
+Pentru a aranja imaginea frumos stilizeaz-o fișierul main.css:
+
+```css
+img {
+	max-width: 100%;
+}
+```
+Daca vreai ca liniile orizonatale să arate și ele mai ”fancy”, poți să le stilizezi și pe ele. Fie analizezi exemplul de mai jos, fie google-uiești și găsești o soluție mai bună.
+
+```css
+hr {
+	height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+```
+În final, pagina ta ar trebui să arate exact ca în imagine.
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/34e5ba5eb2e18557c228dd5952a811a5/tumblr_nt13kv48mD1udztn8o1_1280.jpg" /></div>
