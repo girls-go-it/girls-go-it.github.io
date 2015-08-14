@@ -5,7 +5,7 @@ title: Basic Python Statements
 
 #Basic Python Statements
 
-În decursul acestei sesiuni, veți afla ce înseamnă un limbaj de programare, de ce am ales să studiem **Python** și care este sintaxa acestuia. De asemenea, vă veți familiariza cu practica și logica de bază a scrierii unui program, făcând referință la unele situații cotidiene. În felul acesta, veți percepe mai ușor necesitatea programării în viața de zi cu zi. 
+În decursul acestei sesiuni, veți afla ce înseamnă un limbaj de programare, de ce am ales să studiem **Python** și care este sintaxa acestuia. De asemenea, vă veți familiariza cu practica și logica de bază a scrierii unui program, făcând referință la unele situații cotidiene. În felul acesta, veți percepe mai ușor necesitatea programării în viața de zi cu zi.
 
 ####Ce este un limbaj de programare?
 Un **limbaj de programare** este un mijloc de comunicare cu computerul. El reprezintă un set bine definit de expresii și reguli necesare pentru a formula instrucțiuni pe care ulterior computerul le va procesa. Limbajul de programare dă posibilitate programatorului să specifice în mod exact și amănunțit acțiunile pe care trebuie să le execute calculatorul, în ce ordine și cu ce date. Această specificare constă în scrierea programelor necesare.
@@ -14,30 +14,37 @@ Un **limbaj de programare** este un mijloc de comunicare cu computerul. El repre
 Ce limbaje de programare cunoașteți? Probabil ați auzit de *HTML*, *CSS* sau *Pascal*. Da, ele toate sunt limbaje de programare. Ca și *Python*, de altfel.
 
 Dacă există atât de multe limbaje de programare, de ce noi am ales să studiem anume *Python*? Deoarece *Python* este un limbaj de programare:
-   
+
  - **modern**;
  - **renumit**, fiind utilizat la ora actuală la o scară largă de către programatorii din toată lumea, crescându-și popularitatea tot mai mult;
  - **simplu**, întrucât se pune accentul pe curățenia și simplitatea codului, iar sintaxa sa le permite dezvoltatorilor să exprime unele idei programatice într-o manieră mai clară și mai concisă decât în alte limbaje de programare (de exemplu *Pascal*).
-          
-Cu ajutorul *Python*, puteți crea aplicații web, jocuri și chiar motoare de căutare. 
+
+Cu ajutorul *Python*, puteți crea aplicații web, jocuri și chiar motoare de căutare.
 
 > **Notă:** Există foarte multe site-uri și aplicații web sau mobile scrise în *Python* pe care sigur le cunoașteți și chiar le utilizați zilnic: *Google*, *YouTube*, *Facebook*, *Pinterest*, *Instagram*, *DropBox* ș.a.
 
 ###**Sintaxa Python**
 
+Pentru a scrie și executa toate exercițiile propuse mai jos, veți folosi editorul de text *Sublime Text*.
+
+Deschideți *Sublime Text* și mergeți la bara de meniuri de sus. Selectați `File -> New File`. După ce vi s-a deschis un fișier nou, apăsați `Ctrl + s` pe tastatură. Salvați fișierul sub orice denumire doriți, dar neapărat cu extensia `.py`. Vă amintiți ce va povestit postetit Sergiu despre extensiile fișierelor? Eu o să-mi numesc fișierul `test.py`. Puteți face și voi la fel. Selectați mapa în care veți salva fișierul și apăsați `Save`. Acuma, sunteți gata să efectuați exercițiile propuse la această sesiune.
+
 Pentru început, executați următoarea instrucțiune:
 
 ```python
-print “Numele Vostru"
+print "Numele Vostru"
 ```
+
+Pentru a face acest lucru, copiați textul de mai sus (dar cu numele vostru între ghilimele) și apăsați `Ctrl + b` pe tastatură. În partea de jos a editorului de text, trebuie să vă apară consola, unde vă veți vedea numele afișat.
+
 Instrucțiunea ``` print ``` este simplă și foarte des utilizată, practic în orice program. Ea nu face altceva, decât să afișeze la ecran informația pe care i-o transmiteți.
 
 ####**Variabile și constante**
-Variabilele reprezintă un element important în programare. O **variabilă** reprezintă o valoare care se poate schimba de mai multe ori în timpul execuției unui program. Gândiți-vă la o variabilă ca la o cutie. Atunci când creați variabila, cutia este goală. Când îi atribuiți variabilei o valoare, e ca și cum ați pune în cutie un obiect, să zicem un pix. Peste o perioadă de timp, decideți să nu mai păstrați pixul în cutie, de aia puneți un creion în loc. Acest proces se numește *realocare de date*. 
+Variabilele reprezintă un element important în programare. O **variabilă** reprezintă o valoare care se poate schimba de mai multe ori în timpul execuției unui program. Gândiți-vă la o variabilă ca la o cutie. Atunci când creați variabila, cutia este goală. Când îi atribuiți variabilei o valoare, e ca și cum ați pune în cutie un obiect, să zicem un pix. Peste o perioadă de timp, decideți să nu mai păstrați pixul în cutie, de aia puneți un creion în loc. Acest proces se numește *realocare de date*.
 
 Așadar, o variabilă stochează o cantitate de informație sub un anumit nume. De exemplu, vârsta. Vârsta este un concept dinamic. Acum eu voi crea o variabilă cu numele ```varsta_mea``` și îi voi atribui vârsta mea:
 
-```python 
+```python
 varsta_mea = 20
 ```
 Acum, variabila ```varsta_mea``` conține valoarea 20. Dacă ulterior voi scrie un program specific, valoarea variabilei ```varsta_mea``` va crește periodic.
@@ -47,36 +54,36 @@ Acum, variabila ```varsta_mea``` conține valoarea 20. Dacă ulterior voi scrie 
 ####**Tipuri de variabile**
 În *Python*, ca și în oricare alt limbaj de programare, există mai multe tipuri de variabile. Astăzi, veți face cunoștință cu următoarele tipuri de variabile: ```int```, ```float```, ```bool```, ```string```.
 
-Probabil vă întrebați: "La ce bun există mai multe tipuri de variabile?". 
+Probabil vă întrebați: "La ce bun există mai multe tipuri de variabile?".
 Pentru că în programare sunt necesare anumite convenții pentru a diferenția tipul de variabile cu care lucrăm.
 
 
-- ```int``` <br>
-Primul tip de variabile se numește ```int```. ```int``` reprezintă aceeași mulțime *Z* din matematică, adică mulțimea numerelor întregi. 
+- `int` <br>
+Primul tip de variabile se numește `int`. `int` reprezintă aceeași mulțime *Z* din matematică, adică mulțimea numerelor întregi. 
 
 ```python
 my_int = 3
 your_int = -4
 ```
 
-- ```float``` <br>
-```float``` este un alt tip de variabilă, care include în sine mulțimea numerelor fracționare din matematică, adică cifrele cu punct. 
+- `float` <br>
+`float` este un alt tip de variabilă, care include în sine mulțimea numerelor fracționare din matematică, adică cifrele cu punct. 
 
 ```python
 my_float = 3.1
 your_float = 4.5
 ```
 
-- ```bool``` <br>
-```Bool```-urile reprezintă un tip de variabile care pot avea doar două valori. Așa cum un întrerupător poate avea doar două stări: conectat sau deconectat, la fel și un bool poate fi doar ```True``` sau ```False```. Puteți utiliza variabile pentru a stoca ```bool```-urile:
+- `bool` <br>
+`Bool`-urile reprezintă un tip de variabile care pot avea doar două valori. Așa cum un întrerupător poate avea doar două stări: conectat sau deconectat, la fel și un bool poate fi doar `True` sau `False`. Puteți utiliza variabile pentru a stoca `bool`-urile:
 
 ```python
 my_bool = True
 your_bool = False
 ```
 
-- ```string``` <br>
-Cu tipul de date ```string``` noi deja am lucrat. Țineți minte când am executat instrucțiunea ```print "Numele Vostru"```? În această instrucțiune, ```"Numele Vostru"``` este scris în ghilimele. Toate variabilele care se scriu între ghilimele sunt de tip ```string```. Un ```string``` poate fi o literă, un cuvânt, o mulțime de cuvinte, chiar și cifre, spații sau simboluri atâta timp cât ele sunt scrise între ghilimele.
+- `string` <br>
+Cu tipul de date `string` noi deja am lucrat. Țineți minte când am executat instrucțiunea `print "Numele Vostru"`? În această instrucțiune, `"Numele Vostru"` este scris în ghilimele. Toate variabilele care se scriu între ghilimele sunt de tip `string`. Un `string` poate fi o literă, un cuvânt, o mulțime de cuvinte, chiar și cifre, spații sau simboluri atâta timp cât ele sunt scrise între ghilimele.
 
 ```python
 my_string = "pix"
@@ -95,12 +102,14 @@ my_float = 1.23
 my_bool = True
 my_string = "lalala"
 ```
+
 ###*Live coding:*
 Acum cunoașteți cum să folosiți variabilele pentru a stoca valori. Să zicem:
 
 ```python
 my_int = 7
 ```
+
 Puteți să schimbați valoarea acestei variabile, realocând-o:
 
 ```python
@@ -116,11 +125,11 @@ print my_int
 Creați o variabilă cu orice nume doriți voi și atribuiți-i valoarea 7. După asta, schimbați valoarea variabilei voastre de la 7 la 3. În final, cu ajutorul instrucțiunii ``print``, afișați valoarea variabilei.
 
 ```python
-### creăm my_int cu valoarea 7
+# cream my_int cu valoarea 7
 my_int = 7
-### schimbam valoarea my_int 
+# schimbam valoarea my_int
 my_int = 3
-### daca scriem print my_int, ce credeti ca va afisa consola?
+# daca scriem print my_int, ce credeti ca va afisa consola?
 print my_int
 ```
 ###**Comentarii**
@@ -130,7 +139,6 @@ La ce bun s-au inventat comentariile? Comentariile fac programul vostru mai ușo
 
 ###*Exercițiu:*
 Creați o variabilă și atribuiți-i o valoare de tip ``string``. Înainte de asta, adăugați un comentariu în care puteți scrie orice doriți. Nu uitați de semnul #.
-
 
 ```python
 # acesta este un comentariu
@@ -144,9 +152,9 @@ Haideți să creăm patru variabile: ``suma``, ``diferenta``, ``inmultire`` și 
 
 ```python
 suma = 25 + 25
-diferenta = 108 – 7
+diferenta = 108 - 7
 inmultire = 4 * 5
-impartire = 10 / 9 
+impartire = 10 / 9
 ```
 Pentru a vă convinge că rezultatele sunt corecte, scrieți, spre exemplu, ``print suma`` și vedeți rezultatul. Același exercițiu îl puteți face și asupra diferenței, înmulțirii și împărțirii. Apropo de împărțire. Care credeți că va fi rezultatul ``10 / 9``? Rezultatul va fi 1. De ce? Deoarece în acest caz, noi am împărțit două numere de tip ``int``, respectiv, rezultatul va fi tot de tip ``int``. Această împărțire ne va arăta de câte ori 9 se conține în 10 – o singură dată.
 
@@ -156,7 +164,7 @@ print diferenta
 print inmultire
 print impartire
 ```
-Dacă toate operațiile matematice pot fi efectuate la un simplu calculator, de ce să folosim *Python*? Pentru că putem combina operațiile matematice cu diferite tipuri de date (de exemplu ``bool``) și astfel se poate de creat programe utile. 
+Dacă toate operațiile matematice pot fi efectuate la un simplu calculator, de ce să folosim *Python*? Pentru că putem combina operațiile matematice cu diferite tipuri de date (de exemplu ``bool``) și astfel se poate de creat programe utile.
 
 Însă, să ne amintim că *Python* nu se rezumă doar la cele patru operații matematice de bază! Haideți să vedem cum scriem ridicarea la putere.
 ###*Live coding:*
@@ -205,7 +213,7 @@ print disciplina
 print profesor
 print coleg
 ```
-###**Accesarea după index**
+###**Accesarea după indice**
 Minunat! Acum, că v-ați reamintit ce înseamnă ``string``-urile, haideți să le analizăm mai detaliat. Trebuie să cunoașteți că toate caracterele dintr-un ``string`` sunt aranjate într-o ordine. Această ordine presupune ca fiecărui caracter din ``string`` să-i fie atribuit un număr. Acest număr este numit **indice**. Să analizați diagrama de mai jos:
 
 *diagrama*
@@ -303,9 +311,9 @@ w = "Web"
 print "%s %s" % (p, w)
 ```
 ###**Indentarea**
-Noțiunea de **indentare** este foarte importantă în programare, atunci când scrieți cod. În cazul în care scrieți cod în limbajul *Python*, această noțiune nu este doar importantă, dar este absolut **necesară**. Indentarea presupune plasarea codului pe linii, pentru scrierea corectă și cât mai clară a acestuia. De multe ori, programatorii începători uită de indentare atunci când scriu cod și din acest motiv se confruntă cu erori la execuția programelor. De aceea, fiți atenți la acest capitol și **nu uitați de indentare**! <3 
+Noțiunea de **indentare** este foarte importantă în programare, atunci când scrieți cod. În cazul în care scrieți cod în limbajul *Python*, această noțiune nu este doar importantă, dar este absolut **necesară**. Indentarea presupune plasarea codului pe linii, pentru scrierea corectă și cât mai clară a acestuia. De multe ori, programatorii începători uită de indentare atunci când scriu cod și din acest motiv se confruntă cu erori la execuția programelor. De aceea, fiți atenți la acest capitol și **nu uitați de indentare**! <3
 
-Să analizăm următoarea secvență de cod *Python*. Această sintaxă nu o să vă fie cunoscută, dar pentru moment asta nu e important. 
+Să analizăm următoarea secvență de cod *Python*. Această sintaxă nu o să vă fie cunoscută, dar pentru moment asta nu e important.
 
 ```python
 def colectiv():
@@ -317,7 +325,7 @@ Copiați această secvență de cod și executați-o. Ea trebuie să vă returne
 
 Oh, dar de ce nu ni se afișează ``"45"``? Se pare că *Python* ne spune că avem o greșeală.
 
-Da, așa este. Ceea ce vedeți la ecran se numește *mesaj de eroare*. În general, orice mesaj de eroare pe care-l primim este un indiciu a ceea ce noi n-am făcut corect în program. 
+Da, așa este. Ceea ce vedeți la ecran se numește *mesaj de eroare*. În general, orice mesaj de eroare pe care-l primim este un indiciu a ceea ce noi n-am făcut corect în program.
 
 Dar haideți să examinăm eroarea: ``"IndentationError: expected an indented block"``. Veți primi această eroare ori de câte ori veți uita de indentare sau indentarea va fi greșită.
 
@@ -349,7 +357,7 @@ def olimpiada():
     else:
         print "Nu ai ales nici geografia, nici chimia. Mai incearca odata."
         olimpiada()
-        
+
 olimpiada()
 ```
 
@@ -357,13 +365,13 @@ Pentru a înțelege programul de mai sus, ar fi bine să-l ‘depănăm’ pas c
 ###**Comparatoarele**
 În *Python* există șase comparatoare:
 
- - egal (`==`)
- - diferit (`!=`)
- - mai mic (`<`)
- - mai mic sau egal (`<=`)
- - mai mare (`>`)
- - mai mare sau egal (`>=`)
- 
+ - egal (``==``)
+ - diferit (``!=``)
+ - mai mic (``<``)
+ - mai mic sau egal (``<=``)
+ - mai mare (``>``)
+ - mai mare sau egal (``>=``)
+
 Atrageți atenția că ``==`` compară dacă două lucruri sunt egale, pe când ``=`` atribuie o valoare unei variabile.
 ###**Operațiile Boolean**
 Operațiile ``boolean`` compară careva afirmații, rezultatul acestei comparații fiind o valoare ``boolean``. Există trei operații ``boolean``:
@@ -371,7 +379,7 @@ Operațiile ``boolean`` compară careva afirmații, rezultatul acestei comparaț
  - ``and``, care verifică dacă *ambele* afirmații sunt ``True``;
  - ``or``, care verifică dacă *cel puțin* o afirmație este ``True``;
  - ``not``, care este *opusul* afirmației.
- 
+
 În acest context, aflați că:
 
 ```python
@@ -389,36 +397,36 @@ Operațiile ``boolean`` compară careva afirmații, rezultatul acestei comparaț
  - Not False este True.
 ```
 
- 
+
 ###*Exercițiu:*
-Creați variabila ``bool_1``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ```1 < 2 and 2 < 3```. 
+Creați variabila ``bool_1``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ```1 < 2 and 2 < 3```.
 
 ```python
 bool_1 = True
 ```
 Creați variabila ``bool_2``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``1 < 2 and 2 > 3``.
 
-```python 
+```python
 bool_2 = False
 ```
 Creați variabila ``bool_3``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``1 < 2 or 2 > 3``.
 
-```python 
+```python
 bool_3 = True
 ```
 Creați variabila ``bool_4``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``1 > 2 or 2 > 3``.
 
-```python 
+```python
 bool_4 = False
 ```
-Creați variabila ``bool_5``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``not False``. 
+Creați variabila ``bool_5``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``not False``.
 
 ```python
 bool_5 = True
 ```
 Creați variabila ``bool_6``. Atribuiți-i valoarea ``boolean`` egală cu rezultatul expresiei: ``not 41 > 40``.
 
-```python 
+```python
 bool_6 = False
 ```
 Operațiile ``boolean`` nu sunt pur și simplu evaluate de la stânga la dreapta. La fel ca operațiile aritmetice, operațiile ``boolean`` au o ordine de execuție:
@@ -426,7 +434,7 @@ Operațiile ``boolean`` nu sunt pur și simplu evaluate de la stânga la dreapta
  - ``not`` este evaluat primul;
  - ``and`` este evaluat al doilea;
  - ``or`` este evaluat ultimul.
- 
+
 De exemplu, ``True or not False and False`` returnează ``True``. De ce?
 
 ``not`` este evaluat primul, astfel noi avem
@@ -434,7 +442,7 @@ De exemplu, ``True or not False and False`` returnează ``True``. De ce?
 ``True or False``. Așa după cum am văzut mai sus, ``True or False`` este ``True``, astfel valoarea finală este ``True``!
 
 ###**Sintaxa condiționalelor**
-**If**<br>
+If
 ``if`` (dacă) este cea mai simplă instrucțiune condițională. ``if``-ul execută o anumită bucată de cod dacă expresia pe care o verifică este ``True``.
 
 Aici avem un exemplu de sintaxă:
@@ -444,10 +452,10 @@ if 8 < 9:
     print "Opt este mai mic decat noua!"
 ```
 În acest exemplu, ``8 < 9`` este expresia verificată de către ``if``. Această expresie este ``True``, de aceea *Python* va executa instrucțiunea ``print "Opt este mai mic decat noua!"``.
- 
+
 Luați în considerare *indentarea*. De asemenea, observați cele *două puncte* la sfârșitul afirmației ``if``. Aceste două componente sunt **necesare** atunci când scrieți condiționale.
 
-**Else**<br>
+Else
 Instrucțiunea condițională ``else`` completează instrucțiunea condițională ``if``. O pereche ``if/else`` spune: *"Hey Python, dacă această expresie este adevărată, execută blocul de cod indentat de după if; în caz contrar, execută cealaltă bucată de cod indentat de după instrucțiunea else."*
 
 Spre deosebire de ``if``, ``else`` nu depinde de o expresie (pe care ar trebui să o verifice). De exemplu:
@@ -460,7 +468,7 @@ else:
 ```
 Luați în vedere **indentarea**!
 
-**Elif**<br>
+Elif
 ``elif`` este prescurtarea lui "else if". ``elif``-ul spune: *"În caz contrar, dacă expresia următoare este adevărată, atunci fă asta!"*
 
 ```python
@@ -471,7 +479,7 @@ elif 8 < 9:
 else:
     print "Albastru"
 ```
-În exemplul de mai sus, instrucțiunea condițională ``elif`` este executată doar în cazul în care instrucțiunea ``if`` originală este falsă. 
+În exemplul de mai sus, instrucțiunea condițională ``elif`` este executată doar în cazul în care instrucțiunea ``if`` originală este falsă.
 Totuși, ce credeți că va afișa codul?
 
 ###**The Big If**
@@ -488,7 +496,7 @@ Ați făcut o muncă enormă! Dacă ați trecut ușor prin toată logica descris
 *Operațiile boolean!*
 
 ```python
-True or False 
+True or False
 (3 < 4) and (5 >= 5)
 ```
 *Instrucțiunile condiționale!*
@@ -505,336 +513,10 @@ else:
 Scrieți o secvență de cod care trebuie să includă neapărat: ``if``, ``elif``, și ``else``. De asemenea, codul vostru trebuie să conțină cel puțin un ``and``, ``or`` sau ``not`` și cel puțin un comparator (``==``, ``!=``, ``<``, ``<=``, ``>``, ``>=``). Nu uitați să scrieți ``:`` după afirmația ``if``!
 
 ```python
-    if  8 < 9:    
+    if  8 < 9:
         return True
     elif 9 < 10 and 10 < 11:
         return "lalala"
     else:
         return "lololo"
 ```
-
-###**Data și Timpul**
-####**Librăria datetime**
-De foarte multe ori, în programare, și mai ales în programarea web, e necesar de stabilit și de salvat data și ora exactă a unei informații. Gândiți-vă, spre exemplu, la *Facebook*. În *Facebook* e păstrată și chiar afișată data și ora exactă a fiecărei postări sau comentariu. În *Python*, putem păstra aceste informații, legate de timp, folosind librăria ``datetime``. 
-####**Obținerea de date și timp**
-Pentru a obține data și ora curentă, putem folosi funcția numită ``datetime.now()``.
-
-```python
-from datetime import datetime
-print datetime.now()
-```
-Prima linie de cod importă librăria ``datetime``, astfel încât s-o putem utiliza. A doua linie afișează data și ora curentă.
-###*Exercițiu:*
-Creați o variabilă numită ``acum`` și stocați în ea rezultatul funcției ``datetime.now()``. Apoi, afișați valoarea lui ``acum``. Nu uitați de ``import``!
-
-```python
-from datetime import datetime
-acum = datetime.now()
-print acum
-```
-####**Extragerea informației**
-Observați cum arată output-ul: ``2015-08-25 23:45:14.317454``. Dacă nu doriți să se afișeze întreaga dată și oră, atunci cum preocedați?
-
-Simplu!
-```Pythom
-from datetime import datetime
-acum = datetime.now()
-anul_curent = acum.year
-luna_curenta = acum.month
-ziua_curenta = acum.day
-```
-Primele două linii deja le înțelegeți. În linia a treia, am luat ``anul`` din variabila ``acum`` și l-am stocat în ``anul_curent``. În liniile patru și cinci, am stocat ``luna`` și ``ziua`` din ``acum``.
-
-###*Live coding:*
-Să zicem că noi dorim să afișăm data de azi în formatul următor: *lună/ziuă/an*. Cum putem face asta? Aici ne vine în ajutor **substituția ``string``-urilor**!
-
-```python
-from datetime import datetime
-acum = datetime.now()
-
-print '%s-%s-%s' % (acum.year, acum.month, acum.day)
-# se va afisa: 2015-08-19
-```
-
-Amintiți-vă că operatorul ``%`` va găsi toate scrierile ``%s`` din ``string`` și toate argumentele din paranteze. El le va afișa în ordinea corespunzătoare.
-Vi s-a afișat data corect?
-
-###*Exercițiu:*
-Afișați data curentă în formatul: *zi/lună/an*. Pentru asta trebuie doar să înlocuiți simbolurile ``–`` cu ``/``  și să schimbați ordinea a ``now.month``, ``now.day`` și ``now.year``.
-
-```python
-from datetime import datetime
-acum = datetime.now()
-print '%s/%s/%s' % (acum.day, acum.month, acum.year)
-```
-
-Sunteți bravo! Haideți să implementăm aceeași logică pentru ore, minute și secunde.
-
-```python
-from datetime import datetime
-acum = datetime.now()
-
-print acum.hour
-print acum.minute
-print acum.second
-```
-
-În exemplul de mai sus, noi am afișat ora, minuta și secunda curentă.
-
-###*Exercițiu:*
-Exact ca și în exercițiul anterior, afișați timpul curent în forma: *oră:minută:secundă*.
-
-Schimbați ``string``-ul pe care-l veți afișa, astfel încât să aveți caracterul ``:`` între ``%s``.
-Modificați luna, ziua și anul în ``acum.hour``, ``acum.minute`` și ``acum.second``.
-
-```python
-from datetime import datetime
-acum = datetime.now()
-print '%s:%s:%s' % (acum.hour, acum.minute, acum.second)
-```
-
-###**Marea provocare!**
-Ați reușit să afișați data și timpul în mod separat și într-o formă foarte drăguță! Bravo! Haideți acum să le combinăm!
-
-```python
-from datetime import datetime
-acum = datetime.now()
-
-print '%s/%s/%s' % (acum.month, acum.day, acum.year)
-print '%s:%s:%s' % (acum.hour, acum.minute, acum.second)
-```
-În exemplul de mai sus, se va afișa data. Apoi, dintr-o linie nouă, se va afișa timpul.
-
-Haideți să le afișăm pe toate pe aceeași linie într-o singură instrucțiune ``print``!
-
-###*Exercițiu:*
-Afișați data și timpul împreună în forma: *lună/zi/an oră:minută:secundă*.
-
-Pentru a face asta:
-
-- importați librăria ``datetime``;
-- creați o variabilă numită ``acum`` și atribuiți-I funcția ``datetime.now()``;
-- afișați data și timpul după cum vi s-a cerut mai sus. Nu uitați de: ``%s``, ``%``, ``/``, ``-`` și de ordinea variabilelor din paranteze.
-
-```python
-from datetime import datetime
-acum = datetime.now()
-
-print '%s/%s/%s %s:%s:%s' % (acum.month, acum.day, acum.year, acum.hour, acum.minute, acum.second)
-```
-
-**Concluzie:**
-În acest capitol voi ați învățat două lucruri: ce înseamnă librăria ``datetime`` și cum are loc importarea de librării!
-
-##**Funcții**
-De multe ori, voi, ca viitori programatori, vă veți întâlni cu situația în care veți fi nevoiți să reutilizați o anumită secvență de program, dar deja cu alte valori. Pentru a nu scrie de fiecare dată codul din nou, este mult mai simplu să definiți o **funcție**, care poate fi reutilizată oricând.
-
-Funcția este un concept important în programare (la fel ca și în matematică). Fiecare programator trebuie să poată să scrie funcții. 
-###**Sintaxa funcțiilor**
-
-Funcțiile sunt constituite din două componente.
-
-Primul component este **header**-ul funcției, care include: cuvântul-cheie ``def``, **numele** funcției și **parametrii** pe care-i transmiteți funcției. Parametrii sunt opționali. Vedeți mai jos un exemplu de funcție fără parametri:
-
-```python
-def hello_world(): # acesta este header-ul unei functii fara parametri
-```
-Al doilea component este **corpul** funcției, care descrie, propriu-zis, ce face funcția voastră. Corpul funcției trebuie să fie **indentat**, la fel ca și în cazul instrucțiunilor condiționale. *(Vă amintiți de indentarea condiționalelor?)*
-
-```python
-print "Hello World!" # acesta este corpul functiei
-```
-Mai jos puteți vedea întreaga funcție, scrisă de la început până la sfârșit:
-
-```python
-def hello_world():
-    print "Hello World!"
-```
-Pentru a **apela** funcția dată, se scrie numele ei, urmat de două paranteze ``( )``.
-
-```python
-hello_world()
-```
-###*Exercițiu:*
-Creați o funcție numită ``felicitare``, care afișează ``string``-ul ``"La multi ani!"``, după care apelați funcția dată.
-
-```python
-def felicitare():
-    print "La multi ani!"
-    
-felicitare()
-```
-
-```python
-def calcul(n):
-    patrat = n**2
-    print str(n) + " la patrat este " + str(patrat)
-    return patrat
-    
-calcul(10)
-```
-####**Parametri și Argumente**
-
-În exemplul de mai sus, ``n`` este **parametrul** funcției ``calcul``. ``10`` este **argumentul** transmis.
-
-> **Notă:** Unei funcții îi puteți transmite atâția parametri, de câți aveți nevoie. Când apelați funcția, ar fi bine să-i transmiteți tot atâtea argumente, câți parametri ați definit.
-###*Exercițiu:*
-Analizați funcția ``putere`` de mai jos. Ea cere doi parametri: o bază și un exponent. Primul parametru este ridicat la puterea parametrului al doilea. După cum vedeți, funcția nu este completă, de aceea adăugați de sine-stătător parametrii: ``baza`` și ``exponent``. Apoi, apelați funcția cu argumentele: ``2`` pentru bază și ``3`` pentru exponent.
-
-```python
-def putere(___, ___):  # adaugati aici parametrii
-    rezultat = baza**exponent
-    print "%s la puterea a %s este %s." % (baza, exponent, rezultat)
-
-putere(__,__)  # adaugati aici argumentele
-```
-*Rezultatul vostru trebuie să arate așa:*
-
-```python
-def putere(baza, exponent):  # adaugati aici parametrii
-    rezultat = baza**exponent
-    print "%s la puterea a %s este %s." % (baza, exponent, rezultat)
-
-putere(2, 3)  # adaugati aici argumentele
-```
-Vi s-a dat rezultatul corect? Sunt sigură că da! 
-###**Funcții apelând funcții**
-
-###*Live coding:*
-Ați văzut deja funcții care pot afișa texte sau care pot face operații aritmetice, dar funcțiile pot fi mult mai puternice decât atât! De exemplu, o funcție poate apela o altă funcție: 
-
-```python
-def func_one(n):
-    return n * 5
-
-def func_two(m):
-    return func_one(m) + 7
-```
-
-###*Exercițiu:*
-Să analizăm următoarele două funcții: ``o_afisare`` (care adună 1 la un număr pe care-l ia ca argument) și ``merita_alta_afisare`` (care adună 2).
-
-```python
-def o_afisare(n):
-    return n + 1
-    
-def merita_alta afisare(n):
-    return n + 2
-```
-Schimbați corpul funcției ``merita_alta_afisare`` astfel încât ea să adune 2 la output-ul funcției ``o_afisare``:
-
-```python
-def o_afisare(n):
-    return n + 1
-    
-def merita_alta_afisare(n):
-    return o_afisare(n) + 2
-
-```
-
-####**Practice Makes Perfect**
-
-###*Exercițiu:*
-Definiți ``(def)`` o funcție numită ``cub`` care cere un parametru numit ``numar``. Nu uitați de paranteze și de două puncte!
-
-Faceți ca funcția să returneze ``(return)`` cubul unui număr (adică un număr ridicat la puterea a treia).
-
-Definiți a doua funcție, numită ``mai_mare``, care cere un argument numit ``numar``.
-
-Dacă ``(if)`` acel număr este mai mare decât 100, atunci ``mai_mare`` trebuie să apeleze funcția ``cub(numar)`` și să returneze rezultatul acesteia. În caz contrar, ``mai_mare`` trebuie să returneze ``False``.
-
-Nu uitați că instrucțiunile condiționale ``if`` și ``else`` necesită ``:`` la sfârșitul liniei!
-
-```python
-def cub(numar):
-    return numar ** 3
-    
-def mai_mare(numar):
-    if numar > 100:
-        return cub(numar)
-    else:
-        return False
-```
-###**Importarea modulelor**
-Acum, să trecem la un capitol din *Python* extrem de interesant și, în același timp, foarte important! Înainte de a învăța importarea modulelor, haideți să clarificăm niște noțiuni. Ce înseamnă un modul, în genere?
-
-Un **modul** este un fișier care conține multe definiții, inclusiv variabile și funcții, pe care le puteți folosi odată ce el, acest modul, a fost importat în programul vostru. 
-###*Live coding:*
-Înainte de a importa ceva, haideți să vedem ce știe *Python* implicit, adică fără de importuri. Vom lua exemplul funcției radical. Linia de mai jos trebuie să afișeze ``5``.
-
-```python
-print sqrt(25)
-```
-Hey, dar nu ni s-a afișat ``5``! Se pare că avem o eroare. Să analizăm mesajul:
-
-```python
-NameError: name 'sqrt' is not defined
-```
-
-*Python* ne-a spus: ``"NameError: name 'sqrt' is not defined."`` *Python* nu știe ce înseamnă extragerea rădăcinii… până când!
-
-În *Python* există un modul, numit ``math`` (de la matematică), care include un număr mare de variabile și funcții utile, iar ``sqrt()`` este una dintre aceste funcții. Pentru a accesa ``math``, tot de ce avem nevoie este cuvântul-cheie ``import``.
-
-```python 
-import modul
-```
-Acest fel de import de module se numește **import generic**.
-###*Exercițiu:*
-În acest exercițiu, trebuie să faceți două lucruri.
-
-Primul lucru este să scrieți ``import math`` în prima linie de cod.
-
-Al doilea lucru este să scrieți ``math.sqrt()`` cu argumentul ``25`` și să afișați rezultatul. În felul acesta îi veți spune lui *Python* nu doar să importe ``math``, dar și să extragă rădăcina dintr-un număr. 
-
-```python
-import math
-print math.sqrt(25)
-```
-####**Importarea funcțiilor**
-
-Minunat! Acum *Python* știe cum să extragă rădăcina pătrată dintr-un număr!
-
-Totuși, noi am avut nevoie, de fapt, doar de funcția ``sqrt``, iar să scrii mereu ``math.sqrt()`` poate deveni frustrant.
-
-În *Python*, este posibil de importat doar unele din multiplelel variabile sau funcții dintr-un anumit modul. Pentru asta, avem nevoie de cuvântul-cheie ``from:
-
-```python
-from modul import functie
-```
-În acest fel, puteți scrie doar ``sqrt()`` pentru a obține rădăcina pătrată a unui număr. Nu mai aveți nevoie de ``math.sqrt()``!
-###*Live coding:*
-Haideți să importăm doar funcția ``sqrt`` din modulul ``math``. (Nu avem nevoie de ``()`` după ``sqrt``!)
-
-```python
-from math import sqrt
-```
-####**Importurile universale**
-
-Fain! Am găsit o modalitate corectă de a selecta variabile și funcții din modulul pe care-l vrem!
-
-Dacă noi în continuare dorim să obținem toate variabilele și funcțiile dintr-un modul, dar nu vrem să scriem permanent ``math.``, ce facem?
-
-**Importul universal** vine cu o soluție! Sintaxa acestuia este: 
-
-```python
-from module import *
-```
-###*Live coding:*
-Haideți să utilizăm ``from modul import *`` pentru a importa tot din modulul ``math``.
-
-```python
-from math import *
-```
-Totul e bine, dar...
-Importurile universale pot să pară ok din exterior, dar ele nu sunt o idee bună dintr-un motiv foarte important: ele fac programul vostru plin de o groază de variabile și funcții inutile sau care vă pot crea probleme.
-
-Să zicem că ați creați funcția voastră și ați numit-o ``sqrt``. Tot în același program, ați importat modulul ``math``. În acest caz, funcția voastră ``sqrt`` va fi în siguranță: veți avea funcția pe care ați creat-o – ``sqrt``, și funcția din modul – ``import.sqrt``. Însă, dacă ați fi scris ``from math import *``, v-ați fi confruntat cu o problemă: două funcții diferite, dar cu același nume. Iar dacă ați fi scris de mai multe ori în același program ``import *``, nu ați fi fost capabili să înțelegeți care variabilă sau care funcție din care modul vine.
-
-Din aceste motive, cel mai bine este fie să utilizați fie ``import modul`` și apoi ``modul.nume``, fie pur și simplu să faceți ``import`` unor variabile și funcții specifice din diferite module.
-
-
-
-
-
-
-
