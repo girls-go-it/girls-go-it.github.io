@@ -10,7 +10,7 @@ title: Basic Html
 
 Html sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-Aici vei învăța cum să creezi propria pagină html. Pentru început trebuie doar să deschizi terminalul în directoria proiectului, in folderul `static`. Scrie în terminal următorul rând:
+Aici vei învăța cum să creezi propria pagină html. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Scrie în terminal următorul rând:
 
 ```bash
 $ subl index.html
@@ -194,7 +194,7 @@ Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența
 
 Înțelegerea claselor și a id-urilor pare destul de cețoasă. De aceea, aici se face un nou pas – introducerea CSS-ului. Ce reprezintă? CSS este acronimul pentru Cascading Style Sheets. CSS este un limbaj (style language) care definește "layout-ul" pentru documentele HTML. Acesta acoperă culori, font-uri, margini (borders), linii, înălțime, lățime, imagini de fundal, poziții avansate și multe alte opțiuni. În câteva cuvinte, CSS te ajută să stilizezi pagina după propriul plac.
 
-Deschide terminalul și, în directoria proiectului, în folderul static, creează un fișier cu extensia .css:
+Deschide terminalul și, în directoriul proiectului, în folderul static, creează un fișier cu extensia .css:
 
 ```bash
 $ subl layout.css
@@ -234,9 +234,9 @@ Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a
 	margin: 40px; 
 	background-color: #ABC; 
 	border-width: 10px;
-	overflow: hidden; 
 	border-style: solid;
 	border-color: #006;
+	overflow: hidden;
 }
 ```
 
@@ -288,8 +288,10 @@ Aceleași proprietăți ale clasei pot fi aplicate și daca avem un al id. Drept
 #id-name-second { 
 	margin: 40px; 
 	background-color: blue; 
-	border: 10px solid #006; 
-	overflow: hidden; 
+	border-width: 10px;
+	border-style: solid;
+	border-color: #006;
+	overflow: hidden;
 } 
 ```
 
@@ -305,27 +307,39 @@ Acum că știi cum se lucrează cu un id, cu o clasă, fii liber să încerci or
 
 - `background-size` – specifică dimensiunea imaginii de fundal
 
-- `border` – setează proprietatile marginilor/frontierelor
+- `border` – setează proprietatile marginilor/frontierelor unui element
 
 - `border-color` –setează culoarea marginii
 
 - `border-radius` – setează curbura colțurilor unei casete
 
-- `position` – specifică metoda poziționării unui element  (static, absolute, relative sau fixed)
+- `border-width` - setează dimensiunea tuturor marginilor
 
-- `text-shadow` – adaugă umbre textului
+- `border-style` - setează stilul marginilor(none, hidde, dotted, dashed, solid, double, groove, ridge, inset, outset, initial, inherit)
+
+- `box-shadow` - atașează una sau mai multe umbre la un element.
+
+- `position` – specifică metoda poziționării unui element  (static, absolute, relative sau fixed)
 
 - `font-family` – specifică familia textului
 
-- `font-size` – specifică mărimea textului.
+- `font-size` – specifică mărimea textului
 
 - `font-style` – specifică stilul textului
+
+- `margin` - setează proprietățile tutulor marginilor
+
+- `max-width` - setează dimensiunea maximă a unui element
+
+- `overflow` - specifică proprietatea pe care o ia elementul în caz că se conțin alte elemente
+
+- `text-align` - specifică aranjarea, pe orizontală, a textului
 
 Selectori css:
 
 `.class-name` - selectează elementul class, cu denumirea **class-name**
 
-`css#id-name` - selectează elementele având val9oarea id-ului ***id-name***,
+`css#id-name` - selectează elementele având valoarea id-ului ***id-name***
 
 `p` - selectează toate elementele `<p>`
 
@@ -333,12 +347,12 @@ Selectori css:
 
 `div p` - selectează toate elementele `<p>` care se află în interiorul elementelor `<div>`
 
-`:hover` - seleteaza elementele pe care se afla pozitionat șoricelul
+Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 
 Exercițiu:
 Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 
-Într-o directorie aparte creează fișierul index.html și fișierul main.css. Nu uita să le relaționezi.
+Într-un directoriu aparte creează fișierul index.html și fișierul main.css. Nu uita să le relaționezi.
 
 ```html
 <!DOCTYPE html>
@@ -354,6 +368,10 @@ Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 ```
 
 Pune un titlu paginii, spre exemplu: "My Page".
+
+```html
+<title>My Page</title>
+```
 
 Creează o clasă cu numele ”class-name” și include în interiorul acesteia un header cu cea mai mare dimensiune(h1).
 
@@ -384,7 +402,7 @@ h1 {
 	font-size: 48px;
 }
 ```
-Include în clasa ”class-name” o listă neordonată ce conține o clasă cu valoarea class=”navigation-bar”. Elementele listei vor fi ”page1”, ”page2” și ”page3”. Codul tău, la moment, trebuie să arate așa:
+În ”class-name” include o listă neordonată ce conține o clasă cu valoarea class=”navigation-bar”. Elementele listei vor fi ”page1”, ”page2” și ”page3”. Codul tău, la moment, trebuie să arate așa:
 
 ```html
 <!DOCTYPE html>
@@ -432,7 +450,7 @@ img {
 	max-width: 100%;
 }
 ```
-Daca vreai ca liniile orizonatale să arate și ele mai ”fancy”, poți să le stilizezi și pe ele. Fie analizezi exemplul de mai jos, fie google-uiești și găsești o soluție mai bună.
+Daca vreai ca liniile orizonatale să arate și ele mai ”fancy”, poți să le stilizezi și pe ele. Fie analizezi exemplul de mai jos, fie googluiești și găsești o soluție mai bună.
 
 ```css
 hr {
