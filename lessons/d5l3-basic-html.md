@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basic Html
+title: Basic HTML&CSS
 ---
 
 #Basic HTML
@@ -68,66 +68,66 @@ Mergi în browser și fă refresh la pagină, apăsând F5.
 Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile `<p></p>`, precum în exemplul de mai jos:
 
 ```html
-<p>Foxes are cute.</p>
+<p style="color:blue; font-size: 24px; text-align: center">Savannah is the most beautiful place.</p>
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/5d496b8089f4414be4737c9226741ba9/tumblr_nt16ck2kYt1udztn8o1_500.png" /></div>
+Stilizează ace paragraf, dăndu-i proprietățile: 
+
+```html
+<p style="color:blue; font-size: 24px; text-align: center">
+```
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/eb521c67b6c25039afbfc7b3ea11d5f2/tumblr_nt4t86jlRq1udztn8o2_1280.png" /></div>
 
 
 Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți cum se scriu așa numitele titluri, sau ”headings”. Pentru a scrie un heading, trebuie să incluzi între taguri denumirea acestuia. Reține, tagurile pentru heading încep de la 1 până la 6, iar dimensiunea este descrescătoare odată cu mărirea numărului de pe lângă h. Deci, pentru a vedea diferența, scrie următoarele rânduri în fișirul .html:
 
 ```html
-<h1>Heading h1.</h1>
-<h2>Heading h2.</h2>
-<h3>Heading h3.</h3>
-<h4>Heading h4.</h4>
-<h5>Heading h5.</h5>
-<h6>Heading h6.</h6>
+    <p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> -->
+    <h1 style="color: #696969; font-family: Ubuntu">Lions</h1>
+    <h2 style="color: #500000 ; font-family: Ubuntu">Cheetah</h2>
+    <h3 style="color: #00CC33; font-family: Ubuntu">Leopards</h3>
+    <h4 style="color: #00FFFF; font-family: Ubuntu">Elefhants</h4>
+    <h5 style="color: #6633CC; font-family: Ubuntu">Giraffe</h5>
+    <h6 style="color: #696969; font-family: Ubuntu">Zebra</h6>
 ```
 
-<div class="custom-image"><img src="https://36.media.tumblr.com/eba3814ee9a7c5b7dc68672bd6c5e96a/tumblr_nt0uauzmlx1udztn8o4_250.jpg" /></div>
+Observi că fiecărui heading i s-a atribuit proprietăți de culoare și family-font. Poți să le schimbi după propriul plac.
 
-Poți la fel de bine să incluzi și câteva paragrafe, după titlul pe care l-ai scris. Drept exemplu îți servește porțiunea de cod scrisă mai jos:
-
-```html
-<h1>Fox</h1>
-<p>Foxes are beautiful.</p>
-<p>Foxes are beautiful.</p>
-<h2>Wolf</h2>
-<p>I like foxes, anyway.</p>
-```
-
-<div class="custom-image"><img src="https://40.media.tumblr.com/2ba8a24223e6efd66d6ec6b7267bd229/tumblr_nt0uauzmlx1udztn8o3_250.jpg" /></div>
+<div class="custom-image"><img src="https://36.media.tumblr.com/47b3e53e129ccc817da46176c9aeef3f/tumblr_nt4t86jlRq1udztn8o1_1280.png" /></div>
 
 Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate, neordonate cât și definiție.
 
 Liste ordonate sunt extrem de simple. Un exemplu îl ai chiar în față:
 
 ```html
-<h1>Foxes are: </h1>
-<ol>
-	<li>beautiful</li>
-	<li>cute</li>
-	<li>pretty</li>
+<p>Savannah animals I like:</p> 
+<ol style="font-family: Sans-serif;  color: #993333">
+    <li>Lions</li>
+    <li>Elefants</li>
+    <li>Zebra</li>
 </ol>
 ```
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/3982548b1ee4467c84a4459a9e88c5ec/tumblr_nt0uauzmlx1udztn8o2_250.jpg" /></div>
+Stilizează această listă cu proprietățile:   style="font-family: Sans-serif;  color: #993333".
+
+<div class="custom-image"><img src="https://36.media.tumblr.com/614374edfb15d1b0e858336506609c38/tumblr_nt4ssnu7em1udztn8o5_1280.png" /></div>
 
 Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`. 
 
 Dacă curiozitatea este atributul tău principal, atunci poți să încerci și listele de definiție.
 
 ```html
-<dl>
-    <dt>Fox</dt>
-    <dd>beautiful</dd>
-    <dd>smart</dd>
-    <dt>Wolf</dt>
-    <dd>sturdy</dd>
-</dl>
+    <p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> 
+    <dl>
+        <dt>Lions :</dt>
+        <dd>Rapid</dd>
+        <dd>Strong</dd>
+        <dt>Elefants</dt>
+        <dd>Gray</dd>
+    </dl>
 ```
-<div class="custom-image"><img src="https://36.media.tumblr.com/23b60d2a2ecca5af6b00217dcee74629/tumblr_nt0uauzmlx1udztn8o1_250.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/7fc1ad894f396afdfbbaf305c66bf620/tumblr_nt4ssnu7em1udztn8o6_1280.png" /></div>
 
 Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos: 
 
@@ -175,7 +175,7 @@ Mai mult decât atât, dacă vrei să adaugi o imagine pe pagina ta, poți să u
 Exemplu:
 
 ```html
-<img src="http://www.audreypress.com/blog/wp-content/uploads/2012/02/winterfox1.jpg" alt="Formatul imaginii este necorespunzător"/>
+<img src="http://www.backdropsfantastic.com/backdrop_images/300's/OA-004-African-Savannah-4.jpg" alt="Formatul imaginii este necorespunzător"/>
 ```
 
 Un pas la fel de simplu și interactiv este învățarea și aplicarea în practică a id-urilor și claselor. 
@@ -439,7 +439,7 @@ Desenează o nouă linie orizontală, după care, îndată după tagul `<hr>`, i
 ```html
 <hr>
 <div id="cover-photo">
-	<img src="http://mms.businesswire.com/media/20140930005373/en/434160/5/Thunderbolt-Express-Dock-HD-Office-Mac-PC.jpg">
+	<img src="http://hdwallpapers.cat/wallpaper/zebras_on_savannah_sunlight_grassland_tree_hd-wallpaper-1249130.jpg">
 </div>
 ```
 
