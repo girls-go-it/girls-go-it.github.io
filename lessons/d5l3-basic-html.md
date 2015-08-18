@@ -3,7 +3,7 @@
 ```html
 ---
 layout: default
-title: Basic HTML&CSS
+title: Basic HTML & CSS
 ---
 
 #Basic HTML
@@ -11,9 +11,9 @@ title: Basic HTML&CSS
 ##Ce este HTML?
 
 
-Html sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
+HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-Aici vei învăța cum să creezi propria pagină html. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Scrie în terminal următorul rând:
+Aici vei învăța cum să creezi propria pagină HTML. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Scrie în terminal următorul rând:
 
 ```bash
 $ subl index.html
@@ -33,13 +33,13 @@ $ subl index.html
 </html>
 ```
 
-Salvează modificările făcute în documentul index.html. Dezchizând din nou terminalul, scrie:
+Salvează modificările făcute în documentul `index.html`. Dezchizând din nou terminalul, scrie:
 
 ```bash
 $ sensible-browser index.html
 ```
 
-Ceea ce ai în față este o pagină HTML goală. Observi că numele paginii corespunde cu numele documentului  cu extensia .html pe care l-ai creat anterior. Pentru a schimba denumirea paginii, tot ce trebuie să faci este să scrii titlul pe care-l dorești între tag-urile `<title></title>.`
+Ceea ce ai în față este o pagină HTML goală. Observi că numele paginii corespunde cu numele documentului  cu extensia `.html` pe care l-ai creat anterior. Pentru a schimba denumirea paginii, tot ce trebuie să faci este să scrii titlul pe care-l dorești între tag-urile `<title></title>.`
 Spre exemplu: 
 
 
@@ -47,7 +47,7 @@ Spre exemplu:
 <title>My page</title>
 ```
 
-Salvează modificările făcute în documentul index.html. Apoi poți vedea că titlul s-a schimbat scriind din nou în terminal comanda:
+Salvează modificările făcute în documentul `index.html`. Apoi poți vedea că titlul s-a schimbat scriind din nou în terminal comanda:
 
 
 ```bash
@@ -74,7 +74,9 @@ Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, desch
 <p style="color:blue; font-size: 24px; text-align: center">Savannah is the most beautiful place.</p>
 ```
 
-Stilizează ace paragraf, dăndu-i proprietățile: 
+Stilizează acest paragraf, dându-i proprietățile: 
+
+<div class="custom-image"><img src="https://40.media.tumblr.com/5d496b8089f4414be4737c9226741ba9/tumblr_nt16ck2kYt1udztn8o1_500.png" /></div>
 
 ```html
 <p style="color:blue; font-size: 24px; text-align: center">
@@ -189,7 +191,7 @@ Un id este folosit pentru a identifica un singur tag dintr-o pagină. Acesta poa
 <div id="id-name">This is an id</div>
 ```
 
-Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri html. Prin asta se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferență între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, în css, folosim un “.”(punct), iar în interiorul tagului html în loc de id, scriem class. 
+Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri HTML. Prin asta se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferență între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, în css, folosim un “.”(punct), iar în interiorul tagului HTML în loc de id, scriem class. 
 
 ```html
 <div class="class-name">This is a class.</div>
@@ -203,7 +205,7 @@ Deschide terminalul și, în directoriul proiectului, în folderul static, creea
 $ subl layout.css
 ```
 
-Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul .html. Pentru a include layout.css în index.html, în head-ul fișierului din urmă scrie: 
+Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul `.html`. Pentru a include layout.css în `index.html`, în head-ul fișierului din urmă scrie: 
 
 ```html
 <link rel="stylesheet" type="text/css" href="layout.css">
@@ -258,7 +260,7 @@ După ce ai înțeles cum să definești un id, continuă să studiezi clasele. 
 ```
 
 După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le în aceeași clasă. 
-În fișierul html stilizează clasa. Reține, clasa, în CSS se scrie cu ajutorul selectorului ”.” .
+În fișierul HTML stilizează clasa. Reține, clasa, în CSS se scrie cu ajutorul selectorului ”.” .
 Poți utiliza exemplul de mai jos.
 
 ```css
@@ -355,7 +357,8 @@ Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 #Exercițiul 1:#
 Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 
-Într-un directoriu aparte creează fișierul index.html și fișierul style.css. Nu uita să le relaționezi.
+
+Într-un directoriu aparte creează fișierul `index.html` și fișierul main.css. Nu uita să le relaționezi.
 
 ```html
 <!DOCTYPE html>
