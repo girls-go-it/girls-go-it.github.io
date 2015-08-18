@@ -1,3 +1,6 @@
+
+
+```html
 ---
 layout: default
 title: Basic HTML&CSS
@@ -259,7 +262,7 @@ După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le 
 Poți utiliza exemplul de mai jos.
 
 ```css
-.class-name{ 
+.class-name { 
 	width: 100px; 
 	height: 100px; 
 	border-width:2px;
@@ -349,17 +352,17 @@ Selectori css:
 
 Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 
-Exercițiu:
+#Exercițiul 1:#
 Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 
-Într-un directoriu aparte creează fișierul index.html și fișierul main.css. Nu uita să le relaționezi.
+Într-un directoriu aparte creează fișierul index.html și fișierul style.css. Nu uita să le relaționezi.
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -373,59 +376,71 @@ Pune un titlu paginii, spre exemplu: "My Page".
 <title>My Page</title>
 ```
 
-Creează o clasă cu numele ”class-name” și include în interiorul acesteia un header cu cea mai mare dimensiune(h1).
+Orice pagină conține o bară de navigare. Pentru a o include în pagina ta, creează o clasă și include în aceasta o listă. Elementele listei pot fi oricare, spre exemplu Home, Feed și Login. Fie că vrei ca, atunci când faci click pe ”Login” să fii redirecționat la pagina de login. Pentru asta include între tagurile `<li></li>` elementul `<a href="#">Login</a>`. În locul `#` pune link-ul către login page. Exemplu:
 
 ```html
-<div class="class-name">
-	<h1>This is my first web page</h1>
+<div class="nav-bar">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Feed </a></li>
+		<li><a href="#">Login</a></li>
+	<ul>
 </div>
 ```
 
 Stilizează această clasă în main.css, dându-i proprietățile: 
 
 ```css
-.class-name {
-	text-align: center;
-	margin: 50px;
-	height: 890px;
-	background-color: #F8F8FF;
-	font-family: Ubuntu;
+.nav-bar {
+    margin-top: 0cm;
+    background-color: black;
+    border-style: solid;
+    border-radius: 7px;
 }
 ```
 
-Stilizează și heading-ul:
+Stilizează și elementele listei:
 
 ```css
-h1 {
-	color: #696969;
-	font-family: Ubuntu;
-	font-size: 48px;
+li {
+	display: inline-block;
+	padding-left: 20px;
 }
 ```
-În ”class-name” include o listă neordonată ce conține o clasă cu valoarea class=”navigation-bar”. Elementele listei vor fi ”page1”, ”page2” și ”page3”. Codul tău, la moment, trebuie să arate așa:
+
+```css
+a {
+    color: gray;
+    text-decoration: none;
+    padding-left: 20px;
+}
+```
+
+Scrie, mai jos, un header in care sa indici tematica site-ului, spre exemplu: "This is my first web page". Poți să incluzi și o linie orizontală pentru a delimita acest header. Codul tău, la moment, trebuie să arate așa:
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My page</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>Sarcina</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="class-name">
-		<h1>This is my first web page</h1>
-		<hr>
-		<ul class="navigation-bar">
-			<li>page1</li>
-			<li>page2</li>
-			<li>page3</li>
-		</ul>
+	<div class="nav-bar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Feed </a></li>
+			<li><a href="#">Login</a></li>
+		<ul>
 	</div>
+	<br/>
+	<h1>This is my first web page</h1>
+	<hr>
 </body>
 </html>
 ```
 
-Stilizează elementele listei neordonale, în fișierul main.css, dându-i proprietățile:
+Stilizează elementele listei neordonate în fișierul main.css, dându-i proprietățile:
 
 ```css
 ul li {
@@ -433,11 +448,9 @@ ul li {
 	padding-left: 20px;
 }
 ```
-
-Desenează o nouă linie orizontală, după care, îndată după tagul `<hr>`, include un id cu valoarea id=”cover-photo”, în interiorul căruia vei introduce o imagine.
+Mai jos, după tag-ul `<hr>` include un id cu valoarea id=”cover-photo”, în interiorul căruia vei introduce o imagine.
 
 ```html
-<hr>
 <div id="cover-photo">
 	<img src="http://hdwallpapers.cat/wallpaper/zebras_on_savannah_sunlight_grassland_tree_hd-wallpaper-1249130.jpg">
 </div>
@@ -461,4 +474,93 @@ hr {
 ```
 În final, pagina ta ar trebui să arate exact ca în imagine.
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/34e5ba5eb2e18557c228dd5952a811a5/tumblr_nt13kv48mD1udztn8o1_1280.jpg" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/8af503ce403c19b356f0b7c273bbeb16/tumblr_ntamukLVBI1udztn8o1_1280.png" /></div>
+
+
+
+#Exercițiul 2:#
+
+În același directoriu creează fișierul feed.html. Nu uita să le relaționezi.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+</body>
+</html>
+```
+
+Pune un același titlu paginii: "My Page".
+
+```html
+<title>My Page</title>
+```
+
+Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit: 
+
+```html
+<div class="nav-bar">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Feed </a></li>
+		<li><a href="#">Login</a></li>
+	<ul>
+</div>
+```
+
+Acum vei simula o postare. Pentru asta scrie o clasă în care să introduci o imagine și una în care vei scrie un text despre. Codul tău ar trebui să arate așa: 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="nav-bar">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/feed"> Feed </a></li>
+			<li><a href="/login">Login</a></li>
+		<ul>
+	</div>
+	<br/>
+	<div class="side-post">
+		<img src="http://www.aprilart.net/images/sce01.jpg" alt="User photo">
+	</div>
+	<div class="text-post">
+		<p>What is a Savanna? A savanna is a hot, seasonally dry grassland with scattered trees. This environment is intermediate between a grassland and a forest. Savannas are located in the dry tropics and the subtropics, often bordering a rainforest. Savannas have an extended dry season and a rainy season.
+
+		Animal Adaptations: The animals that live in savannas have adapted to a great deal of variability in the food supply throughout the year; there are times of plenty (during and after the wet season) and times of almost no food or water (during the dry season). </p>
+	</div>
+</body>
+</html>
+```
+
+Continuă cu stilizarea claselor ”side-post” și ”text-post”.
+
+```css
+.side-post img {
+    width: 450px;
+    float: left;
+    padding-left: 100px;
+}
+```
+
+```css
+.text-post {
+    padding-left: 600px;
+    padding-right: 150px;
+}
+```
+Ai obținut, deci, ceva ca în imaginea de mai jos:
+
+<div class="custom-image"><img src="https://41.media.tumblr.com/528f727c4a82e159a806ee77e54595f5/tumblr_ntalvxjL8T1udztn8o1_1280.png" /></div>
+
+
