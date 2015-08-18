@@ -68,12 +68,10 @@ Mergi în browser și fă refresh la pagină, apăsând F5.
 Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile `<p></p>`, precum în exemplul de mai jos:
 
 ```html
-<p style="color:blue; font-size: 24px; text-align: center">Savannah is the most beautiful place.</p>
+<p>Savannah is the most beautiful place.</p>
 ```
 
 Stilizează acest paragraf, dându-i proprietățile: 
-
-<div class="custom-image"><img src="https://40.media.tumblr.com/5d496b8089f4414be4737c9226741ba9/tumblr_nt16ck2kYt1udztn8o1_500.png" /></div>
 
 ```html
 <p style="color:blue; font-size: 24px; text-align: center">
@@ -89,14 +87,14 @@ Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți c
     <h1 style="color: #696969; font-family: Ubuntu">Lions</h1>
     <h2 style="color: #500000 ; font-family: Ubuntu">Cheetah</h2>
     <h3 style="color: #00CC33; font-family: Ubuntu">Leopards</h3>
-    <h4 style="color: #00FFFF; font-family: Ubuntu">Elefhants</h4>
+    <h4 style="color: #00FFFF; font-family: Ubuntu">Elephants</h4>
     <h5 style="color: #6633CC; font-family: Ubuntu">Giraffe</h5>
     <h6 style="color: #696969; font-family: Ubuntu">Zebra</h6>
 ```
 
 Observi că fiecărui heading i s-a atribuit proprietăți de culoare și family-font. Poți să le schimbi după propriul plac.
 
-<div class="custom-image"><img src="https://36.media.tumblr.com/47b3e53e129ccc817da46176c9aeef3f/tumblr_nt4t86jlRq1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/09808e0ed0f50c3b384825d5c09c0cb4/tumblr_ntao2jTvQa1udztn8o1_1280.png" /></div>
 
 Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate, neordonate cât și definiție.
 
@@ -106,30 +104,30 @@ Liste ordonate sunt extrem de simple. Un exemplu îl ai chiar în față:
 <p>Savannah animals I like:</p> 
 <ol style="font-family: Sans-serif;  color: #993333">
     <li>Lions</li>
-    <li>Elefants</li>
+    <li>Elephants</li>
     <li>Zebra</li>
 </ol>
 ```
 
 Stilizează această listă cu proprietățile:   style="font-family: Sans-serif;  color: #993333".
 
-<div class="custom-image"><img src="https://36.media.tumblr.com/614374edfb15d1b0e858336506609c38/tumblr_nt4ssnu7em1udztn8o5_1280.png" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/451fb93a55eda0e1a5636de40c221f3c/tumblr_ntao63ZWD71udztn8o1_1280.png" /></div>
 
 Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`. 
 
 Dacă curiozitatea este atributul tău principal, atunci poți să încerci și listele de definiție.
 
 ```html
-    <p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> 
-    <dl>
-        <dt>Lions :</dt>
-        <dd>Rapid</dd>
-        <dd>Strong</dd>
-        <dt>Elefants</dt>
-        <dd>Gray</dd>
-    </dl>
+<p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> 
+<dl>
+    <dt>Lions :</dt>
+    <dd>Rapid</dd>
+    <dd>Strong</dd>
+    <dt>Elephants</dt>
+    <dd>Gray</dd>
+</dl>
 ```
-<div class="custom-image"><img src="https://40.media.tumblr.com/7fc1ad894f396afdfbbaf305c66bf620/tumblr_nt4ssnu7em1udztn8o6_1280.png" /></div>
+<div class="custom-image"><img src="https://40.media.tumblr.com/51f7a2e741803079e74ddef9293f22c3/tumblr_ntao9cj9es1udztn8o1_1280.png" /></div>
 
 Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos: 
 
