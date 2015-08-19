@@ -251,6 +251,7 @@ $ ls
 
 ##Exercițiu
 Executați următoarele comenzi:
+
 ```
 $ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file1
 $ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file2
