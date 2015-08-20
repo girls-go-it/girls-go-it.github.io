@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: default
 title: Basic Python Statements, Playing with "a" Python
 ---
-
+ -->
 #Basic Python Statements, <br> Playing with "a" Python
 
 ###**Data și Timpul**

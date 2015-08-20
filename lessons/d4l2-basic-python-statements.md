@@ -1,7 +1,8 @@
----
+<!-- ---
 layout: default
 title: Basic Python Statements
 ---
+ -->
 #Basic Python Statements
 
 În decursul acestei sesiuni, veți afla ce înseamnă un limbaj de programare, de ce am ales să studiem **Python** și care este sintaxa acestuia. De asemenea, vă veți familiariza cu practica și logica de bază a scrierii unui program, făcând referință la unele situații cotidiene. În felul acesta, veți percepe mai ușor necesitatea programării în viața de zi cu zi.
