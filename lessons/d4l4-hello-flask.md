@@ -1,8 +1,8 @@
-<!-- ---
+---
 layout: default
 title: Hello Flask
 ---
- -->
+
 #Hello Flask
 
 Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework (cadru, schelet). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.
@@ -11,7 +11,7 @@ Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 
 
 ###Utilizarea ”Mediului Virtual” *(Virtual Environments)*
 
-Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un *contra-exemplu* a necesităţii unui mediu virtual este geana (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
+Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un *contra-exemplu* a necesităţii unui mediu virtual este geanta (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
 
 Așa e și cu mediu virtual, instalezi doar ceea ce ai nevoie. <br>
 Pentru început, verificaţi dacă acest program de creare a mediilor virtuale este instalat.<br>
@@ -69,6 +69,12 @@ Acum în terminal, printr-un `venv` în fața numelui, ar trebui să ţi se men�
 Îţi mai aminteşti ce este relaţia **client - server**? Exact, *clientul* solicită un serviciu (ex: vizualizarea unei pagini de Facebook), iar *serverul*, după ce a primit cererea, transmite un răspuns (ex: informaţia necesară browserului pentru ca el să afişeze pagina solicitată).
 
 În cazul nostru, Flask va îndeplini rolul de *server*, iar browserul - *clientul*.
+
+Acum să instalăm programul care ne va permite să instalăm (descărcăm) programe (module) pentru `Python`:
+
+```bash
+$ sudo apt-get install python-pip
+```
 
 Pentru ca Flask-ul să îndeplinească rolul de *server*, el trebuie instalat.  Asigură-te că `(venv)` este în fața numelui din terminal, apoi rulează:
 
@@ -309,7 +315,7 @@ Ultimul folder pe care trebuie să-l creezi este `/static` şi se va alfa în fo
 După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. Introdu un text asemănător în interiorul lui:
 
 ```html
-Salut dintr-o pagină statică!
+Hello from the static page!
 ```
 
 După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
