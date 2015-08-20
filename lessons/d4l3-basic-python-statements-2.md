@@ -843,6 +843,7 @@ zoo_animale = ["urs", "vulpe", "tigru", "elefant"]
 
 Puteți accesa un item al listei după index-ul său. Un **index** e ca o adresă care identifică locul itemului în listă. Index-ul se scrie direct după numele listei, în paranteze patrate, cam așa: `nume_lista[index]`.
 
+
 Indecșii listei încep cu 0, nu cu 1! (Da, da, la fel ca și la `string`-uri). Puteți să accesați primul element al unei liste în felul următor: `nume_lista[0]`. Al doilea item îl accesați așa: `nume_lista[1]`. Programatorii iubesc să numere de la zero.
 
 
