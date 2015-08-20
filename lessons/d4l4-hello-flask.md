@@ -1,8 +1,8 @@
----
+<!-- ---
 layout: default
 title: Hello Flask
 ---
-
+ -->
 #Hello Flask
 
 Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework (cadru, schelet). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.
@@ -248,6 +248,17 @@ Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul 
 
 <div class="custom-image-shadow"><img src="/images/hello_flask/project_structure.png" /></div>
 
+```
+awesomeFlaskProject
+	/app
+		/static
+			page.html
+		__init__.py
+		views.py
+	/venv
+	run.py
+```
+
 Pentru început, în folderul proiectului, creează un folder `/app`. În interiorul acestui folder `/app`, creează 2 fişiere: `__init__.py` şi `views.py`. <br>
 `__init__.py` este un fişier special în limbajul `Python`, pentru că el permite ca directoriul (folderul) în care se află să devină un modul ce poate fi importat în alte fişiere `.py`. Aici o să includem instanţa aplicaţiei noastre şi o să importăm conţinutul fişierului `views.py`.
 
@@ -295,7 +306,13 @@ Ultimul folder pe care trebuie să-l creezi este `/static` şi se va alfa în fo
 
 ### Fișiere statice
 
-După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
+După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. Introdu un text asemănător în interiorul lui:
+
+```html
+Salut dintr-o pagină statică!
+```
+
+După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
 
 <div class="custom-image-shadow"><img src="/images/hello_flask/static_page.png" /></div>
 
