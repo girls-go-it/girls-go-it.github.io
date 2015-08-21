@@ -352,7 +352,7 @@ Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 
 
-Într-un directoriu aparte creează fișierul `index.html` și fișierul main.css. Nu uita să le relaționezi.
+Într-un directoriu aparte creează fișierul `index.html` și fișierul style.css. Nu uita să le relaționezi.
 
 ```html
 <!DOCTYPE html>
@@ -453,7 +453,7 @@ Mai jos, după tag-ul `<hr>` include un id cu valoarea id=”cover-photo”, în
 </div>
 ```
 
-Pentru a aranja imaginea frumos stilizeaz-o fișierul main.css:
+Pentru a aranja imaginea frumos stilizeaz-o fișierul style.css:
 
 ```css
 img {
