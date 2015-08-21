@@ -30,8 +30,8 @@ $ sudo apt-get install python-virtualenv
 După aceasta, crează un folder cu mediul virtual unde vei păstra primul tău proiect Flask.
 
 ```bash
-$ mkdir awesomeFlaskProject
-$ cd awesomeFlaskProject
+$ mkdir savanna-tweet
+$ cd savanna-tweet
 ```
 
 Următorul pas e să creezi mediul virtual cu ajutorul comenzii `virtualenv`. După această comandă trebuie să urmeze numele folderului unde va fi creat mediul virtual, de obicei acest nume este `venv`, de la **v**irtual **env**ironment.
@@ -255,7 +255,7 @@ Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul 
 <div class="custom-image-shadow"><img src="/images/hello_flask/project_structure.png" /></div>
 
 ```
-awesomeFlaskProject
+savanna-tweet
 	/app
 		/static
 			page.html
