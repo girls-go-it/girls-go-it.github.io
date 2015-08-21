@@ -236,7 +236,8 @@ Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a
 	border-width: 10px;
 	border-style: solid;
 	border-color: #006;
-	overflow: hidden;
+	width: 200px;
+	height: 600px;
 }
 ```
 
@@ -259,14 +260,12 @@ După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le 
 Poți utiliza exemplul de mai jos.
 
 ```css
-.class-name { 
+.class-name {
 	width: 100px; 
 	height: 100px; 
-	border-width:2px;
 	border-style: solid;
 	border-color: red; 
 	margin: 20px; 
-	float: left; 
 }
 ```
 
