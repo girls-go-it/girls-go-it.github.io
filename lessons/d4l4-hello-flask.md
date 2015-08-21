@@ -11,7 +11,7 @@ Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 
 
 ###Utilizarea ”Mediului Virtual” *(Virtual Environments)*
 
-Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un *contra-exemplu* a necesităţii unui mediu virtual este geana (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
+Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un *contra-exemplu* a necesităţii unui mediu virtual este geanta (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
 
 Așa e și cu mediu virtual, instalezi doar ceea ce ai nevoie. <br>
 Pentru început, verificaţi dacă acest program de creare a mediilor virtuale este instalat.<br>
@@ -30,8 +30,8 @@ $ sudo apt-get install python-virtualenv
 După aceasta, crează un folder cu mediul virtual unde vei păstra primul tău proiect Flask.
 
 ```bash
-$ mkdir awesomeFlaskProject
-$ cd awesomeFlaskProject
+$ mkdir savanna-tweet
+$ cd savanna-tweet
 ```
 
 Următorul pas e să creezi mediul virtual cu ajutorul comenzii `virtualenv`. După această comandă trebuie să urmeze numele folderului unde va fi creat mediul virtual, de obicei acest nume este `venv`, de la **v**irtual **env**ironment.
@@ -69,6 +69,12 @@ Acum în terminal, printr-un `venv` în fața numelui, ar trebui să ţi se men�
 Îţi mai aminteşti ce este relaţia **client - server**? Exact, *clientul* solicită un serviciu (ex: vizualizarea unei pagini de Facebook), iar *serverul*, după ce a primit cererea, transmite un răspuns (ex: informaţia necesară browserului pentru ca el să afişeze pagina solicitată).
 
 În cazul nostru, Flask va îndeplini rolul de *server*, iar browserul - *clientul*.
+
+Acum să instalăm programul care ne va permite să instalăm (descărcăm) programe (module) pentru `Python`:
+
+```bash
+$ sudo apt-get install python-pip
+```
 
 Pentru ca Flask-ul să îndeplinească rolul de *server*, el trebuie instalat.  Asigură-te că `(venv)` este în fața numelui din terminal, apoi rulează:
 
@@ -248,6 +254,17 @@ Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul 
 
 <div class="custom-image-shadow"><img src="/images/hello_flask/project_structure.png" /></div>
 
+```
+savanna-tweet
+	/app
+		/static
+			page.html
+		__init__.py
+		views.py
+	/venv
+	run.py
+```
+
 Pentru început, în folderul proiectului, creează un folder `/app`. În interiorul acestui folder `/app`, creează 2 fişiere: `__init__.py` şi `views.py`. <br>
 `__init__.py` este un fişier special în limbajul `Python`, pentru că el permite ca directoriul (folderul) în care se află să devină un modul ce poate fi importat în alte fişiere `.py`. Aici o să includem instanţa aplicaţiei noastre şi o să importăm conţinutul fişierului `views.py`.
 
@@ -295,7 +312,13 @@ Ultimul folder pe care trebuie să-l creezi este `/static` şi se va alfa în fo
 
 ### Fișiere statice
 
-După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
+După cum presupune numele, Flask permite utilizarea fișierelor statice (și se numesc așa pentru că aceste pagini afișează aceeași informație tuturor utilizatorilor site-ului). Pentru că Flask este un framework inteligent, el o să caute fișierele statice în folderul `/static` din proiect. Creați folderul și un fișier în interiorul lui cu extensia `.html`. Introdu un text asemănător în interiorul lui:
+
+```html
+Hello from the static page!
+```
+
+După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fișierului>.html`
 
 <div class="custom-image-shadow"><img src="/images/hello_flask/static_page.png" /></div>
 
