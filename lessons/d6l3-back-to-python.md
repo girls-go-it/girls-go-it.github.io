@@ -26,7 +26,7 @@ Splendid! Te provoc să mai experimentezi cu aceste structuri de date, în timpu
 
 ## Programare orientată pe obiecte (OOP)
 
-Programarea orientată pe obiecte este o paradigmă de programare bazată pe "obiecte" ce înglobează structuri ce conțin date sub formă de câmpuri, numite *atribute* și careva funcțional reprezentat prin *metode*. Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Eu însă vreau să explic conceptele OOP prin exemple practice.
+Programarea orientată pe obiecte este o paradigmă de programare bazată pe "obiecte" ce înglobează structuri ce conțin date sub formă de câmpuri, numite *atribute* și careva funcțional reprezentat prin *metode*. Metodele de obicei operează cu datele interioare ale obiectului, care, la dorință pot fi făcute inaccesibile direct utilizatorului. Mai multă teorie găsești pe [Wikipedia](https://en.wikipedia.org/wiki/Object-oriented_programming). Eu însă vreau să îți explic conceptele OOP prin exemple practice.
 
 ### NB: Mini-ghid de utilizare
 
@@ -52,7 +52,7 @@ class Animal(object):
 
 Asta e tot! Avem o clasă "goală" cu numele `Animal`.
 
-Ok, totul e destul de simplu și evident, însă, probabil te întrebi de ce există  sintactic avem secvența `Animal(object)`. Partea din paranteză denotă superclasa, adică clasa sau obiectul de la care se moștenește. Aceasta e o chestie istorică și în Python 3 nu mai e necesară. În Python 3 poți scrie `class Animal:` pentru a obține același rezultat, de aia nu voi intra în detalii tehnice, iar despre moștenire, vorbim mai târziu. :wink:
+Ok, totul e destul de simplu și evident, însă, probabil te întrebi de ce sintactic avem secvența `Animal(object)`. Partea din paranteză denotă superclasa, adică clasa sau obiectul de la care se moștenește. Aceasta e o chestie istorică și în Python 3 nu mai e necesară. În Python 3 poți scrie `class Animal:` pentru a obține același rezultat, de aia nu voi intra în detalii tehnice, iar despre moștenire, vorbim mai târziu. :wink:
 
 Având definiția clasei, putem instanția primele obiecte:
 
@@ -80,7 +80,7 @@ NB: Ca să executăm metoda `say()` a unui obiect `a`, vom scrie `a.say()`.
 
 Acum putem crea un  obiect nou cu din această clasă și putem invoca metoda `say()`. Ai observat probabil că funcția `say` are un parametru numit `self`. Încă nu-ți explic ce înseamnă, însă tu scrie-l, ca totul să funcționeze.
 
-NB: Dacă nu punem parametrul `self` în declarația metodei, vom avea așa o eroare la înercarea de a invoca această metodă:
+NB: Dacă nu punem parametrul `self` în declarația metodei, vom avea așa o eroare la încercarea de a invoca această metodă:
 
 ```python
 >>> a = Animal()
@@ -93,7 +93,7 @@ TypeError: say() takes no arguments (1 given)
 
 În câteva momente voi explica și semnificația acestei convenții.
 
-Haideți să creăm un obiect de tip `Animal` și să executăm metoda `say()`. Să vedem ce ne iese:
+Haideți să creăm un obiect de tip `Animal` și să executăm metoda `say()`. Să aplicăm în mod practic:
 
 ```python
 >>> a = Animal()
@@ -164,7 +164,7 @@ My name is Tobby.  # Greșit! Totul e din cauza că în info() facem referire la
 ```
 
 Aparent lucrurile au luat o întorsătură neașteptată. :confused: 
-Însă, nu te întrista! Totul e mai simplu decât de așteptai!
+Însă, nu te întrista! Totul e mai simplu decât te așteptai!
 
 Probabil ți-ai dat seama unde vreau să ajung. Exact, înapoi la `self`. Acest parametru formal al metodelor ține în interiorul său referința spre obiectul curent. Utilizând-ul vom scăpa de ambiguitatea în care am intrat în exemplele precedente. Hai să vedem ce ne-a ieșit:
 
