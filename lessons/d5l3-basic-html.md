@@ -381,11 +381,11 @@ Orice pagină conține o bară de navigare. Pentru a o include în pagina ta, cr
 		<li><a href="#">Home</a></li>
 		<li><a href="#">Feed </a></li>
 		<li><a href="#">Login</a></li>
-	<ul>
+	</ul>
 </div>
 ```
 
-Stilizează această clasă în main.css, dându-i proprietățile: 
+Stilizează această clasă în style.css, dându-i proprietățile: 
 
 ```css
 .nav-bar {
@@ -428,7 +428,7 @@ Scrie, mai jos, un header in care sa indici tematica site-ului, spre exemplu: "T
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Feed </a></li>
 			<li><a href="#">Login</a></li>
-		<ul>
+		</ul>
 	</div>
 	<br/>
 	<h1>This is my first web page</h1>
@@ -437,7 +437,7 @@ Scrie, mai jos, un header in care sa indici tematica site-ului, spre exemplu: "T
 </html>
 ```
 
-Stilizează elementele listei neordonate în fișierul main.css, dându-i proprietățile:
+Stilizează elementele listei neordonate în fișierul style.css, dându-i proprietățile:
 
 ```css
 ul li {
