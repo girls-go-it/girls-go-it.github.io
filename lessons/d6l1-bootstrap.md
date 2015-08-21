@@ -12,7 +12,7 @@ Inițial, a fost un proiect intern în cadrul Twitter Inc., ca ulterior să devi
 Începând cu versiunea 3.0, Bootstrap a adoptat un standard mobile-first, ce permite crearea interfețelor responsive. Interfețele responsive își au ca scop furnizarea aplicațiilor web pe diferite platforme cum ar fi telefoanele mobile, tabletele, laptop-uri și alte dispozitive.
 
 ## Starting point
-Pentru început, zic să inițiem un fișier în care vom experimenta bootstrap-ul. Eu sper că deja te-ai obișnuit cu terminalul și cu editorul de text. Dacă încă nu te simți confortabil utilizând terminalul sau alte instrumente și ai careva neclarități - **întreabă**! La această etapă comunicarea este foarte importantă, iar eu și colegii mei suntem gata să-ți ofere suport suplimentar. :wink:
+Pentru început, zic să inițiem un fișier în care vom experimenta bootstrap-ul. Eu sper că deja te-ai obișnuit cu terminalul și cu editorul de text. Dacă încă nu te simți confortabil utilizând terminalul sau alte instrumente și ai careva neclarități - **întreabă**! La această etapă comunicarea este foarte importantă, iar eu și colegii mei suntem gata să-ți oferim suport suplimentar. :wink:
 
 Deci, te rog să deschizi terminalul, să mergi în directoria în care lucrezi și să rulezi următoarea comandă:
 
@@ -153,7 +153,7 @@ Nu e rău! Însă hai să beneficiem de oporunitățile oferite de bootstrap. Ad
     <img src="/images/d6l1-bootstrap/bootstrap-table-striped.png" />
 </div>
 
-Bravo! :rose: Te-ai descurcat de minunte. Sper că te-am intrigat și vrei să explorăm împreună în continuare bootstrap-ul.
+Bravo! :rose: Te-ai descurcat de minune. Sper că te-am intrigat și vrei să explorăm împreună în continuare bootstrap-ul.
 
 ### Forme și butoane
 
@@ -178,7 +178,7 @@ Să zicem că avem nevoie de o interfață de căutare a animalelor după numele
     </form>
 ```
 
-Să vedem ce ne-a ieșit:
+Să vedem rezultatul:
 
 <div class="custom-image-shadow">
     <img src="/images/d6l1-bootstrap/clean-search-form.png" />
@@ -227,7 +227,7 @@ De asemenea putem experimenta și cu starea input-urilor, bootstrap-ul se descur
 ### Glyphicons
 Glyphicons este un set cu 254 de iconițe incorporate într-un font cu același nume. Dat fiind că e un font, beneficiem de grafică vector pentru iconițe, deci putem să le scalăm la orice dimensiune fără a pierde din calitate.
 
-NB: Grafica vectorială se deosebește de cea simplă numită raster sau bitmap prin faptul că imaginile sunt construite utilizând primitivele grafice cum ar fi punctul, linia, linii bezier și altele. Imaginile raster folosește pixelii ca unitate primitivă, deci de exeplu o imagine de 16x16 pixeli nu poate fi scalată fără pierderea calității, chiar și cu tehnici avansate de interpolare.
+NB: Grafica vectorială se deosebește de cea simplă numită raster sau bitmap prin faptul că imaginile sunt construite utilizând primitivele grafice cum ar fi punctul, linia, linii bezier și altele. Imaginile raster folosesc pixelii ca unitate primitivă, deci de exemplu o imagine de 16x16 pixeli nu poate fi scalată fără pierderea calității, chiar și cu tehnici avansate de interpolare.
 
 La fel ca și celelalte componente, iconițele sunt disponibile prin intermediul claselor specifice. Pentru a plasa o iconiță pe un element este necesară plasarea claselor: `glyphicon` și `glyphicon-<nume_iconiță>`. Dimensiunea iconiței e dependentă de parametrul CSS `font-size` pentru acel element.
 
