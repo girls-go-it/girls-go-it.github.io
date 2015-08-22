@@ -1,7 +1,7 @@
-<!-- ---
+---
 layout: default
 title: Back to Python
---- -->
+---
 
 # Back to Python
 
@@ -61,9 +61,9 @@ Având definiția clasei, putem instanția primele obiecte:
 >>> second_animal = Animal()
 >>> type(first_animal)		# Verificăm tipul variabilei
 __main__.Animal
->>> type(second_animal) 
+>>> type(second_animal)
 __main__.Animal
->>> 
+>>>
 ```
 
 Felicitări! Ai creat prima ta clasă și ai mai și creat obiecte cu acea clasă. Bravo! Acum hai să îmbunătățim această clasă.
@@ -76,7 +76,7 @@ class Animal(object):
         print "Hello world!"
 ```
 
-NB: Ca să executăm metoda `say()` a unui obiect `a`, vom scrie `a.say()`.  
+NB: Ca să executăm metoda `say()` a unui obiect `a`, vom scrie `a.say()`.
 
 Acum putem crea un  obiect nou cu din această clasă și putem invoca metoda `say()`. Ai observat probabil că funcția `say` are un parametru numit `self`. Încă nu-ți explic ce înseamnă, însă tu scrie-l, ca totul să funcționeze.
 
@@ -88,7 +88,7 @@ NB: Dacă nu punem parametrul `self` în declarația metodei, vom avea așa o er
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: say() takes no arguments (1 given)
->>> 
+>>>
 ```
 
 În câteva momente voi explica și semnificația acestei convenții.
@@ -99,7 +99,7 @@ Haideți să creăm un obiect de tip `Animal` și să executăm metoda `say()`. 
 >>> a = Animal()
 >>> a.say()
 Hello world!
->>> 
+>>>
 ```
 
 Perfect! Acum clasa noastră are o metodă care mai și funcționează. Și totuși, probabil te întrebi de ce a fost nevoie de `self` ca parametru al funcției și de ce la executarea metodei nu am specificat niciun parametru. Curiozitatea ta e foarte actuală.
@@ -115,7 +115,7 @@ Aici am creat din nou clasa `Animal` și i-am dat definit atributul `name`. Meto
 ```python
 class Animal(object):
     name = "I don't have a name yet :("
-    
+
     def info(self):
     	print "My name is %s." % name # Eroare pentru că nu utilizăm self
 ```
@@ -134,7 +134,7 @@ NameError: global name 'name' is not defined # Eroare
 'Tobby'
 ```
 
-Nu lucrează cum ne-am fi așteptat! :disappointed_relieved: 
+Nu lucrează cum ne-am fi așteptat! :disappointed_relieved:
 
 Totuși, vezi că suntem apți să accesăm atributul `name` al obiectului nostru. Hai să beneficiem de această facilitate și să rescriem metoda noastră:
 
@@ -150,7 +150,7 @@ Hai să vedem ce ne-a ieșit:
 >>> a.name = "Tobby"
 >>> a.info()
 My name is Tobby.
->>> 
+>>>
 ```
 
 Yay! Merge! Însă, e incorect pentru că facem referință la un obiect cu un nume exact în cadrul metodei noastre și anume:
@@ -160,10 +160,10 @@ Yay! Merge! Însă, e incorect pentru că facem referință la un obiect cu un n
 >>> bob.name = "Bob"
 >>> bob.info()
 My name is Tobby.  # Greșit! Totul e din cauza că în info() facem referire la obiectul a.
->>> 
+>>>
 ```
 
-Aparent lucrurile au luat o întorsătură neașteptată. :confused: 
+Aparent lucrurile au luat o întorsătură neașteptată. :confused:
 Însă, nu te întrista! Totul e mai simplu decât te așteptai!
 
 Probabil ți-ai dat seama unde vreau să ajung. Exact, înapoi la `self`. Acest parametru formal al metodelor ține în interiorul său referința spre obiectul curent. Utilizând-ul vom scăpa de ambiguitatea în care am intrat în exemplele precedente. Hai să vedem ce ne-a ieșit:
@@ -184,7 +184,7 @@ My name is Tobby. # Perfect, așa cum așteptam
 >>> bob.name = "Bob"
 >>> bob.info()
 My name is Bob. # Din nou, lucrează perfect!
->>> 
+>>>
 ```
 
 Acum totul lucrează exact așa cum doream. Mă bucur că ai înțeles semnificația convenției de a utiliza `self`! :rose:
@@ -225,7 +225,7 @@ Atât de simplu. Hai să testăm:
 ```python
 >>> a = Animal()
 A new baby animal was born!
->>> 
+>>>
 ```
 
 Așa cum te-ai așteptat, la crearea unei instanțe noi, metoda `__init__()` a fost executată! Perfect, însă probabil te întrebi, dacă alte metode acceptă parametri adiționali, oare și `__init__`-ul poate accepta acești parametri? Răspunsul e: Cu siguranță! Hai să specificăm numele animăluțului nostru la crearea unui obiect nou:
@@ -244,7 +244,7 @@ Hai să testăm ce ne-a ieșit, în linia de comandă:
 A new baby animal was born!
 >>> tobby.name
 'Tobby'
->>> 
+>>>
 ```
 
 Perfect! Acum poți crea "constructori" utilizând `__init__`. Și mai știi cum să adaugi parametri acestei metode.
@@ -265,7 +265,7 @@ Exact ca și în cazul constructorului, vom afișa un mesaj descriptiv la șterg
 A new baby animal was born!
 >>> del(tobby)
 An animal has left :(
->>> 
+>>>
 ```
 
 Te-ai descurcat foarte bine până acum! Hai să explorăm mai departe aspectele programării orientate pe obiecte în Python!
@@ -297,7 +297,7 @@ My name is Tobby!
 I am 8 months old.
 >>> tobby.say_hi()
 Hello!
->>> 
+>>>
 ```
 
 Perfect! Ne vom baza pe clasa dată în exemplele ce urmează.
@@ -346,7 +346,7 @@ Așa cum am pomenit mai sus, atributele date au devenit private. Dar să vă zic
 'Tobby'
 >>> a._Animal__age
 8
->>> 
+>>>
 ```
 
 Magnific! Acum știi lucruri din interiorul interpretatorului. Însă ai grijă și utilizează aceste facilități doar atunci când într-adevăr ai nevoie de ele. Pe lângă deviza "We're all responsible users here", mai există una ce-mi place foarte mult: "With great power comes great responsibility". Ar fi bine să le memorezi :stuck_out_tongue_winking_eye:
@@ -396,7 +396,7 @@ True
 >>> nona.info()
 My name is Nona!
 I am 12 months old.
->>> 
+>>>
 ```
 
 Totul merge așa cum ne-am așteptat. Avem acces atât la metodele din clasa `Cat` cât și la cele din clasa-părinte `Animal`. Hai acum să modificăm metodele `__init__()` utilizând funcția `super()`:
@@ -432,7 +432,7 @@ Meow!
 >>> nona.info()
 My name is Nona!
 I am 12 months old.
->>> 
+>>>
 ```
 
 Acum totul lucrează, și mai e și făcut corect. Hai să încercăm încă un nivel de moștenire. Știți de existența pisicilor fără blană? :smile_cat: Hai să moștenim de la Cat și că creăm SphynxCat:
@@ -455,7 +455,7 @@ Mrrr-Meow!
 >>> ramses.info()
 My name is Ramses!
 I am 36 months old.
->>> 
+>>>
 ```
 
 Perfect, lucrează! Acum că am ajuns să rescriem metode, o să trecem la următorul subiect strâns legat cu acest principiu. :relieved:
@@ -492,7 +492,7 @@ Am implementat aceiași metodă cu efecte diferite. Să vedem rezultatele:
 Meow-meow!
 >>> d.say()
 Woof-woof!
->>> 
+>>>
 ```
 
 Lucrează! Isn't that amazing? :heart_eyes: Hai să încercăm să îmbunătățim exemplul nostru un pic. Ce zici să forțăm cumva utilizatorul să implementeze metoda `say()` după moștenire? Hai să încercăm un exemplu simplu. Hai să adăugăm metoda asta în clasa `Animal`:
@@ -516,7 +516,7 @@ class Pig(Animal):
 >>> p = Pig("Porky", 24)
 >>> p.say()
 Clasa derivata trebuie sa implementeze aceasta meoda!
->>> 
+>>>
 ```
 
 Good, dar hai să nu ne oprim aici. Unele limbaje de programare au conceptul de "abstract method", metodă ce trebuie neapărat implementată în clasa derivată. Hai să forțăm o eroare în caz că metoda nu e implementată. În practică poate fi foarte util la depistarea posibilelor erori de programare. O să facem **raise** la excepția NotImplementedError. Să vedem ce ne-a ieșit:
