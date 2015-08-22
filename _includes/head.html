@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Girls-go-it.GitHub.io by girls-go-it</title>
+    <title>Girls Go IT - Wiki</title>
 
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/syntax/default.css">
@@ -20,6 +20,18 @@
           <header>
             <h1 class="header">Girls Go IT</h1>
             <p class="header"></p>
+            <div id="sidenav" class="left-menu">
+            
+            <ul>
+              {% for p in site.pages %}
+                {% if p.title != "Hello People" %}
+                  <li>
+                    <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
           </header>
         </a>
       {% include side.html %}

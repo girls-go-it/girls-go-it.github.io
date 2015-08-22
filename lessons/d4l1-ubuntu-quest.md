@@ -28,7 +28,7 @@ Modul primar de interacționare cu acest sistem de operare este similar cu Windo
 
 <div class="custom-image"><img src="http://2.bp.blogspot.com/-omfXnS75kuM/TjK-YxLqAZI/AAAAAAAACRQ/v3-g6RFsgEY/s1600/PCMan+file+manager+in+ubuntu+11.04.png" /></div>
 
-O altă modalitate mai puțin tradițională este **terminalul**. Chiar dacă pare un pic criptică el ne oferă un avantaj enorm. Pentru a putea folosi **terminalul** este nevoie mai întâi de a înțelege un pic. Aceasta vine cu un set de comenzi predefinite peste care le vom explora mai târziu.
+O altă modalitate mai puțin tradițională este **terminalul**. Chiar dacă pare un pic criptică el ne oferă un avantaj enorm. Pentru a putea folosi **terminalul** este nevoie mai întâi de a înțelege un pic conceptul care stă în spatele lui. Aceasta vine cu un set de comenzi predefinite peste care le vom explora mai târziu.
 
 <div class="custom-image"><img src="http://i.imgur.com/C1lE1NK.png"></div>
 
@@ -81,7 +81,8 @@ Nu ai observat nimic dubios? Dacă te uiți atent la lista de directorii ai să 
 
 <div class="custom-image"><img src="http://i.imgur.com/1UENgxh.png"></div>
 
-####Pro Tip :alien:
+####Pro Tip
+:alien:
 Folosiți cât mai des TAB atunci când scrieti comenzi sau navigați prin directorii, pentru a putea folosi **autocomplete feature**
 
 Superb :rose:. Acum aș dori să creez un directoriu în care să fac un experiment. Pentru aceasta rulez următoarea comandă:
@@ -247,3 +248,15 @@ $ ls
 <div class="custom-image"><img src="http://s22.postimg.org/6umeo3iip/Screenshot_2015_08_11_01_15_50.png"></div>
 
 Și aici s-a terminat și sesiunea De **Ubuntu Quest**. Succes în continuare :bouquet:
+
+##Exercițiu
+Executați următoarele comenzi:
+
+```
+$ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file1
+$ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file2
+$ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file3
+$ wget https://github.com/girls-go-it/random-files/raw/master/ubuntu-quest/file4
+```
+
+Încearcă să determini tipul de fișiere care le-ai downloadat și poate ce acțiuni poți face cu ele :kiss:
