@@ -1,8 +1,8 @@
-<!-- ---
+---
 layout: default
 title: Basic HTML & CSS
 ---
- -->
+
 #Basic HTML
 
 ##Ce este HTML?
@@ -236,7 +236,8 @@ Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a
 	border-width: 10px;
 	border-style: solid;
 	border-color: #006;
-	overflow: hidden;
+	width: 200px;
+	height: 600px;
 }
 ```
 
@@ -259,14 +260,12 @@ După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le 
 Poți utiliza exemplul de mai jos.
 
 ```css
-.class-name { 
+.class-name {
 	width: 100px; 
 	height: 100px; 
-	border-width:2px;
 	border-style: solid;
 	border-color: red; 
 	margin: 20px; 
-	float: left; 
 }
 ```
 
@@ -353,7 +352,7 @@ Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 Aici vei simula prima ta pagină web. Urmează instrucțiunile.
 
 
-Într-un directoriu aparte creează fișierul `index.html` și fișierul main.css. Nu uita să le relaționezi.
+Într-un directoriu aparte creează fișierul `index.html` și fișierul style.css. Nu uita să le relaționezi.
 
 ```html
 <!DOCTYPE html>
@@ -382,11 +381,11 @@ Orice pagină conține o bară de navigare. Pentru a o include în pagina ta, cr
 		<li><a href="#">Home</a></li>
 		<li><a href="#">Feed </a></li>
 		<li><a href="#">Login</a></li>
-	<ul>
+	</ul>
 </div>
 ```
 
-Stilizează această clasă în main.css, dându-i proprietățile: 
+Stilizează această clasă în style.css, dându-i proprietățile: 
 
 ```css
 .nav-bar {
@@ -429,7 +428,7 @@ Scrie, mai jos, un header in care sa indici tematica site-ului, spre exemplu: "T
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Feed </a></li>
 			<li><a href="#">Login</a></li>
-		<ul>
+		</ul>
 	</div>
 	<br/>
 	<h1>This is my first web page</h1>
@@ -438,7 +437,7 @@ Scrie, mai jos, un header in care sa indici tematica site-ului, spre exemplu: "T
 </html>
 ```
 
-Stilizează elementele listei neordonate în fișierul main.css, dându-i proprietățile:
+Stilizează elementele listei neordonate în fișierul style.css, dându-i proprietățile:
 
 ```css
 ul li {
@@ -454,7 +453,7 @@ Mai jos, după tag-ul `<hr>` include un id cu valoarea id=”cover-photo”, în
 </div>
 ```
 
-Pentru a aranja imaginea frumos stilizeaz-o fișierul main.css:
+Pentru a aranja imaginea frumos stilizeaz-o fișierul style.css:
 
 ```css
 img {
