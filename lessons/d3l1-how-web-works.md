@@ -8,11 +8,6 @@ title: How Web Works
 ## How the Web Works 
 ----------
 
-
-	## How the Web Works ##
-----------
-
-
 Scurt Istoric
 -------------
 
