@@ -3,7 +3,7 @@ layout: default
 title: Bootstrap
 ---
 
-# Bootstrap
+# Bootstrap [[slides-1](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-1-bootstrap)] [[slides-2](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-2-bootstrap-integration)]
 
 [Bootstrap](getbootstrap.com) sau Twitter Bootstrap Framework este un conglomerat de intstrumente și șabloane stilizate ce au ca scop ușurarea și facilitarea dezvoltării aplicațiilor web.
 

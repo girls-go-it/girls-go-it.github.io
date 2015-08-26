@@ -3,7 +3,7 @@ layout: default
 title: Back to Python
 ---
 
-# Back to Python
+# Back to Python [[slides](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-3-back-to-python)]
 
 După o abatere de la Python, am revenit la această temă. Sper că lucrurile pe care le-ați învățat până acum au fost interesante și practice. Mai sper că vi s-a făcut dor de Python-el. :heart:
 
