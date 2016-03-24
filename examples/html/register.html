@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feed.html">Feed</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</div>
+<br/>
+
+<h1>Sign Up</h1>
+<hr/>
+<form action="account.html" method="post">
+    <div class="form-row">
+        <label for="email-input">Email:</label>
+        <input type="text" name="email" id="email-input"/>
+    </div>
+    <br/>
+
+    <div class="form-row">
+        <label for="password-input">Password:</label>
+        <input type="password" name="password" id="password-input"/>
+    </div>
+
+    <div class="form-row">
+        <label for="town">Town:</label>
+        <select id="town">
+            <option>- Select town -</option>
+            <option value="K">Chisinau</option>
+            <option value="UN">Ungheni</option>
+            <option value="SC">Soroca</option>
+            <option value="AN">Anenii Noi</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label><input type="radio" name="sex" value="F">F</label>
+        <label><input type="radio" name="sex" value="M">M</label>
+    </div>
+
+    <div class="form-row">
+        <label><input type="checkbox"/> I read Terms and Conditions</label>
+    </div>
+    <button type="submit">Submit</button>
+    <a href="login.html">Log in</a>
+</form>
+
+
+</body>
+</html>

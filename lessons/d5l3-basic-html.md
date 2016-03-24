@@ -18,7 +18,7 @@ $ subl index.html
 
 În sublime, scrie următorul cod:
 
-```HTML	
+```html
 <!DOCTYPE html>
 <html>
 <head>
