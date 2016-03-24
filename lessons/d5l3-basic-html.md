@@ -609,5 +609,43 @@ Urmeaza apoi forma de login
 	<hr />
 	<button type="submit">Submit</button>
 </form>
-<a href="register.html">Register</a>
+<a href="register.html">Sign up</a>
+```
+
+Dupa care deschidem fisierul de stiluri si adaugam regulile urmatoare pentru pozitionarea formei la mijloc:
+
+```css
+form {
+    width: 400px;
+    margin: 80px auto 14px;
+    padding: 16px 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+```
+
+Stilizam un pic elementele formei
+
+```css 
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select,
+input[type=text],
+input[type=password] {
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+}
+```
+
+si ultimul stil pentru acest exercitiu este definirea grupelor prin adaugarea spatiului:
+```css
+ .form-row {
+     padding: 8px 0;
+ }
 ```

@@ -64,6 +64,7 @@ label {
     margin-bottom: 8px;
 }
 
+select,
 input[type=text],
 input[type=password] {
     width: 100%;
