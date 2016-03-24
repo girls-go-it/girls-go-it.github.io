@@ -561,3 +561,53 @@ Ai obținut, deci, ceva ca în imaginea de mai jos:
 <div class="custom-image"><img src="https://41.media.tumblr.com/528f727c4a82e159a806ee77e54595f5/tumblr_ntalvxjL8T1udztn8o1_1280.png" /></div>
 
 
+#Exercițiul 3:#
+
+În același directoriu creează fișierul login.html. Nu uita să le relaționezi.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+</body>
+</html>
+```
+
+Pune un același titlu paginii: "Login Page".
+
+```html
+<title>Login Page</title>
+```
+
+Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit: 
+
+```html
+<div class="nav-bar">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="feed.html">Feed </a></li>
+		<li><a href="login.html">Login</a></li>
+	<ul>
+</div>
+```
+
+Urmeaza apoi forma de login
+
+```html
+<h1>Login</h1>
+<form action="account.html">
+	<label for="email-input">Email:</label>
+	<input type="text" name="email" id="email-input" />
+	<br/>
+	<label for="password-input">Password:</label>
+	<input type="password" name="password" id="password-input" />
+	<hr />
+	<button type="submit">Submit</button>
+</form>
+<a href="register.html">Register</a>
+```
