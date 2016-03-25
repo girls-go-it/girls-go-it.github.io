@@ -37,7 +37,7 @@ $ sensible-browser index.html
 ```
 
 Ceea ce ai în față este o pagină HTML goală. Observi că numele paginii corespunde cu numele documentului  cu extensia `.html` pe care l-ai creat anterior. Pentru a schimba denumirea paginii, tot ce trebuie să faci este să scrii titlul pe care-l dorești între tag-urile `<title></title>.`
-Spre exemplu: 
+Spre exemplu:
 
 
 ```html
@@ -71,7 +71,7 @@ Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, desch
 <p>Savannah is the most beautiful place.</p>
 ```
 
-Stilizează acest paragraf, dându-i proprietățile: 
+Stilizează acest paragraf, dându-i proprietățile:
 
 ```html
 <p style="color:blue; font-size: 24px; text-align: center">
@@ -101,7 +101,7 @@ Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate,
 Liste ordonate sunt extrem de simple. Un exemplu îl ai chiar în față:
 
 ```html
-<p>Savannah animals I like:</p> 
+<p>Savannah animals I like:</p>
 <ol style="font-family: Sans-serif;  color: #993333">
     <li>Lions</li>
     <li>Elephants</li>
@@ -113,12 +113,12 @@ Stilizează această listă cu proprietățile:   style="font-family: Sans-serif
 
 <div class="custom-image"><img src="https://40.media.tumblr.com/451fb93a55eda0e1a5636de40c221f3c/tumblr_ntao63ZWD71udztn8o1_1280.png" /></div>
 
-Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`. 
+Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`.
 
 Dacă curiozitatea este atributul tău principal, atunci poți să încerci și listele de definiție.
 
 ```html
-<p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> 
+<p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p>
 <dl>
     <dt>Lions :</dt>
     <dd>Rapid</dd>
@@ -129,7 +129,7 @@ Dacă curiozitatea este atributul tău principal, atunci poți să încerci și 
 ```
 <div class="custom-image"><img src="https://40.media.tumblr.com/51f7a2e741803079e74ddef9293f22c3/tumblr_ntao9cj9es1udztn8o1_1280.png" /></div>
 
-Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos: 
+Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos:
 
 ```html
 <table>
@@ -140,17 +140,17 @@ Element important îl mai reprezintă și tabele. Tabele se definesc prin interm
 	</tr>
 	<tr>
 		<td>Alex</td>
-		<td>Cretu</td>		
+		<td>Cretu</td>
 		<td>25</td>
 	</tr>
 	<tr>
 		<td>Alexandra</td>
-		<td>Cretu</td>		
+		<td>Cretu</td>
 		<td>24</td>
 	</tr>
 	<tr>
 		<td>Alexandrina</td>
-		<td>Cretu</td>		
+		<td>Cretu</td>
 		<td>18</td>
 	</tr>
 </table>
@@ -166,7 +166,44 @@ Exemplu:
 <a href="http://girls-go-it.github.io/lessons/aaa_vocabulary/">Vocabular tehnic</a>
 ```
 
-Mai mult decât atât, dacă vrei să adaugi o imagine pe pagina ta, poți să utilizezi: 
+Link-urile sunt primul pas spre o pagină web dinamică. Următorul pas sunt formele HTML, care sunt utilizate pentru a transmite date între paginile accesate într-un mod securizat.
+Pentru a crea o formă, utilizezi tag-ul `form` :
+
+```html
+<form action="test2.html" method="get"/>
+  Prenume:<br>
+  <input type="text" name="prenume" value="Mickey"><br>
+  Nume:<br>
+  <input type="text" name="nume" value="Mouse"><br><br>
+  <input type="submit" value="Trimite">
+</form>
+```
+
+Proprietatea `action` a unei forme arată către ce pagină este redirecționat utilizatorul după completarea ei, iar proprietatea `method` arată prin ce metodă aceasta informație este transmisă.
+Ea poate avea 2 valori: `get` și `post`.
+În cazul utilizării metodei `post` valorile selectate/introduse sunt transmise ca parametri ai request-ului HTTP către server și nu sunt afișate în browser.
+Dacă este utilizată metoda `get` atunci valorile formei sunt afișate la capărul URL-ului, ca de exemplu :
+
+```html
+file:///C:/Users/oxrc/test2.html?prenume=Mickey&nume=Mouse
+```
+Exemplu: Aceasta poate fi folositor dacă vrei să-i dai cuiva un link cu anumite valori dintr-o formă (de căutare de exemplu) setate.
+
+O formă poate conține elemente de mai multe tipuri (mai jos urmează o listă de tag-uri prin care sunt realizate acestea):
+- `input` - la rândul său poate fi de mai multe feluri (se specifică în atributul `type`)
+ - `text` - câmp scurt de text (cum ar fi numele/parola unui utilizator)
+ - `password` - un câmp pentru introducerea parolei (nu se vor afișa caracterele introduse)
+ - `submit` - buton de trimire a formei
+ - `radio` - mai multe opțiuni din care poți alege doar una (sunt legate între ele prin proprietate `name`)
+ - `checkbox` - zero sau mai multe opțiuni din care poți alege (la fel legate prin proprietatea `name`)
+ - `button` - un simplu buton care nu trimite forma, dar permite acțiuni asupra ei (prin JavaScript de exemplu)
+- `textarea` - oferă o zona mai mare de introducere a textului (de exemplu textul unui articol)
+- `button` - crează butoane simple, dar în care, spre deosebire de cele create utilizând tag-ul `input` poți insera imagini, text sau alt conținut
+- `select` - permite crearea listelor de opțiuni prin intermediul tag-ului `option`.
+
+Mai multă informație despre forme în HTML poți găsi aici: http://www.w3schools.com/html/html_forms.asp
+
+Mai mult decât atât, dacă vrei să adaugi o imagine pe pagina ta, poți să utilizezi:
 
 ```html
 <img src="url " alt="Textul in cazul neaparitiei imaginii"/>
@@ -178,7 +215,7 @@ Exemplu:
 <img src="http://www.backdropsfantastic.com/backdrop_images/300's/OA-004-African-Savannah-4.jpg" alt="Formatul imaginii este necorespunzător"/>
 ```
 
-Un pas la fel de simplu și interactiv este învățarea și aplicarea în practică a id-urilor și claselor. 
+Un pas la fel de simplu și interactiv este învățarea și aplicarea în practică a id-urilor și claselor.
 Un id este folosit pentru a identifica un singur tag dintr-o pagină. Acesta poate fi asemănat cu IDNP-ul unei persone, este unic. Cum arată un id definit?
 
 
@@ -186,7 +223,7 @@ Un id este folosit pentru a identifica un singur tag dintr-o pagină. Acesta poa
 <div id="id-name">This is an id</div>
 ```
 
-Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri HTML. Prin asta se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferență între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, în css, folosim un “.”(punct), iar în interiorul tagului HTML în loc de id, scriem class. 
+Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența claselor constă în faptul că pot fi folosite la mai multe taguri HTML. Prin asta se înțelege că poate fi folosit  același stil pentru mai multe paragrafe, heading-uri etc. Singura diferență între definirea și folosirea claselor față de id-uri este că, în loc de # la definire, în css, folosim un “.”(punct), iar în interiorul tagului HTML în loc de id, scriem class.
 
 ```html
 <div class="class-name">This is a class.</div>
@@ -200,7 +237,7 @@ Deschide terminalul și, în directoriul proiectului, în folderul static, creea
 $ subl layout.css
 ```
 
-Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul `.html`. Pentru a include layout.css în `index.html`, în head-ul fișierului din urmă scrie: 
+Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul `.html`. Pentru a include layout.css în `index.html`, în head-ul fișierului din urmă scrie:
 
 ```html
 <link rel="stylesheet" type="text/css" href="layout.css">
@@ -230,9 +267,9 @@ Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a
 În interior poți deja să scrii și să stilizezi diferite proprietăți. Un exemplu ar fi:
 
 ```css
-#id-name { 
-	margin: 40px; 
-	background-color: #ABC; 
+#id-name {
+	margin: 40px;
+	background-color: #ABC;
 	border-width: 10px;
 	border-style: solid;
 	border-color: #006;
@@ -243,55 +280,55 @@ Acum, în fișierul layout.css stilizează acest id după propriu plac. Pentru a
 
 <div class="custom-image"><img src="https://40.media.tumblr.com/dc1245c8e054cdd10b07d85766a30eeb/tumblr_nt16oyX6wh1udztn8o1_1280.png" /></div>
 
-Există mult mai multe trucuri pe care le poți folosi și la care vei reveni ulterior. 
+Există mult mai multe trucuri pe care le poți folosi și la care vei reveni ulterior.
 
-După ce ai înțeles cum să definești un id, continuă să studiezi clasele. O clasă se definește asemeni id-ului, cum a fost specificat mai sus. Deci, poți să exersezi în a învăța clasele, exact ca în model: 
+După ce ai înțeles cum să definești un id, continuă să studiezi clasele. O clasă se definește asemeni id-ului, cum a fost specificat mai sus. Deci, poți să exersezi în a învăța clasele, exact ca în model:
 
 ```html
-<div id="id-name"> 
-	<div class="class-name"> Statement number 1</div> 
-	<div class="class-name"> Statement number 2</div> 
-	<div class="class-name"> Statement number 3</div> 
+<div id="id-name">
+	<div class="class-name"> Statement number 1</div>
+	<div class="class-name"> Statement number 2</div>
+	<div class="class-name"> Statement number 3</div>
 </div>
 ```
 
-După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le în aceeași clasă. 
+După cum îți spuneam, poți să stilizezi mai multe elemente, incluzându-le în aceeași clasă.
 În fișierul HTML stilizează clasa. Reține, clasa, în CSS se scrie cu ajutorul selectorului ”.” .
 Poți utiliza exemplul de mai jos.
 
 ```css
 .class-name {
-	width: 100px; 
-	height: 100px; 
+	width: 100px;
+	height: 100px;
 	border-style: solid;
-	border-color: red; 
-	margin: 20px; 
+	border-color: red;
+	margin: 20px;
 }
 ```
 
 <div class="custom-image"><img src="https://40.media.tumblr.com/bfd1448af43e9ec7cf59fa389a782d0b/tumblr_nt16skLDhT1udztn8o1_1280.png" /></div>
 
-Aceleași proprietăți ale clasei pot fi aplicate și daca avem un al id. Drept provocare, creeaza un alt id, cu alte proprietati include in interior elemente din clasa creata anterior. Exemplu: 
+Aceleași proprietăți ale clasei pot fi aplicate și daca avem un al id. Drept provocare, creeaza un alt id, cu alte proprietati include in interior elemente din clasa creata anterior. Exemplu:
 
 ```html
-<div id="id-name-second"> 
-	<div class="class-name"> Statement number 1.</div> 
-	<div class="class-name"> Statement number 2</div> 
-	<div class="class-name"> Statement number 3.</div> 
+<div id="id-name-second">
+	<div class="class-name"> Statement number 1.</div>
+	<div class="class-name"> Statement number 2</div>
+	<div class="class-name"> Statement number 3.</div>
 </div>
 ```
 
 În fișierul layout.css, include:
 
 ```css
-#id-name-second { 
-	margin: 40px; 
-	background-color: blue; 
+#id-name-second {
+	margin: 40px;
+	background-color: blue;
 	border-width: 10px;
 	border-style: solid;
 	border-color: #006;
 	overflow: hidden;
-} 
+}
 ```
 
 <div class="custom-image"><img src="https://40.media.tumblr.com/52f8c9d99c5249ce122a14e86f224392/tumblr_nt180hpumI1udztn8o1_1280.png" /></div>
@@ -336,15 +373,15 @@ Acum că știi cum se lucrează cu un id, cu o clasă, fii liber să încerci or
 
 Selectori css:
 
-`.class-name` - selectează elementul class, cu denumirea **class-name**
+- `.class-name` - selectează elementul class, cu denumirea **class-name**
 
-`css#id-name` - selectează elementele având valoarea id-ului ***id-name***
+- `css#id-name` - selectează elementele având valoarea id-ului ***id-name***
 
-`p` - selectează toate elementele `<p>`
+- `p` - selectează toate elementele `<p>`
 
-`div, p` - selectează toate elementele `<div>` și elementele `<p>`
+- `div, p` - selectează toate elementele `<div>` și elementele `<p>`
 
-`div p` - selectează toate elementele `<p>` care se află în interiorul elementelor `<div>`
+- `div p` - selectează toate elementele `<p>` care se află în interiorul elementelor `<div>`
 
 Mai multe proprietăți poți găsi la (http://www.w3schools.com/cssref/) .
 
@@ -385,7 +422,7 @@ Orice pagină conține o bară de navigare. Pentru a o include în pagina ta, cr
 </div>
 ```
 
-Stilizează această clasă în style.css, dându-i proprietățile: 
+Stilizează această clasă în style.css, dându-i proprietățile:
 
 ```css
 .nav-bar {
@@ -498,7 +535,7 @@ Pune un același titlu paginii: "My Page".
 <title>My Page</title>
 ```
 
-Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit: 
+Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit:
 
 ```html
 <div class="nav-bar">
@@ -510,7 +547,7 @@ Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta res
 </div>
 ```
 
-Acum vei simula o postare. Pentru asta scrie o clasă în care să introduci o imagine și una în care vei scrie un text despre. Codul tău ar trebui să arate așa: 
+Acum vei simula o postare. Pentru asta scrie o clasă în care să introduci o imagine și una în care vei scrie un text despre. Codul tău ar trebui să arate așa:
 
 ```html
 <!DOCTYPE html>
@@ -583,7 +620,7 @@ Pune un același titlu paginii: "Login Page".
 <title>Login Page</title>
 ```
 
-Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit: 
+Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit:
 
 ```html
 <div class="nav-bar">
@@ -628,7 +665,7 @@ form {
 
 Stilizam un pic elementele formei
 
-```css 
+```css
 label {
     display: block;
     margin-bottom: 8px;
@@ -657,8 +694,8 @@ Rezultatul ar trebui sa arate ca si in imagine:
 
 #Exercițiul 4:#
 
-În același directoriu creează fișierul register.html, cu titlul "Sign Up", de asemenea atasam si 
-fisierul de stiluri style.css care se afla in aceeasi mapa 
+În același directoriu creează fișierul register.html, cu titlul "Sign Up", de asemenea atasam si
+fisierul de stiluri style.css care se afla in aceeasi mapa
 
 ```html
 <!DOCTYPE html>
@@ -673,7 +710,7 @@ fisierul de stiluri style.css care se afla in aceeasi mapa
 ```
 
 În tagul body adaugam navigarea care am folosit-o si la paginele precedente:
- 
+
 ```html
 <div class="nav-bar">
     <ul>
@@ -702,7 +739,7 @@ dupa care refolosim forma din exercitiul precedent
 </form>
 ```
 
-Schimbam H1 cu textul "Sign up" in loc de "Login": 
+Schimbam H1 cu textul "Sign up" in loc de "Login":
 
 ```html
 <h1>Sign Up</h1>
