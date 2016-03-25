@@ -190,13 +190,14 @@ file:///C:/Users/oxrc/test2.html?prenume=Mickey&nume=Mouse
 Exemplu: Aceasta poate fi folositor dacă vrei să-i dai cuiva un link cu anumite valori dintr-o formă (de căutare de exemplu) setate.
 
 O formă poate conține elemente de mai multe tipuri (mai jos urmează o listă de tag-uri prin care sunt realizate acestea):
+
 - `input` - la rândul său poate fi de mai multe feluri (se specifică în atributul `type`)
- - `text` - câmp scurt de text (cum ar fi numele/parola unui utilizator)
- - `password` - un câmp pentru introducerea parolei (nu se vor afișa caracterele introduse)
- - `submit` - buton de trimire a formei
- - `radio` - mai multe opțiuni din care poți alege doar una (sunt legate între ele prin proprietate `name`)
- - `checkbox` - zero sau mai multe opțiuni din care poți alege (la fel legate prin proprietatea `name`)
- - `button` - un simplu buton care nu trimite forma, dar permite acțiuni asupra ei (prin JavaScript de exemplu)
+  - `text` - câmp scurt de text (cum ar fi numele/parola unui utilizator)
+  - `password` - un câmp pentru introducerea parolei (nu se vor afișa caracterele introduse)
+  - `submit` - buton de trimire a formei
+  - `radio` - mai multe opțiuni din care poți alege doar una (sunt legate între ele prin proprietate `name`)
+  - `checkbox` - zero sau mai multe opțiuni din care poți alege (la fel legate prin proprietatea `name`)
+  - `button` - un simplu buton care nu trimite forma, dar permite acțiuni asupra ei (prin JavaScript de exemplu)
 - `textarea` - oferă o zona mai mare de introducere a textului (de exemplu textul unui articol)
 - `button` - crează butoane simple, dar în care, spre deosebire de cele create utilizând tag-ul `input` poți insera imagini, text sau alt conținut
 - `select` - permite crearea listelor de opțiuni prin intermediul tag-ului `option`.
