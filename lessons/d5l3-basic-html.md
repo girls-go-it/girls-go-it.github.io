@@ -18,7 +18,7 @@ $ subl index.html
 
 În sublime, scrie următorul cod:
 
-```HTML	
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -561,3 +561,194 @@ Ai obținut, deci, ceva ca în imaginea de mai jos:
 <div class="custom-image"><img src="https://41.media.tumblr.com/528f727c4a82e159a806ee77e54595f5/tumblr_ntalvxjL8T1udztn8o1_1280.png" /></div>
 
 
+#Exercițiul 3:#
+
+În același directoriu creează fișierul login.html.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+</body>
+</html>
+```
+
+Pune un același titlu paginii: "Login Page".
+
+```html
+<title>Login Page</title>
+```
+
+Include bara de navigare pe care ai folosit-o pentru index.html. Pentru asta rescrie codul pe care l-ai folosit: 
+
+```html
+<div class="nav-bar">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="feed.html">Feed </a></li>
+		<li><a href="login.html">Login</a></li>
+	<ul>
+</div>
+```
+
+Urmeaza apoi forma de login
+
+```html
+<h1>Login</h1>
+<form action="account.html" method="post">
+    <div class="form-row">
+        <label for="email-input">Email:</label>
+        <input type="text" name="email" id="email-input"/>
+    </div>
+    <br/>
+    <div class="form-row">
+        <label for="password-input">Password:</label>
+        <input type="password" name="password" id="password-input"/>
+    </div>
+    <button type="submit">Submit</button>
+    <a href="register.html">Sign Up</a>
+</form>
+```
+
+Dupa care deschidem fisierul de stiluri si adaugam regulile urmatoare pentru pozitionarea formei la mijloc:
+
+```css
+form {
+    width: 400px;
+    margin: 80px auto 14px;
+    padding: 16px 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+```
+
+Stilizam un pic elementele formei
+
+```css 
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select,
+input[type=text],
+input[type=password] {
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+}
+```
+
+si ultimul stil pentru acest exercitiu este definirea grupelor prin adaugarea spatiului:
+```css
+.form-row {
+ padding: 8px 0;
+}
+```
+
+Rezultatul ar trebui sa arate ca si in imagine:
+<div class="custom-image-shadow"><img src="/images/d5l3-basic-html/login-page.png" /></div>
+
+#Exercițiul 4:#
+
+În același directoriu creează fișierul register.html, cu titlul "Sign Up", de asemenea atasam si 
+fisierul de stiluri style.css care se afla in aceeasi mapa 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+</body>
+</html>
+```
+
+În tagul body adaugam navigarea care am folosit-o si la paginele precedente:
+ 
+```html
+<div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feed.html">Feed </a></li>
+        <li><a href="login.html">Login</a></li>
+    <ul>
+</div>
+```
+dupa care refolosim forma din exercitiul precedent
+
+```html
+<h1>Login</h1>
+<form action="account.html" method="post">
+    <div class="form-row">
+        <label for="email-input">Email:</label>
+        <input type="text" name="email" id="email-input"/>
+    </div>
+    <br/>
+    <div class="form-row">
+        <label for="password-input">Password:</label>
+        <input type="password" name="password" id="password-input"/>
+    </div>
+    <button type="submit">Submit</button>
+    <a href="register.html">Sign Up</a>
+</form>
+```
+
+Schimbam H1 cu textul "Sign up" in loc de "Login": 
+
+```html
+<h1>Sign Up</h1>
+```
+
+Si linkul de la sfarsitul formei cu cel de la pagina precedenta "login.html" si textul "Log in" in felul urmator
+
+```html
+<a href="login.html">Log in</a>
+```
+
+Dupa campul de password adaugam inca un camp pentru confirmarea la parola
+
+```html
+<div class="form-row">
+    <label for="confirm-password-input">Confirm Password:</label>
+    <input type="password" name="password" id="confirm-password-input"/>
+</div>
+```
+
+Dupa care inseram campuri pentru datele care le mai avem nevoie:
+- Orasul
+- Sexul
+- Termeni si conditii
+
+```html
+<div class="form-row">
+    <label for="town">Town:</label>
+    <select id="town">
+        <option>- Select town -</option>
+        <option value="K">Chisinau</option>
+        <option value="UN">Ungheni</option>
+        <option value="SC">Soroca</option>
+        <option value="AN">Anenii Noi</option>
+    </select>
+</div>
+<div class="form-row">
+    <label><input type="radio" name="sex" value="F">F</label>
+    <label><input type="radio" name="sex" value="M">M</label>
+</div>
+<div class="form-row">
+    <label><input type="checkbox"/> I read Terms and Conditions</label>
+</div>
+```
+
+Pentru acest exercitiu  nu avem nevoie de a adauga stiluri, deoarce este acoperit de stilurile de la exercitiul precedent
+
+Rezultatul ar trebui sa similar cu imaginea de mai jos:
+<div class="custom-image-shadow"><img src="/images/d5l3-basic-html/signup-page.png" /></div>
