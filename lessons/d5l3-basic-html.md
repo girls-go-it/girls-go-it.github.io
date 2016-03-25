@@ -563,7 +563,7 @@ Ai obținut, deci, ceva ca în imaginea de mai jos:
 
 #Exercițiul 3:#
 
-În același directoriu creează fișierul login.html. Nu uita să le relaționezi.
+În același directoriu creează fișierul login.html.
 
 ```html
 <!DOCTYPE html>
@@ -573,7 +573,6 @@ Ai obținut, deci, ceva ca în imaginea de mai jos:
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
 </body>
 </html>
 ```
@@ -600,16 +599,19 @@ Urmeaza apoi forma de login
 
 ```html
 <h1>Login</h1>
-<form action="account.html">
-	<label for="email-input">Email:</label>
-	<input type="text" name="email" id="email-input" />
-	<br/>
-	<label for="password-input">Password:</label>
-	<input type="password" name="password" id="password-input" />
-	<hr />
-	<button type="submit">Submit</button>
+<form action="account.html" method="post">
+    <div class="form-row">
+        <label for="email-input">Email:</label>
+        <input type="text" name="email" id="email-input"/>
+    </div>
+    <br/>
+    <div class="form-row">
+        <label for="password-input">Password:</label>
+        <input type="password" name="password" id="password-input"/>
+    </div>
+    <button type="submit">Submit</button>
+    <a href="register.html">Sign Up</a>
 </form>
-<a href="register.html">Sign up</a>
 ```
 
 Dupa care deschidem fisierul de stiluri si adaugam regulile urmatoare pentru pozitionarea formei la mijloc:
@@ -645,7 +647,108 @@ button {
 
 si ultimul stil pentru acest exercitiu este definirea grupelor prin adaugarea spatiului:
 ```css
- .form-row {
-     padding: 8px 0;
- }
+.form-row {
+ padding: 8px 0;
+}
 ```
+
+Rezultatul ar trebui sa arate ca si in imagine:
+<div class="custom-image-shadow"><img src="/images/d5l3-basic-html/login-page.png" /></div>
+
+#Exercițiul 4:#
+
+În același directoriu creează fișierul register.html, cu titlul "Sign Up", de asemenea atasam si 
+fisierul de stiluri style.css care se afla in aceeasi mapa 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+</body>
+</html>
+```
+
+În tagul body adaugam navigarea care am folosit-o si la paginele precedente:
+ 
+```html
+<div class="nav-bar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feed.html">Feed </a></li>
+        <li><a href="login.html">Login</a></li>
+    <ul>
+</div>
+```
+dupa care refolosim forma din exercitiul precedent
+
+```html
+<h1>Login</h1>
+<form action="account.html" method="post">
+    <div class="form-row">
+        <label for="email-input">Email:</label>
+        <input type="text" name="email" id="email-input"/>
+    </div>
+    <br/>
+    <div class="form-row">
+        <label for="password-input">Password:</label>
+        <input type="password" name="password" id="password-input"/>
+    </div>
+    <button type="submit">Submit</button>
+    <a href="register.html">Sign Up</a>
+</form>
+```
+
+Schimbam H1 cu textul "Sign up" in loc de "Login": 
+
+```html
+<h1>Sign Up</h1>
+```
+
+Si linkul de la sfarsitul formei cu cel de la pagina precedenta "login.html" si textul "Log in" in felul urmator
+
+```html
+<a href="login.html">Log in</a>
+```
+
+Dupa campul de password adaugam inca un camp pentru confirmarea la parola
+
+```html
+<div class="form-row">
+    <label for="confirm-password-input">Confirm Password:</label>
+    <input type="password" name="password" id="confirm-password-input"/>
+</div>
+```
+
+Dupa care inseram campuri pentru datele care le mai avem nevoie:
+- Orasul
+- Sexul
+- Termeni si conditii
+
+```html
+<div class="form-row">
+    <label for="town">Town:</label>
+    <select id="town">
+        <option>- Select town -</option>
+        <option value="K">Chisinau</option>
+        <option value="UN">Ungheni</option>
+        <option value="SC">Soroca</option>
+        <option value="AN">Anenii Noi</option>
+    </select>
+</div>
+<div class="form-row">
+    <label><input type="radio" name="sex" value="F">F</label>
+    <label><input type="radio" name="sex" value="M">M</label>
+</div>
+<div class="form-row">
+    <label><input type="checkbox"/> I read Terms and Conditions</label>
+</div>
+```
+
+Pentru acest exercitiu  nu avem nevoie de a adauga stiluri, deoarce este acoperit de stilurile de la exercitiul precedent
+
+Rezultatul ar trebui sa similar cu imaginea de mai jos:
+<div class="custom-image-shadow"><img src="/images/d5l3-basic-html/signup-page.png" /></div>
