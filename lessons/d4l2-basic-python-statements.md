@@ -22,6 +22,39 @@ Dacă există atât de multe limbaje de programare, de ce noi am ales să studie
 Cu ajutorul *Python*, puteți crea site-uri, aplicații web, jocuri și chiar motoare de căutare.
 
 
+###**Instalare pe Windows**
+
+####Python####
+
+Pentru a instala Python (vorbim de ultima versiune - 3.5 la moment) pe Windows, este nevoie de a efectua următorii pași:
+
+  1.  Descarcă Python de aici: https://www.python.org/ftp/python/3.5.1/python-3.5.1.exe
+  2.  Pornește fișierul cu un dublu-clik pe fișierul descărcat.
+  3.  În fereastra apărută asigură-te că opțiunea **Add Python 3.5 to PATH** este selectată și alege **Customize installation**
+  4.  La pasul doi, ai grijă ca toate checkbox-urile sa fie selectate și apasă **Next**
+  5.  La pasul trei selectează o directorie unde ai permisiuni de scriere (dacă vorbim de bibliotecile Novateca - trebuie să fie pe **E:\** )
+  6.  Ți se va cere să întroduci datele administratorului după ce vei apăsa **Next**. Fă asta și așteaptă să termine de lucrat installer-ul.
+  7.  Apasă **Win + R** , tastează ```cmd.exe``` pentru a lansa linia de comandă.
+  8.  În terminalul apărut tastează ```python```, ce va lansa interpretatorul limbajului în regim interactiv. Felicitări, acum poți utiliza Python pe windows!
+
+####Django####
+
+  0.  Asigură-te că ai instalat ```python``` conform pașilor de mai sus.
+  1.  Apasă **Win + R** , tastează ```cmd.exe``` pentru a lansa linia de comandă (o fereastră de terminal windows).
+  2.  Pentru a installa Django, rulează următoarea comandă
+
+  ```pip install Django==1.9.5```
+
+  în terminal.
+  3.  Nu închide fereastra pînă cînd nu va termina de lucrat instalatorul (îți va scrie 'Successfully installed Django-1.9.5').
+  4.  Pentru a verifica că totul s-a instalat corect, rulează următoare comandă în terminal:
+
+    ```python -c "import django; print(django.__path__)"```
+
+    ca rezultat trebuie sa vezi directoriul în care a fost instalat pachetul `Django`.
+
+Acum ai totul pentru a dezvolta o aplicație Django.
+
 ###**Sintaxa Python**
 
 Pentru a scrie și executa toate exercițiile propuse mai jos, veți folosi editorul de text *Sublime Text*.
