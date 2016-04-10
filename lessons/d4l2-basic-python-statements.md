@@ -43,15 +43,16 @@ Pentru a instala Python (vorbim de ultima versiune - 3.5 la moment) pe Windows, 
   1.  Apasă **Win + R** , tastează ```cmd.exe``` pentru a lansa linia de comandă (o fereastră de terminal windows).
   2.  Pentru a installa Django, rulează următoarea comandă
 
-  ```pip install Django==1.9.5```
+  ```
+  pip install Django==1.9.5
+  ```
 
   în terminal.
   3.  Nu închide fereastra pînă cînd nu va termina de lucrat instalatorul (îți va scrie 'Successfully installed Django-1.9.5').
-  4.  Pentru a verifica că totul s-a instalat corect, rulează următoare comandă în terminal:
-
-    ```python -c "import django; print(django.__path__)"```
-
-    ca rezultat trebuie sa vezi directoriul în care a fost instalat pachetul `Django`.
+  4.  Pentru a verifica că totul s-a instalat corect, rulează această comandă în terminal - ea va afișa versiunea pachetului Django:
+  ```
+  python -c "import django; print(django.__path__)"
+  ```
 
 Acum ai totul pentru a dezvolta o aplicație Django.
 
