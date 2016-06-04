@@ -10,6 +10,10 @@ title: Django Scaffolding
 
 # Hai să fim hackeri
 
-O altă modalitate de a interacționa cu calculatorul este prin terminal. Mai jos vedeți un exemplu pentru windows.
+O altă modalitate de a interacționa cu calculatorul este prin `terminal`. Mai jos vedeți un exemplu de `terminal` pe Windows.
 
-<div class="custom-image"><img src="http://s14.postimg.org/706z87b00/Screenshot_2015_08_10_23_43_45.jpg"></div>
+<div class="custom-image"><img src="https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/images/django-scaffold/windows-console.png"></div>
+
+Pentru a porni un terminal pe windows doar apăsați pe Windows, tastați `cmd` după care apăsați `Enter`.
+
+<div class="custom-image"><img src="https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/images/django-scaffold/windows-console.png"></div>
