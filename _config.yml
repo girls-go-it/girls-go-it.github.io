@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rouge
 github: [Repository metadata]
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
