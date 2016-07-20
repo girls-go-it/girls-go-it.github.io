@@ -24,7 +24,7 @@
             
             <ul>
               {% for p in site.pages %}
-                {% if "2016" in p.tags %}
+                {% if p.category == "basic" %}
                   <li>
                     <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
                   </li>

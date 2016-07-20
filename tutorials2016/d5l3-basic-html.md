@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Basic HTML & CSS
-tags: 2016
+category: basic
 ---
 
 #Basic HTML
