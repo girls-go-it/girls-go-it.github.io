@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Bootstrap
+year: 2016
 ---
 
 # Bootstrap [[slides-1](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-1-bootstrap)] [[slides-2](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-2-bootstrap-integration)]
