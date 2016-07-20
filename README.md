@@ -1,6 +1,6 @@
 # Wiki pentru GGIT
 
-Lecţiile se pun în folderul `lessons`.
+Lecţiile se pun în folderul `tutorials2016`.
 
 Convenţia de denumire a fişierelor:
 d**x**l**y**-< lesson-name >.md,
