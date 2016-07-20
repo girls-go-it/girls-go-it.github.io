@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bootstrap
+title: Bootstrap Intro
 category: basic
 ---
 

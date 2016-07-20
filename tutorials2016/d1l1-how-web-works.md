@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How Web Works
-caetgory: basic
+category: basic
 ---
 
 
