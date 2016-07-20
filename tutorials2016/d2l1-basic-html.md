@@ -4,9 +4,7 @@ title: Basic HTML & CSS
 category: basic
 ---
 
-#Basic HTML
-
-##Ce este HTML?
+## Ce este HTML?
 
 
 HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
