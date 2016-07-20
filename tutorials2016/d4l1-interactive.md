@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CSS Tricks
+title: Interactive Pages
 category: basic
 ---
 
