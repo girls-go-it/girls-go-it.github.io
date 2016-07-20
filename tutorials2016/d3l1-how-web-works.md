@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How Web Works
-year: 2016
+tags: 2016
 ---
 
 
