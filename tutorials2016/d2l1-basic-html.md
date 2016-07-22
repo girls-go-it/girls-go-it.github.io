@@ -23,12 +23,14 @@ In Linux
 touch pagina.html
 ```
 
+
+
 <div class="custom-image"><img src="https://67.media.tumblr.com/faaf3c0b73c7589bc96f50d634b56ad6/tumblr_oapijqOnCs1vb8jc0o1_1280.gif" /></div>
 
 
 
 
-În sublime, scrie următorul cod:
+În sublime, editati pagina creata si scrie următorul cod:
 
 ```html
 <!DOCTYPE html>
@@ -42,11 +44,7 @@ touch pagina.html
 </html>
 ```
 
-Salvează modificările făcute în documentul `index.html`. Dezchizând din nou terminalul, scrie:
-
-```bash
-$ sensible-browser index.html
-```
+Salvează modificările făcute în documentul `pagina.html`. Deschide cu un browser fisierul `pagina.html`:
 
 Ceea ce ai în față este o pagină HTML goală. Observi că numele paginii corespunde cu numele documentului  cu extensia `.html` pe care l-ai creat anterior. Pentru a schimba denumirea paginii, tot ce trebuie să faci este să scrii titlul pe care-l dorești între tag-urile `<title></title>.`
 Spre exemplu:
@@ -56,12 +54,7 @@ Spre exemplu:
 <title>My page</title>
 ```
 
-Salvează modificările făcute în documentul `index.html`. Apoi poți vedea că titlul s-a schimbat scriind din nou în terminal comanda:
-
-
-```bash
-$ sensible-browser index.html
-```
+Salvează modificările făcute în documentul `pagina.html`. Apoi poți vedea că titlul s-a schimbat, dai F5 in browser:
 
 <div class="custom-image"><img src="https://40.media.tumblr.com/f24c47044eb096aa26d351646ae7e47c/tumblr_nt175dbOWZ1udztn8o1_1280.png" /></div>
 
@@ -141,41 +134,12 @@ Dacă curiozitatea este atributul tău principal, atunci poți să încerci și 
 ```
 <div class="custom-image"><img src="https://40.media.tumblr.com/51f7a2e741803079e74ddef9293f22c3/tumblr_ntao9cj9es1udztn8o1_1280.png" /></div>
 
-Element important îl mai reprezintă și tabele. Tabele se definesc prin intermediul tag-ului `<table>`. Tabele se împart în rânduri prin intermediul tag-urilor `<tr>`. Rândurile se împart în datele tabelului, cu ajutorul tagului `<td>`. Rândul unui tabel poate fi, la fel, divizat în titluri ale tabelului, utilizând tag-ul `<th>`. Pentru a face lucrurile mai clare, analizează codul de mai jos:
-
-```html
-<table>
-	<tr>
-		<th>Nume</th>
-		<th>Prenume</th>
-		<th>Virsta</th>
-	</tr>
-	<tr>
-		<td>Alex</td>
-		<td>Cretu</td>
-		<td>25</td>
-	</tr>
-	<tr>
-		<td>Alexandra</td>
-		<td>Cretu</td>
-		<td>24</td>
-	</tr>
-	<tr>
-		<td>Alexandrina</td>
-		<td>Cretu</td>
-		<td>18</td>
-	</tr>
-</table>
-```
-
-<div class="custom-image"><img src="https://41.media.tumblr.com/e92c1c50400a708d115ada579a929654/tumblr_nt17f7AVKN1udztn8o1_1280.png" /></div>
-
-Acum că ai însușit paragrafele, titlurile (header), tabelele și listele, poți să faci loc și link-urilor. În HTML link-urile sunt definite prin intermediul tag-ului `<a>` sub forma: `<a href="url">link text</a>`.
+Acum că ai însușit paragrafele, titlurile (header) și listele, poți să faci loc și link-urilor. În HTML link-urile sunt definite prin intermediul tag-ului `<a>` sub forma: `<a href="url">link text</a>`.
 
 Exemplu:
 
 ```html
-<a href="http://girls-go-it.github.io/lessons/aaa_vocabulary/">Vocabular tehnic</a>
+<a href="http://girls-go-it.github.io/tutorials2016/d21l1-extra-html/">Extra info</a>
 ```
 
 Link-urile sunt primul pas spre o pagină web dinamică. Următorul pas sunt formele HTML, care sunt utilizate pentru a transmite date între paginile accesate într-un mod securizat.
