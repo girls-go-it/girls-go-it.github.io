@@ -16,6 +16,7 @@ Pseudo-clasele sunt utilizate pentru a defini o stare specială a unui element H
 
 ## Syntax
 Sintaxa pentru a utiliza pseudo-clasele în CSS este:
+
 ```
 selector:pseudo-class {
     property:value;
@@ -24,6 +25,7 @@ selector:pseudo-class {
 
 ## Pseudo-clase pentru link-uri
 Link-urile pot fi afișate în diferite moduri:
+
 ```
 /* unvisited link */
 a:link {
@@ -47,6 +49,7 @@ a:active {
 
 ## Pseudo-clasele pot fi folosite împreună cu clasele CSS
 Pseudo-clasele pot fi combinate cu clasese definite de tine.
+
 ```
 a.my-class:pseudo-class {
     property:value;
@@ -55,6 +58,7 @@ a.my-class:pseudo-class {
 
 ## Hover asupra unui `<div>`
 Iată un exemplu de a utiliza pseudo-clasa `:hover` asupta unui element `div`.
+
 ```
 div:hover {
     background-color: red;
@@ -63,6 +67,7 @@ div:hover {
 
 ## Pseudo-clasa `:first-child`
 Pseudo-clasa `:first-child` se utilizează pentru a selecta primul element copil al fiecărui element.
+
 ```
 /*match the first <p> element*/
 p:first-child {
@@ -76,6 +81,7 @@ p i:first-child {
 
 ## Pseudo-clasa `:nth-child(n)`
 Această pseudo-clasa se utilizează pentru a selecta fiecare element care este copilul n-lea al elementului părinte. `n` poate fi valoare, cuvînt cheie, funcție.
+
 ```
 /*select every <p> element that is the second child of its parent*/
 p:nth-child(2) {
@@ -98,8 +104,10 @@ Pentru a utiliza tranzițiile, este nevoie de a specifica două lucruri:
  - durata efectului
 
 > Dacă durata efectului nu va fi specificată, atunci tranziția nu se va aplica deoarece valoarea implicită pentru dutară este 0.
+
 ## Exemplu
 În exemplul de mai jos, putem observa că atunci cînd cursorul va fi peste un element `div`, se va modifica lungimea lui cu o durată de 2 secunde.
+
 ```
 div {
     width: 100px;
@@ -115,6 +123,7 @@ div:hover {
 
 ## Tranziții cu întîrziere
 Exemplul de mai jos demonstrează cum de utilizat proprietatea `transition-delay`.
+
 ```
 div {
     width: 100px;
@@ -152,6 +161,7 @@ div:hover {
 
 ## **BONUS:** Blur Menu
 Pentru că sunt foarte multe lucruri care pot fi efectuate cu tranzițiile și transformările în CSS, o să experimentăm cu scopul de a realiza un efect de blur asupra unei bare de meniu.
+
 ```
 body{
   background-image:url("http://tympanus.net/Tutorials/BlurMenu/images/pattern.png"), url("http://tympanus.net/Tutorials/BlurMenu/images/1.jpg");
@@ -187,7 +197,9 @@ body{
 	padding-left: 10px;
 }
 ```
+
 Elementele HTML:
+
 ```
 <ul class="bmenu">
   <li><a href="#">About</a></li>
