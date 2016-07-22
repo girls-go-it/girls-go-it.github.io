@@ -12,7 +12,7 @@ HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de ma
 Aici vei învăța cum să creezi propria pagină HTML. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Scrie în terminal următorul rând:
 
 ```bash
-$ subl index.html
+$ sublsss index.html
 ```
 
 În sublime, scrie următorul cod:
