@@ -4,9 +4,9 @@ title: Interactive Pages
 category: basic
 ---
 
-#Interactive Web Pages
+# Interactive Web Pages
 
-##Ce reprezintă pseudo-clasele în CSS?
+## Ce reprezintă pseudo-clasele în CSS?
 
 Pseudo-clasele sunt utilizate pentru a defini o stare specială a unui element HTML. Spre exemplu, ele pot fi utilizate pentru:
 
@@ -45,7 +45,7 @@ a:active {
 
 >`a:hover` trebuie să fie definită după `a:link` și `a:visited` pentru a avea efect, totodată, `a:active` trebuie să fie definită după `a:hover`.
 
-##Pseudo-clasele pot fi folosite împreună cu clasele CSS
+## Pseudo-clasele pot fi folosite împreună cu clasele CSS
 Pseudo-clasele pot fi combinate cu clasese definite de tine.
 ```
 a.my-class:pseudo-class {
@@ -53,7 +53,7 @@ a.my-class:pseudo-class {
 }
 ```
 
-##Hover asupra unui `<div>`
+## Hover asupra unui `<div>`
 Iată un exemplu de a utiliza pseudo-clasa `:hover` asupta unui element `div`.
 ```
 div:hover {
@@ -61,7 +61,7 @@ div:hover {
 }
 ```
 
-##Pseudo-clasa `:first-child`
+## Pseudo-clasa `:first-child`
 Pseudo-clasa `:first-child` se utilizează pentru a selecta primul element copil al fiecărui element.
 ```
 /*match the first <p> element*/
@@ -74,7 +74,7 @@ p i:first-child {
 }
 ```
 
-##Pseudo-clasa `:nth-child(n)`
+## Pseudo-clasa `:nth-child(n)`
 Această pseudo-clasa se utilizează pentru a selecta fiecare element care este copilul n-lea al elementului părinte. `n` poate fi valoare, cuvînt cheie, funcție.
 ```
 /*select every <p> element that is the second child of its parent*/
@@ -151,6 +151,7 @@ div:hover {
 ```
 
 ## **BONUS:** Blur Menu
+Pentru că sunt foarte multe lucruri care pot fi efectuate cu tranzițiile și transformările în CSS, o să experimentăm cu scopul de a realiza un efect de blur asupra unei bare de meniu.
 ```
 body{
   background-image:url("http://tympanus.net/Tutorials/BlurMenu/images/pattern.png"), url("http://tympanus.net/Tutorials/BlurMenu/images/1.jpg");
@@ -185,4 +186,15 @@ body{
 	text-shadow: 0px 0px 1px #fff;
 	padding-left: 10px;
 }
+```
+Elementele HTML:
+```
+<ul class="bmenu">
+  <li><a href="#">About</a></li>
+  <li><a href="#">Illustrations</a></li>
+  <li><a href="#">Photography</a></li>
+  <li><a href="#">Web Design</a></li>
+  <li><a href="#">Personal Projects</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
 ```
