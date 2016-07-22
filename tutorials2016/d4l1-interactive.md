@@ -47,6 +47,8 @@ a:active {
 
 >`a:hover` trebuie să fie definită după `a:link` și `a:visited` pentru a avea efect, totodată, `a:active` trebuie să fie definită după `a:hover`.
 
+Pentru demo click **[aici](https://jsfiddle.net/dfpno9ta/)**
+
 ## Pseudo-clasele pot fi folosite împreună cu clasele CSS
 Pseudo-clasele pot fi combinate cu clasese definite de tine.
 
@@ -65,6 +67,8 @@ div:hover {
 }
 ```
 
+Pentru demo click **[aici](https://jsfiddle.net/xbn8rbd2/)**
+
 ## Pseudo-clasa `:first-child`
 Pseudo-clasa `:first-child` se utilizează pentru a selecta primul element copil al fiecărui element.
 
@@ -78,6 +82,8 @@ p i:first-child {
     color: blue;
 }
 ```
+
+Pentru demo click **[aici](https://jsfiddle.net/7byabsx2/)**
 
 ## Pseudo-clasa `:nth-child(n)`
 Această pseudo-clasa se utilizează pentru a selecta fiecare element care este copilul n-lea al elementului părinte. `n` poate fi valoare, cuvînt cheie, funcție.
@@ -95,6 +101,8 @@ p:nth-child(even) {
     background: blue;
 }
 ```
+
+Pentru demo click **[aici](https://jsfiddle.net/kkr0vu9r/)**
 
 # Tranzițtii CSS
 Tranzițiile CSS oferă programatorului un mod de a controla viteza de animare atunci cînd sunt schimbate proprietățile CSS ale elementelor HTML.
@@ -121,6 +129,8 @@ div:hover {
 }
 ```
 
+Pentru demo click **[aici](https://jsfiddle.net/yvknekh9/)**
+
 ## Tranziții cu întîrziere
 Exemplul de mai jos demonstrează cum de utilizat proprietatea `transition-delay`.
 
@@ -129,9 +139,9 @@ div {
     width: 100px;
     height: 100px;
     background: red;
-    -webkit-transition: width 2s; /* Safari */
+    -webkit-transition: width 3s; /* Safari */
     -webkit-transition-delay: 1s; /* Safari */
-    transition: width 2s;
+    transition: width 3s;
     transition-delay: 1s;
 }
 
@@ -139,6 +149,8 @@ div:hover {
     width: 300px;
 }
 ```
+
+Pentru demo click **[aici](https://jsfiddle.net/7z3ww5fj/)**
 
 ## Tranziții + Transformări
 
@@ -158,6 +170,8 @@ div:hover {
     transform: rotate(180deg);
 }
 ```
+
+Pentru demo click **[aici](https://jsfiddle.net/smqurzas/)**
 
 ## **BONUS:** Blur Menu
 Pentru că sunt foarte multe lucruri care pot fi efectuate cu tranzițiile și transformările în CSS, o să experimentăm cu scopul de a realiza un efect de blur asupra unei bare de meniu.
@@ -210,3 +224,5 @@ Elementele HTML:
   <li><a href="#">Contact</a></li>
 </ul>
 ```
+
+Pentru demo click **[aici](https://jsfiddle.net/28d7yvdx/)**
