@@ -139,7 +139,7 @@ Acum că ai însușit paragrafele, titlurile (header) și listele, poți să fac
 Exemplu:
 
 ```html
-<a href="http://girls-go-it.github.io/tutorials2016/d21l1-extra-html/">Extra info</a>
+<a href="http://girls-go-it.github.io/tutorials2016/d2l1-extra-html">Extra info</a>
 ```
 
 Link-urile sunt primul pas spre o pagină web dinamică. Următorul pas sunt formele HTML, care sunt utilizate pentru a transmite date între paginile accesate într-un mod securizat.
