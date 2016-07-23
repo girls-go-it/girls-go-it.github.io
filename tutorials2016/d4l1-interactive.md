@@ -17,7 +17,7 @@ Pseudo-clasele sunt utilizate pentru a defini o stare specială a unui element H
 ## Syntax
 Sintaxa pentru a utiliza pseudo-clasele în CSS este:
 
-```
+```css
 selector:pseudo-class {
     property:value;
 }
@@ -26,7 +26,7 @@ selector:pseudo-class {
 ## Pseudo-clase pentru link-uri
 Link-urile pot fi afișate în diferite moduri:
 
-```
+```css
 /* unvisited link */
 a:link {
     color: #FF0000;
@@ -52,7 +52,7 @@ Pentru demo click **[aici](https://jsfiddle.net/dfpno9ta/)**
 ## Pseudo-clasele pot fi folosite împreună cu clasele CSS
 Pseudo-clasele pot fi combinate cu clasese definite de tine.
 
-```
+```css
 a.my-class:pseudo-class {
     property:value;
 }
@@ -61,7 +61,7 @@ a.my-class:pseudo-class {
 ## Hover asupra unui `<div>`
 Iată un exemplu de a utiliza pseudo-clasa `:hover` asupta unui element `div`.
 
-```
+```css
 div:hover {
     background-color: red;
 }
@@ -72,7 +72,7 @@ Pentru demo click **[aici](https://jsfiddle.net/xbn8rbd2/)**
 ## Pseudo-clasa `:first-child`
 Pseudo-clasa `:first-child` se utilizează pentru a selecta primul element copil al fiecărui element.
 
-```
+```css
 /*match the first <p> element*/
 p:first-child {
     color: blue;
@@ -88,7 +88,7 @@ Pentru demo click **[aici](https://jsfiddle.net/7byabsx2/)**
 ## Pseudo-clasa `:nth-child(n)`
 Această pseudo-clasa se utilizează pentru a selecta fiecare element care este copilul n-lea al elementului părinte. `n` poate fi valoare, cuvînt cheie, funcție.
 
-```
+```css
 /*select every <p> element that is the second child of its parent*/
 p:nth-child(2) {
     background: red;
@@ -116,7 +116,7 @@ Pentru a utiliza tranzițiile, este nevoie de a specifica două lucruri:
 ## Exemplu
 În exemplul de mai jos, putem observa că atunci cînd cursorul va fi peste un element `div`, se va modifica lungimea lui cu o durată de 2 secunde.
 
-```
+```css
 div {
     width: 100px;
     height: 100px;
@@ -134,7 +134,7 @@ Pentru demo click **[aici](https://jsfiddle.net/yvknekh9/)**
 ## Tranziții cu întîrziere
 Exemplul de mai jos demonstrează cum de utilizat proprietatea `transition-delay`.
 
-```
+```css
 div {
     width: 100px;
     height: 100px;
@@ -154,7 +154,7 @@ Pentru demo click **[aici](https://jsfiddle.net/7z3ww5fj/)**
 
 ## Tranziții + Transformări
 
-```
+```css
 div {
     width: 100px;
     height: 100px;
@@ -176,9 +176,11 @@ Pentru demo click **[aici](https://jsfiddle.net/smqurzas/)**
 ## **BONUS:** Blur Menu
 Pentru că sunt foarte multe lucruri care pot fi efectuate cu tranzițiile și transformările în CSS, o să experimentăm cu scopul de a realiza un efect de blur asupra unei bare de meniu.
 
-```
+```css
 body{
-  background-image:url("http://tympanus.net/Tutorials/BlurMenu/images/pattern.png"), url("http://tympanus.net/Tutorials/BlurMenu/images/1.jpg");
+  background-image:
+    url("http://tympanus.net/Tutorials/BlurMenu/images/pattern.png"),
+    url("http://tympanus.net/Tutorials/BlurMenu/images/1.jpg");
 }
 .bmenu{
     padding: 0px;
@@ -214,7 +216,7 @@ body{
 
 Elementele HTML:
 
-```
+```html
 <ul class="bmenu">
   <li><a href="#">About</a></li>
   <li><a href="#">Illustrations</a></li>
