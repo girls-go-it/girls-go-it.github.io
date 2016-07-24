@@ -15,12 +15,6 @@ Inițial, a fost un proiect intern în cadrul Twitter Inc., ca ulterior să devi
 ## Starting point
 Pentru început, zic să inițiem un fișier în care vom experimenta bootstrap-ul. Eu sper că deja te-ai obișnuit cu terminalul și cu editorul de text. Dacă încă nu te simți confortabil utilizând terminalul sau alte instrumente și ai careva neclarități - **întreabă**! La această etapă comunicarea este foarte importantă, iar eu și colegii mei suntem gata să-ți oferim suport suplimentar. :wink:
 
-Deci, te rog să deschizi terminalul, să mergi în directoria în care lucrezi și să rulezi următoarea comandă:
-
-```
-$ subl bootstrap.html
-```
-
 În editorul tău preferat (încă nu te-ai îndrăgostit de sublime text?), inserează următorul text. El va fi scheletul experimentelor noastre.
 
 ```html
@@ -80,26 +74,26 @@ Acum că avem un schelet funcțional, haideți să încercăm să stilizăm elem
 Navbar-ul este componentul cel mai des întâlnit pe paginile web. De obicei navbar-ul este amplasat împreună cu logo-ul, deci urmează un exemplu cum prezentăm un logo și un navbar pe pagina noastră utilizînd clasele Bootstrap.
 
 ```html
-	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html">Your Logo Text Goes Here</a>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="#">First Menu Item</a>
-					</li>
-					<li>
-						<a href="#">Second Menu Item</a>
-					</li>
-					<li>
-						<a href="#">Third Menu Item</a>
-					</li>
-				</ul>
-			</div>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html">Your Logo Text Goes Here</a>
 		</div>
-	</nav>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">First Menu Item</a>
+				</li>
+				<li>
+					<a href="#">Second Menu Item</a>
+				</li>
+				<li>
+					<a href="#">Third Menu Item</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
 	
 ```
 
@@ -114,40 +108,40 @@ Rezultatul e un Navbar simpatic care l-am obținut în mai puțin de un minut. I
 Nimic nu face mai sexy un site de cât niște imagini mari și frumoase într-un slider. Utilizînd codul ce urmează vă veți convinge că lucrurile stau foarte simplu.
 
 ```html
-	<header id="myCarousel" class="carousel slide" data-ride="carousel">
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="http://unsplash.it/1900/800/?image=151" alt="Slide">
-				<div class="carousel-caption">
-					<h2>Quibusdam illum, suscipit labore. Voluptas minima, magni.</h2>
-				</div>
-			</div>
-			<div class="item">
-				<img src="http://unsplash.it/1900/800/?image=152" alt="Slide">
-				<div class="carousel-caption">
-					<h2>Soluta distinctio suscipit ab sapiente quo molestias.</h2>
-				</div>
-			</div>
-			<div class="item">
-				<img src="http://unsplash.it/1900/800/?image=153" alt="Slide">
-				<div class="carousel-caption">
-					<h2>Facere praesentium quo asperiores. Omnis, itaque, quo.</h2>
-				</div>
+<header id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="http://unsplash.it/1900/800/?image=151" alt="Slide">
+			<div class="carousel-caption">
+				<h2>Quibusdam illum, suscipit labore. Voluptas minima, magni.</h2>
 			</div>
 		</div>
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="icon-prev"></span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="icon-next"></span>
-		</a>
-	</header>
+		<div class="item">
+			<img src="http://unsplash.it/1900/800/?image=152" alt="Slide">
+			<div class="carousel-caption">
+				<h2>Soluta distinctio suscipit ab sapiente quo molestias.</h2>
+			</div>
+		</div>
+		<div class="item">
+			<img src="http://unsplash.it/1900/800/?image=153" alt="Slide">
+			<div class="carousel-caption">
+				<h2>Facere praesentium quo asperiores. Omnis, itaque, quo.</h2>
+			</div>
+		</div>
+	</div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="icon-prev"></span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="icon-next"></span>
+	</a>
+</header>
 ```
 
 Să vedem rezultatul:
 
 <div class="custom-image-shadow">
-	<img src="/images/d6l1-bootstrap/5.png" />
+	<img src="/images/d6l1-bootstrap/4.png" />
 </div>
 
 
@@ -163,37 +157,37 @@ Pentru a defini o listă de știri pe pagină avem nevoie de cîteva coloane. Pa
 Următorul pas ar fi calcularea dimensiunilor coloanelor. Le calculăm după formula 12/x, unde x este numărul de coloane care dorim să-l obținem. De exemplu dacă dorim să afișăm conținutul în 3 coloane împărțim 12/3 și obținem dimensiunea coloanelor egală cu 4. Folosind rezultatele obținute și markup-ul de mai jos afișăm noutățile.
 
 ```html
-	<div class="container">
-		<div class="row">
-		    <div class="col-md-4">
-		        <div class="panel panel-default">
-		            <img src="http://unsplash.it/800/600?image=101" class="img-thumbnail" alt="">
-		            <div class="panel-body">
-		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="col-md-4">
-		        <div class="panel panel-default">
-		            <img src="http://unsplash.it/800/600?image=102" class="img-thumbnail" alt="">
-		            <div class="panel-body">
-		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="col-md-4">
-		        <div class="panel panel-default">
-		            <img src="http://unsplash.it/800/600?image=103" class="img-thumbnail" alt="">
-		            <div class="panel-body">
-		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
-		            </div>
-		        </div>
-		    </div>
-		</div>
+<div class="container">
+	<div class="row">
+	    <div class="col-md-4">
+	        <div class="panel panel-default">
+	            <img src="http://unsplash.it/800/600?image=101" class="img-thumbnail" alt="">
+	            <div class="panel-body">
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-md-4">
+	        <div class="panel panel-default">
+	            <img src="http://unsplash.it/800/600?image=102" class="img-thumbnail" alt="">
+	            <div class="panel-body">
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="col-md-4">
+	        <div class="panel panel-default">
+	            <img src="http://unsplash.it/800/600?image=103" class="img-thumbnail" alt="">
+	            <div class="panel-body">
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+	                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+	            </div>
+	        </div>
+	    </div>
 	</div>
+</div>
 ```
 
 ## Fin
