@@ -27,8 +27,8 @@ $ subl bootstrap.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bootstraping...</title>
+	<meta charset="UTF-8">
+	<title>Bootstraping...</title>
 </head>
 <body>
 
@@ -46,7 +46,7 @@ Adaugă o salutare în `body`, inserează acest text:
 Vezi rezultatul în navigatorul tău web preferat:
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/1.png" />
+	<img src="/images/d6l1-bootstrap/1.png" />
 </div>
 
 Implicit, navigatorul tău stilizează elementele HTML fundamentale. Hai să-i dăm o aromă de bootstrap!
@@ -69,12 +69,10 @@ Adăugăm și librăria javascript pentru bootstrap. Nu ne trebuie la moment, da
 Surprinzător! Ceva s-a schimbat. Poți observa că textul a căpătat automat altă nuanță de culoare, altă dimensiune și alt font.
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/2.png" />
+	<img src="/images/d6l1-bootstrap/2.png" />
 </div>
 
 Te întrebi probabil de ce s-a întâmplat asta. bootstrap.css a făcut-o. Ca prim scop, acele stil-uri au resetat toate stilurile predefinite de navigatorul tău și și-a impus standardele asupra elementelor de bază. Totuși, Bootstrap nu-și impune stilizarea asupra butoanelor, tabelelor, input-urilor (căsuțe de introducere a textului) și altele. Stilizarea se face explicit, specificând clasele necesare pentru elementele alese. Știm că explicit e mai bine decât implicit pentru că ni se oferă libertatea de a lua decizii mai multe.
-
-## 
 
 Acum că avem un schelet funcțional, haideți să încercăm să stilizăm elemente obișnuite cu ajutorul la bootstrap.
 
@@ -82,219 +80,121 @@ Acum că avem un schelet funcțional, haideți să încercăm să stilizăm elem
 Navbar-ul este componentul cel mai des întâlnit pe paginile web. De obicei navbar-ul este amplasat împreună cu logo-ul, deci urmează un exemplu cum prezentăm un logo și un navbar pe pagina noastră utilizînd clasele Bootstrap.
 
 ```html
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">Your Logo Text Goes Here</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">First Menu Item</a>
-                </li>
-                <li>
-                    <a href="#">Second Menu Item</a>
-                </li>
-                <li>
-                    <a href="#">Third Menu Item</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-    
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Your Logo Text Goes Here</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#">First Menu Item</a>
+					</li>
+					<li>
+						<a href="#">Second Menu Item</a>
+					</li>
+					<li>
+						<a href="#">Third Menu Item</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
 ```
 
-Rezultatul e un Navbar simpatic car în mod tradițional ar fi necesita pînă la o oră de lucru.
+Rezultatul e un Navbar simpatic care l-am obținut în mai puțin de un minut. Isn't that fantastic.
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/3.png" />
+	<img src="/images/d6l1-bootstrap/3.png" />
 </div>
 
-### Forme și butoane
+### Slider
 
-Mereu, atunci când utilizatorul va trebui să introducă ceva date în aplicațiile tale vei avea nevoie de forme. În cadrul formelor vei avea diverse tipuri de câmpuri ca de exemplu câmpuri de introducere a textului, checkbox (elemente de bifare), radio button (la fel ca și checkbox doar că având posibilitatea de a selecta un unic item dintr-un grup), butoane și altele.
-
-Să zicem că avem nevoie de o interfață de căutare a animalelor după numele lor. Deasemenea putem salva rezultatele căutării pentru utilizare ulterioară. Vom avea nevoie deci de un text input, un checkbox și un buton. Hai să vedem cum o facem:
+Nimic nu face mai sexy un site de cât niște imagini mari și frumoase într-un slider. Utilizînd codul ce urmează vă veți convinge că lucrurile stau foarte simplu.
 
 ```html
-    <form action="#">
-        <div>
-            <label for="animal-name">Animal name</label>
-            <input type="text" id="animal-name">
-        </div>
-        <div>
-            <label>
-                <input type="checkbox"> Save this search for later
-            </label>
-        </div>
-        <div>
-            <button type="submit">Search</button>
-        </div>
-    </form>
+	<header id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="http://unsplash.it/1900/800/?image=151" alt="Slide">
+				<div class="carousel-caption">
+					<h2>Quibusdam illum, suscipit labore. Voluptas minima, magni.</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="http://unsplash.it/1900/800/?image=152" alt="Slide">
+				<div class="carousel-caption">
+					<h2>Soluta distinctio suscipit ab sapiente quo molestias.</h2>
+				</div>
+			</div>
+			<div class="item">
+				<img src="http://unsplash.it/1900/800/?image=153" alt="Slide">
+				<div class="carousel-caption">
+					<h2>Facere praesentium quo asperiores. Omnis, itaque, quo.</h2>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="icon-next"></span>
+		</a>
+	</header>
 ```
 
 Să vedem rezultatul:
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/clean-search-form.png" />
+	<img src="/images/d6l1-bootstrap/5.png" />
 </div>
 
 
-Am obținut rezultatul dorit. Acum hai s-o stilizăm utilizând bootstrap.
 
-Adăugăm clasa `form-group` la grupul cu text box, clasa `checkbox` grupului cu checkbox și clasele `btn btn-default` butonului de căutare. Căsuței de introducere a textului îi dăm clasa `form-control`. Acum avem formă stilizată standard cu bootstrap. Iată cum s-a schimbat codul pentru formă:
+### Responsive Layout
+
+Pentru a defini o listă de știri pe pagină avem nevoie de cîteva coloane. Paginile web au moștenit această tehnică de la ziare. Implicit Bootstrap folosește sistemul de 12 coloane. O reprezentare grafică vedeți mai jos.
+
+<div class="custom-image-shadow">
+	<img src="/images/d6l1-bootstrap/5.png" />
+</div>
+
+Următorul pas ar fi calcularea dimensiunilor coloanelor. Le calculăm după formula 12/x, unde x este numărul de coloane care dorim să-l obținem. De exemplu dacă dorim să afișăm conținutul în 3 coloane împărțim 12/3 și obținem dimensiunea coloanelor egală cu 4. Folosind rezultatele obținute și markup-ul de mai jos afișăm noutățile.
 
 ```html
-    <form action="#">
-        <div class="form-group">
-            <label for="animal-name">Animal name</label>
-            <input type="text" id="animal-name" class="form-control">
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Save this search for later
-            </label>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-success">Search</button>
-        </div>
-    </form>
+	<div class="container">
+		<div class="row">
+		    <div class="col-md-4">
+		        <div class="panel panel-default">
+		            <img src="http://unsplash.it/800/600?image=101" class="img-thumbnail" alt="">
+		            <div class="panel-body">
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-md-4">
+		        <div class="panel panel-default">
+		            <img src="http://unsplash.it/800/600?image=102" class="img-thumbnail" alt="">
+		            <div class="panel-body">
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="col-md-4">
+		        <div class="panel panel-default">
+		            <img src="http://unsplash.it/800/600?image=103" class="img-thumbnail" alt="">
+		            <div class="panel-body">
+		                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+		                <a href="#" class="btn btn-success">Mai mult <i class="glyphicon glyphicon-menu-right"></i></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
 ```
-
-Și iată cum arată vizual:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/bootstrap-form.png" />
-</div>
-
-Perfect! Acum, dacă dorim ca forma să fie aliniată orizontal într-un rând, trebuie să punem forma într-un `div` cu clasa `form-inline`. Superb! Cu un efort minim, elementele stau frumos aliniate, perfect pentru interfața noastră de căutare. :+1:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/bootstrap-inline-form.png" />
-</div>
-
-Haideți acum să experimentăm cu stilul butonului. Colorarea în culorile predefinite se face prin clasele: `btn-primary`, `btn-success`, `btn-info`, `btn-warning`, `btn-danger` și `btn-link`. Desigur, puteți stiliza suplimentar scriind definind noi clase în CSS și aplicându-le în locurile necesare.
-
-La fel ca și culorile, dimensiunile butoanelor pot fi definite prin clasele bootstrap: `btn-lg`, `btn-sm` și `btn-xs`.
-
-De asemenea putem experimenta și cu starea input-urilor, bootstrap-ul se descurcă și cu aceste detalii. Haideți să experimentăm cu atributele `disabled` and `readonly`.
-
-### Glyphicons
-Glyphicons este un set cu 254 de iconițe incorporate într-un font cu același nume. Dat fiind că e un font, beneficiem de grafică vector pentru iconițe, deci putem să le scalăm la orice dimensiune fără a pierde din calitate.
-
-NB: Grafica vectorială se deosebește de cea simplă numită raster sau bitmap prin faptul că imaginile sunt construite utilizând primitivele grafice cum ar fi punctul, linia, linii bezier și altele. Imaginile raster folosesc pixelii ca unitate primitivă, deci de exemplu o imagine de 16x16 pixeli nu poate fi scalată fără pierderea calității, chiar și cu tehnici avansate de interpolare.
-
-La fel ca și celelalte componente, iconițele sunt disponibile prin intermediul claselor specifice. Pentru a plasa o iconiță pe un element este necesară plasarea claselor: `glyphicon` și `glyphicon-<nume_iconiță>`. Dimensiunea iconiței e dependentă de parametrul CSS `font-size` pentru acel element.
-
-Acum că am învățat care e treaba cu iconițele și cum se folosesc, haideți să plasăm o pictogramă relevantă pe butonul de căutare din exemplul precedent. Pentru aceasta, tot ce trebuie să facem e să adăugăm un element nou în interiorul tag-ului `<button></button>` cu clasele discutate mai sus. Pentru acest exemplu este nevoie de `glyphicon glyphicon-search`:
-
-```html
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-```
-
-Iată și rezultatul mult așteptat:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-glyphicons.png" />
-</div>
-
-Perfect! A fost simplu, nu? :stuck_out_tongue_winking_eye:
-
-### Dropdowns
-Acum că și butonașul de căutare arată destul de intuitiv, trebuie să adăugăm un element în care am putea seta un filtru după modul de nutriție. Simplu, putem să creăm un select box:
-
-```html
-    <div class="form-group">
-        <select name="nutrition">
-            <option value="0">Carnivore</option>
-            <option value="1">Herbivore</option>
-            <option value="2">Omnivore</option>
-        </select>
-    </div>
-```
-
-Hm... Nu arată prea bine:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-selectbox.png" />
-</div>
-
-We can do better than that! :innocent:
-
-Un prim lucru ce poate fi făcut este adăugarea clasei `form-control` elementului `<select>`. Arată ceva mai bine, nu?
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-selectbox-formcontrol.png" />
-</div>
-
-Însă nu e perfect. Și lista deschisă arată diferit pe diferite sisteme. Probabil există vre-un mecanism prin care e posibilă crearea unui element universal care să arate bine și la fel pe toate sistemele. Haideți să analizăm împreună **button dropdowns** din Bootstrap.
-
-Dați să rescriem codul de mai sus utilizând button dropdowns din bootstrap:
-
-```html
-    <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Carnivore <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li><a href="#">Carnivore</a></li>
-            <li><a href="#">Herbivore</a></li>
-            <li><a href="#">Omnivore</a></li>
-        </ul>
-    </div>
-
-```
-
-Să vedem... Acum atât butonul cât și lista de selecție arată bine, într-o manieră consistentă cu interfața bootstrap:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-button-dropdown.png" />
-</div>
-
-Perfect! Vezi că ți-a ieșit bine? Hai să mergem mai departe să explorăm și alte detalii ale bootstrap-ului.
-
-### Bară de navigare (navbar)
-Ne-am propus ca în partea de sus a paginii să avem un meniu orizontal ce ne va ajuta să navigăm mai ușor aplicația noastră. Reieșind din documentația bootstrap, o să facem un navbar simplificat:
-
-```html
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Catalog</a></li>
-                    <li><a href="#">Messages</a></li>
-                    <li><a href="#">Encyclopedia</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Profile</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-```
-
-Avem și un rezultat bun pe față. Twitter bootstrap chiar ne scutește de multe eforturi!
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-navbar.png" />
-</div>
-
-### Badges
-"Badges" este termenul dat de bootstrap unor elemente speciale. Ele sunt niște etichete care au ca scop să ne arate careva numere sub formă de contoare. Acum am putea să adăugăm un element ce va denota numărul de mesaje necitite, în bara de navigare. În cazul dat soluția este extrem de simplă. Adăugăm secvența următoare de cod în itemul cu **Messages**:
-
-```html
-<span class="badge">21</span>
-```
-
-Și, din nou, avem un rezultat drăguț, obținut cu un foarte mic efort:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/components-badge.png" />
-</div>
 
 ## Fin
 Cam atât de pe meleagurile componentelor Twitter bootstrap. Ca o provocare, zic să experimentezi cu elementele, stilurile, iconițele și alte detalii bootstrap. Îți pun la dispoziție documentația:
