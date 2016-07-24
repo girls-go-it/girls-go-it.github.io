@@ -23,6 +23,10 @@
         <p class="header"></p>
         <div id="sidenav" class="left-menu">
 
+            <div class="link-category">
+                MAIN
+            </div>
+
             <ul>
                 {% for p in site.pages %}
                     {% if p.category == "basic" %}
@@ -33,8 +37,8 @@
                 {% endfor %}
             </ul>
 
-            <div class="link-divider">
-                ADVANCED
+            <div class="link-category">
+                MORE
             </div>
 
             <ul>
