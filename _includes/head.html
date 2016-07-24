@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Girls Go IT - Wiki</title>
@@ -13,26 +13,42 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
-  <body>
+</head>
+<body>
+<div class="wrapper">
+    <header>
         <a href="/index.html">
-          <div class="wrapper">
-          <header>
             <h1 class="header">Girls Go IT</h1>
-            <p class="header"></p>
-            <div id="sidenav" class="left-menu">
-            
-            <ul>
-              {% for p in site.pages %}
-                {% if p.category == "basic" %}
-                  <li>
-                    <a {% if p.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-          </header>
         </a>
-      {% include side.html %}
-      <section>
+        <p class="header"></p>
+        <div id="sidenav" class="left-menu">
+
+            <ul>
+                {% for p in site.pages %}
+                {% if p.category == "basic" %}
+                <li>
+                    <a {% if p.url== page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{
+                        p.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <div class="link-divider">
+                ADVANCED
+            </div>
+
+            <ul>
+                {% for p in site.pages %}
+                {% if p.category == "advanced" %}
+                <li>
+                    <a {% if p.url== page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{
+                        p.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </header>
+    {% include side.html %}
+    <section>
