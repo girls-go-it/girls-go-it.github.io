@@ -4,7 +4,7 @@ title: Bootstrap Intro
 category: basic
 ---
 
-# Bootstrap [[slides-1](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-1-bootstrap)] [[slides-2](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-2-bootstrap-integration)]
+# Bootstrap
 
 [Bootstrap](getbootstrap.com) sau Twitter Bootstrap Framework este un conglomerat de intstrumente și șabloane stilizate ce au ca scop ușurarea și facilitarea dezvoltării aplicațiilor web.
 
@@ -31,9 +31,7 @@ $ subl bootstrap.html
     <title>Bootstraping...</title>
 </head>
 <body>
-<div style="width: 800px; margin: 10px auto 0;">
 
-</div>
 </body>
 </html>
 ```
@@ -41,14 +39,14 @@ $ subl bootstrap.html
 Adaugă o salutare în `body`, inserează acest text:
 
 ```html
-<h1>Welcome to Bootstrap-Savannah!</h1>
-<h2>Lions are cute!</h2>
+<h1>Feel the power of Bootstrap.</h1>
+<h2>Now YOU rule the world of web!</h2>
 ```
 
 Vezi rezultatul în navigatorul tău web preferat:
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/clean-page.png" />
+    <img src="/images/d6l1-bootstrap/1.png" />
 </div>
 
 Implicit, navigatorul tău stilizează elementele HTML fundamentale. Hai să-i dăm o aromă de bootstrap!
@@ -71,90 +69,47 @@ Adăugăm și librăria javascript pentru bootstrap. Nu ne trebuie la moment, da
 Surprinzător! Ceva s-a schimbat. Poți observa că textul a căpătat automat altă nuanță de culoare, altă dimensiune și alt font.
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/clean-bootstrap.png" />
+    <img src="/images/d6l1-bootstrap/2.png" />
 </div>
 
 Te întrebi probabil de ce s-a întâmplat asta. bootstrap.css a făcut-o. Ca prim scop, acele stil-uri au resetat toate stilurile predefinite de navigatorul tău și și-a impus standardele asupra elementelor de bază. Totuși, Bootstrap nu-și impune stilizarea asupra butoanelor, tabelelor, input-urilor (căsuțe de introducere a textului) și altele. Stilizarea se face explicit, specificând clasele necesare pentru elementele alese. Știm că explicit e mai bine decât implicit pentru că ni se oferă libertatea de a lua decizii mai multe.
 
-## Stilizarea lucrurilor obișnuite
+## 
 
 Acum că avem un schelet funcțional, haideți să încercăm să stilizăm elemente obișnuite cu ajutorul la bootstrap.
 
-### Tabele
-Că tot suntem la începutul sesiunii, vom da startul experimentelor cu chestii mai plictisitoare, și anume - tabele. Deseori în aplicațiile tale vei avea nevoie să afișezi fie careva statistici fie alte date organizate sub formă de tabel. Fără ele, poate fi într-adevăr dificil. Hai să încercăm un tabelaș cu oarecare 5 animale din savană:
+### Navbar
+Navbar-ul este componentul cel mai des întâlnit pe paginile web. De obicei navbar-ul este amplasat împreună cu logo-ul, deci urmează un exemplu cum prezentăm un logo și un navbar pe pagina noastră utilizînd clasele Bootstrap.
 
 ```html
-    <table>
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Name</th>
-                <th>Genus</th>
-                <th>Family</th>
-                <th>Order</th>
-                <th>Class</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1.</td>
-                <td>Giraffe</td>
-                <td>Giraffa</td>
-                <td>Giraffidae</td>
-                <td>Artiodactyla</td>
-                <td>Mammalia</td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Zebra</td>
-                <td>Equus</td>
-                <td>Equidae</td>
-                <td>Perissodactyla</td>
-                <td>Mammalia</td>
-            </tr>
-            <tr>
-                <td>3.</td>
-                <td>Ostrich</td>
-                <td>Struthio</td>
-                <td>Struthionidae</td>
-                <td>Struthioniformes</td>
-                <td>Aves</td>
-            </tr>
-            <tr>
-                <td>4.</td>
-                <td>Grasshopper</td>
-                <td>-</td>
-                <td>Caelifera</td>
-                <td>Orthoptera</td>
-                <td>Insecta</td>
-            </tr>
-            <tr>
-                <td>5.</td>
-                <td>Cheetah</td>
-                <td>Acinonyx</td>
-                <td>Felidae</td>
-                <td>Carnivora</td>
-                <td>Mammalia</td>
-            </tr>
-        </tbody>
-    </table>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Your Logo Text Goes Here</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">First Menu Item</a>
+                </li>
+                <li>
+                    <a href="#">Second Menu Item</a>
+                </li>
+                <li>
+                    <a href="#">Third Menu Item</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
 ```
 
-Rezultatul e un tabel simplu, stilizat cumva de către navigatorul tău web. Ar putea cam așa:
+Rezultatul e un Navbar simpatic car în mod tradițional ar fi necesita pînă la o oră de lucru.
 
 <div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/clean-table.png" />
+    <img src="/images/d6l1-bootstrap/3.png" />
 </div>
-
-Nu e rău! Însă hai să beneficiem de oporunitățile oferite de bootstrap. Adăugăm tabelului clasa `table` și explorăm clasele `table-hover`, `table-bordered` și `table-striped`.
-
-În combinația `table table-striped`, tabelul tău va arăta cam așa:
-
-<div class="custom-image-shadow">
-    <img src="/images/d6l1-bootstrap/bootstrap-table-striped.png" />
-</div>
-
-Bravo! :rose: Te-ai descurcat de minune. Sper că te-am intrigat și vrei să explorăm împreună în continuare bootstrap-ul.
 
 ### Forme și butoane
 
