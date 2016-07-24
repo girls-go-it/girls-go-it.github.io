@@ -121,7 +121,6 @@ div {
     width: 100px;
     height: 100px;
     background: red;
-    -webkit-transition: width 2s; /* Safari */
     transition: width 2s;
 }
 div:hover {
@@ -139,8 +138,6 @@ div {
     width: 100px;
     height: 100px;
     background: red;
-    -webkit-transition: width 3s; /* Safari */
-    -webkit-transition-delay: 1s; /* Safari */
     transition: width 3s;
     transition-delay: 1s;
 }
@@ -159,14 +156,12 @@ div {
     width: 100px;
     height: 100px;
     background: red;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
     transition: width 2s, height 2s, transform 2s;
 }
 
 div:hover {
     width: 300px;
     height: 300px;
-    -webkit-transform: rotate(180deg); /* Safari */
     transform: rotate(180deg);
 }
 ```
