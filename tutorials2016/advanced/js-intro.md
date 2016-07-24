@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Intro to Javascript
-category: advanced
+<!--category: advanced-->
 ---
 
 JS fun goes here ;)
