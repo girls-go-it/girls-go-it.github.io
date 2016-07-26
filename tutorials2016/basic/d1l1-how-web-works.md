@@ -52,7 +52,7 @@ Haideti sa luam un URL generic si sa-i analizam structura:
 
 * `https://` - este protocolul comunicarii
 * `example.com` - este numele resursei
-* `:8000` - este portul catre resursa
+* `8000` - este portul catre resursa
 * `/group/resoure` - este calea catre pagina concreta a resursei
 
 Protocolul - este doar un set de reguli, o intelegere cum sa comunice intre ele calculatoarele, tot asa cum avem un protocol de a ne saluta cand ne intalnim intre oameni.
@@ -73,6 +73,6 @@ Fiecare calculator are o adresa care inseamna "eu insumi":
 
 Portul `8000` e portul pe care va rula implicit Django, serverul care il vom porni noi.
 
-Deci, pentru a apela la serverul care va rula la noi local, vom apela: `http://127.0.0.1:8000/`
+Deci, pentru a apela la serverul care va rula la noi local, vom apela: `http://127.0.0.1:8000/` sau `http://localhost:8000/`
 
 Dar ajunge atata vorba, cred ca ar fi timpul sa vedem ceva actiune!
