@@ -36,6 +36,10 @@ Ca sa accesati serverul GOOGLE, spre exemplu, scrieti adresa 'www.google.com' in
 In spate se intampla multe lucruri interesante, dar mai intai haideti sa descurcam cateva detalii:
 
 1. Calculatoarele se acceaseaza intre ele nu prin nume, ci prin o secventa de 4 numere separate prin punct, numita IP, un exemplu de IP ar fi: '212.0.195.168'
+
 2. Numele (cum ar fi 'google.com') e la fel ca si numele care-l salvati la voi in telefon pentru fiecare numar al prietenilor, familie, etc. Si are doar rolul sa arate memorizabil pentru noi, oamenii, si sa faca legatura cu numarul de telefon sunat.
+
 3. Reiese ca avem nevoie si de o "Carte de IP'uri" globala, care sa traduca un nume ca 'google.com' intr-un ip ca '212.0.195.168' - aceasta carte globala se numeste DNS (Domain Name Server)
-4. Tot asa cum putem apela o persoana atat dupa nume (cand e salvata), cat si dupa un numar direct de telefon, fix asa putem accesa serverul google atat dupa numele 'google.com' cat si dupa ip'ul '212.0.195.168'. Recomand sa incercati 'http://212.0.195.168' in browserul vostru ;) 
+
+4. Noi putem apela o persoana atat dupa nume (cand e salvata), cat si dupa un numar direct de telefon. In acelasi mod putem accesa serverul google atat dupa numele 'google.com' cat si dupa ip'ul '212.0.195.168'. Recomand sa incercati 'http://212.0.195.168' in browserul vostru ;)
+
