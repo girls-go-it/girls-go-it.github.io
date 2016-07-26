@@ -28,4 +28,6 @@ In primul rand trebuie sa constientizam ca nu e posibil sa interconectam intre e
 ![Request path](/images/www/internet_2.png)
 
 
-Comunicarea are loc intotdeauna dupa modelul Intrebare - Raspuns. Si anume, calculatorul vostru intreaba un alt calculator din internet ceva fisiere, si el le transmite inapoi ca raspuns.
+Comunicarea are loc intotdeauna dupa modelul Intrebare - Raspuns. Si anume, calculatorul vostru intreaba un alt calculator din internet ceva fisiere, si el le transmite inapoi ca raspuns:
+![Communication](/images/www/get-response.png)
+
