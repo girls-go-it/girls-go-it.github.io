@@ -30,5 +30,5 @@ Sa testam cateva operatii matematice. Scrieti urmatoarea linie in consola si tas
 ```
 
 Obtinem raspunsul la univers si tot absolut:
-![Console run](/images/js-intro-chrome-dev.png)
+![Console run](/images/js-intro/console-run.png)
 
