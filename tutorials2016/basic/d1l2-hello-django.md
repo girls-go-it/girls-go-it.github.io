@@ -128,6 +128,7 @@ Observam ca fisierul **urls.py** lipseste din folderul applicatiei blog. Inseamn
 Apasam **Click Dreapta** pe folderul applicatiei, in cazul dat **blog** si dam click la ** New File**
 
 Apoi mai jos dam denumirea fisierului **urls.py**. Asa am creat un fisier python. 
+![URLS](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13639382_1352542781440152_90438662_o.png?oh=b1160c01d8d60f456c56ccca52c74652&oe=579AC43A)
 
 Deschidem fisierul **urls.py**  din folderul **mysite**, apasam **ctrl-A** si apoi **ctrl-C** pentru a copia continutul fisierului. In **urls.py** din folderul applicatiei(blog in cazul dat) apasti **ctrl-V** pentru a insera continutul in fisierul nou. Apoi **ctrl-S** pentru a salva fisierul.
 
@@ -145,7 +146,25 @@ Observam ca inainte de **blog_page** avem **views** urmat de un punct. Prin asa 
  
 Dechidem fisierul **views.py** din folderul applicatiei(blog), aici noi declaram orice pagina in felul urmator
 
+```python
+from django.shortcuts import render
 
 
+# Create your views here.
+```
 
-Pentru moment noi dorim ca pagina noastra sa ne afisheze un text, pentru aceasta 
+
+Pentru moment noi dorim ca pagina noastra sa ne afiseze un text, pentru aceasta trebuie sa importam o nous librarire `HttpResponse`, pe ea o vom folosi pentru ca sa putem afisa textul.
+
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def blog_page():
+	return HttpResponse("You are Awesome")
+```
+salvam fisierul 
+
+La final lansam serverul local. Ne intoarcem la linia de comanda si introducem urmatoarea comanda `python manage.py runserver`. Asigurativa ca linia de comanda este deschis din folderul proiectului.
+
+pentru inceput introduceti 127.0.0.1:8000, in browser, apoi 127.0.0`.1:8000/url in cazul dat **blog**. Pagina trebuie sa afiseze stringul care lati introdus in views.py 
