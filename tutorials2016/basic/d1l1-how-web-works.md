@@ -48,4 +48,31 @@ In spate se intampla multe lucruri interesante, dar mai intai haideti sa descurc
 
 Haideti sa luam un URL generic si sa-i analizam structura:
 
-`https://example.com/group/resource`
+`https://example.com:8000/group/resource`
+
+* `https://` - este protocolul comunicarii
+* `example.com` - este numele resursei
+* `8000` - este portul catre resursa
+* `/group/resoure` - este calea catre pagina concreta a resursei
+
+Protocolul - este doar un set de reguli, o intelegere cum sa comunice intre ele calculatoarele, tot asa cum avem un protocol de a ne saluta cand ne intalnim intre oameni.
+⋅⋅⋅`https://` e varianta securizata a protocului `http://`, care la randul sau e un set de reguli de comunicare a textelor prin web
+
+Numele resursei -  este acel nume dupa care un DNS gaseste IP'ul concret al serverului
+
+Portul -  este doar un numar. Puteti sa-l interpretati ca numarul apartamentului intr-un bloc locativ. 
+⋅⋅⋅ El permite mai multor aplicatii in paralel sa ruleze pe server si sa primeasca mesaje fara se incurce una pe alta (e.g. skype, torrent, web server, etc). Browserele implicit comunica pe portul `80`, dar noi intotdeauna putem "forta" portul comunicarii specificandu-l.
+
+Calea catre pagina concreta -  e deja structura interna a paginilor in cadrul unei aplicatii. In aplicatia creata de noi, aceasta cale o vom defini in dependenta de cum vom dori sa fie apelate diferite pagini create de noi.
+
+## Localhost
+
+Calculatorul vostru personal tot poate actiona ca un web server, caci un web server e doar o aplicatie care ruleaza pe calculator.
+Fiecare calculator are o adresa care inseamna "eu insumi":
+![Request path](/images/www/laptop.png)
+
+Portul `8000` e portul pe care va rula implicit Django, serverul care il vom porni noi.
+
+Deci, pentru a apela la serverul care va rula la noi local, vom apela: `http://127.0.0.1:8000/` sau `http://localhost:8000/`
+
+Dar ajunge atata vorba, cred ca ar fi timpul sa vedem ceva actiune!
