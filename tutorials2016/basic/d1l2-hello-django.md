@@ -79,7 +79,7 @@ Dupa cum observati in stinga editorului sa deschis un tab unde este afisat conti
 
 Intoarcetiva la Linia de Comanda(fereastra cu fundal negru strasnica) si in ea introduceti urmatoarea commanda 
 
-```bash
+```sh
 python manage.py startapp blog
 ``` 
 
@@ -96,9 +96,9 @@ Fisierele cu denumirea **urls.py** sunt responsabile de de URL’urile din proie
 Haideti sa dechidem fisierul urls.py din folder-ul mysite in Sublime Text.  Vom vedea urmatorul cod:
 
 ```python
-
 from django.conf.urls import url
 from django.contrib import admin
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
@@ -107,8 +107,7 @@ urlpatterns = [
 Analizam urmatorul rind de cod  
 
 ```python
-	url(r'^admin/', admin.site.urls)
-
+url(r'^admin/', admin.site.urls)
 ```
 
 Acesta va analiza tot ce noi introducem in Browser si daca va gasi cuvintul cheie `admin` acesta va rederectiona spre URL-urile ale admin 
@@ -155,7 +154,8 @@ from . import views
 Stergem  
 
 ```python
-url(r'^admin/', admin.site.urls)` si `url(r'',('blog.urls'))
+url(r'^admin/', admin.site.urls)
+url(r'',('blog.urls'))
 ```
 
 
@@ -191,7 +191,7 @@ salvam fisierul
 
 La final lansam serverul local. Ne intoarcem la linia de comanda si introducem urmatoarea comanda 
 
-```bash
+```sh
 python manage.py runserver
 ```
 
