@@ -25,7 +25,7 @@ In firefox instructiunile javascript le puteti scrie jos.
 
 Sa testam cateva operatii matematice. Scrieti urmatoarea linie in consola si tastati [Enter]:
 
-```js
+```javascript
 (16 + 21*4) / 2 - 8
 ```
 
@@ -41,20 +41,20 @@ Variabila este ceva ce poate sa se schimbe, e variabila :). Ii setati o valoare,
 Variabila e elementul cheie a oricarui limbaj de programare, in Pascal la fel aveti variabile, si au fix acelasi rol.
 
 Pentru a defini o variabila, cu valoarea 10, puteti scrie asa:
-```js
+```javascript
 var number = 10;
 ```
 
 Aici am declarat variabila `number` cu valoarea `10`. Observati ca nu am zis de ce tip e `number` - Javascript e un limbaj dinamic, el incearca sa inteleaga automat de ce tip sunt variabilelel, in cazul dat - un numar.
 
 Putem folosi aceasta variabila in alte declaratii:
-```js
+```javascript
 var otherNumber = number + 5;
 ```
 Desigur `otherNumber` va avea valoarea 15.
 
 Pentru a defini un sir de caractere doar punem in jurul textului ghilimele simple sau duble:
-```js
+```javascript
 var h = "Hello "
 var w = 'World!'
 console.log(h + w)
