@@ -10,8 +10,6 @@ Stiati voi oare ca aveti un puterea unui limbaj de programare in aplicatia folos
 
 Acest limbaj se numeste `javascript`. Haideti sa incercam sa vedem cum il putem dresa sa ne asculte!
 
-[TOC]: # Teme adresate:
-
 ## Experiments
 
 Cel mai simplu mod sa incepeti sa experimentati cu `javascript` este sa deschideti consola browserului vostru si sa incepeti a scrie direct acolo.
@@ -127,5 +125,80 @@ if (c < 30) {
 Instructiunea `switch` ne permite sa executam unul din mai multe blocuri in dependenta de conditie:
 
 ```javascript
+var day;
+switch (new Date().getDay()) { 
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+
+console.log(day);
+```
+
+Instructiunea `new Date().getDay()` ne permite sa obtinem ziua curenta a saptamanii ca un numar de la 0 la 6.
+
+## Cicluri (for, while)
+
+Orice limbaj de programare are notiunea de a executa instructiuni in ciclu. Javascript are cateva:
+
+Ciclul `while` ne permite sa executam un grup de instructiuni de multe ori atat timp cat o conditie e adevarata:
+
+```javascript
+var i = 0;
+while (i < 10) {
+    console.log(i)
+    i++             // adunam 1 la i, echivalent cu i = i + 1
+}
+```
+
+Codul de mai sus va afisa la consola cifrele de la 0 la 9, deoarece in momentul cand va fi variabila `i` va deveni `10`, conditia va fi falsa
+
+Ciclul `for` echivalent al blocului de mai sus ar fi: 
+
+```javascript
+for (i = 0; i < 10; i++) {
+    console.log(i)
+}
+```
+
+Observati ca el combina 3 instructiuni intre paranteze:
 
 ```
+for (instructiune1; instructiune2; instructiune3;) {
+    ...
+}
+```
+
+- `instructiune1` - e initializarea unei variabile, deobicei
+- `instructiune2` - e conditia de continuitate, fix ca in while
+- `instructiune3` - e instructiunea care sa o execute dupa fiecare ciclu (deobicei e o crestere/descrestere a variabilei)
+
+Oricare din aceste instructiuni poate fi omisa, daca nu e relevanta, ba mai mult, pot fi omise toate 3!
+
+```javascript
+for (;;) {      // ciclu infinit
+    ...
+}
+
+while (true) {  // la fel ciclu infinit
+    ... 
+}
+```
+
