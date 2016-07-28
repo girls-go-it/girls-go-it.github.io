@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Intro to Javascript
-<!--category: advanced-->
+category: advanced
 ---
 
 # Hello Javascript!
@@ -202,3 +202,89 @@ while (true) {  // la fel ciclu infinit
 }
 ```
 
+## Functii
+
+Cand vrem sa reutilizam o bucata de cod, ar fi bine sa-l putem grupa si defini sub un nume, ca sa-l putem dupa asta apela dupa acest nume. Acesta e rolul functiilor!
+
+Functia in javascript se defineste foarte simplu:
+
+```javascript
+function max(a, b) {    // functia cu numele 'max' si cu 2 parametri 'a' si 'b'
+    if (a > b) {
+        return a        // intoarcem un raspuns
+    } else {
+        return b        // intoarcem un raspuns
+    }
+}
+```
+
+Sa apelam aceasta functie e la fel de simplu:
+
+```javascript
+max(3, 5)
+```
+
+Observati ca folosim numele functiei, si intre paranteze specificam valorile pentru parametrii functiei, ca valori putem transmite si alte variabile, desigur.
+
+## Arrays
+
+Un array in javascript e o colectie de elemente, grupate sub o singura variabila:
+
+```javascript
+var nothing = []    // array gol
+var fruits = ['apple', 'orange', 'carrot', 'kiwi']  // array cu valori
+var primes = [2, 3, 5, 7] // array de numere
+```
+
+Un array se defineste prin paranteze patrate `[...]`, si poate contine zero sau mai multe valori.
+
+Pentru a accesa un element din array, il referim dupa indexul lui (ordinea in array):
+ 
+```javascript
+console.log('first prime is ' + primes[0])      // accesam numarul '2'
+console.log(fruits[2] + ' is not a fruit!')     // accesam cuvantl 'carrot'
+```
+
+Pentru a schimba valoarea unui element putem sa-l accesam si sa-i setam indata valoarea:
+
+```javascript
+fruits[2] = 'mango'     // setam valoarea pentru al 3'lea element din array
+console.log(fruits[2] + ' is a fruit! maybe')
+```
+
+
+> Nota: In marea majoritate a limbajelor de programare, numaratoare se incepe intotdeauna de la 0!. 
+Deci primul element e `arr[0]`, al doilea e `arr[1]`, etc.
+
+Un array in javascript are multe proprietati si functii interesante:
+
+Pentru a afla lungimea unui array (cate elemente contine) putem scrie:
+
+```javascript
+fruits.length;
+```
+
+Pentru a adauga un nou element la array putem scrie:
+
+```javascript
+fruits.push('cherry')       // adaugam un element nou la sfarsit
+fruits.unshift('lemon')     // adaugam un element nou la inceput
+```
+
+Pentru a sterge un element din array putem scrie: 
+
+```javascript
+fruits.pop()     // stergem un element de la sfarsitul array'ului
+fruits.shift()   // adaugam un element de la inceputul array'ului
+```
+
+Pentru a face modificari in mijlocul unui array putem folosi metoda splice:
+
+```javascript
+fruits.splice(2, 0, 'banana')   // adaugam o 'banana' pe pozitia a treia in array
+fruits.splice(3, 1)             // stergem al 4-lea element
+```
+
+## Objects
+
+.. To be defined :wink:

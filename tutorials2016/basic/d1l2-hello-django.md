@@ -79,7 +79,11 @@ Dupa cum observati in stinga editorului sa deschis un tab unde este afisat conti
 
 Intoarcetiva la Linia de Comanda(fereastra cu fundal negru strasnica) si in ea introduceti urmatoarea commanda 
 
-`python manage.py startapp blog`, **blog** este denumirea applicatiei, puteti sa o schimbati 
+```bash
+python manage.py startapp blog
+``` 
+
+**blog** este denumirea applicatiei, puteti sa o schimbati 
 
 Acesta commanda va crea applicatie in proiectul dorit,  aici se vor contine toate fisierele care vor fi direct responsabile de site-ul care il creati(URL’uri, imagini, text etc)
 
@@ -106,9 +110,11 @@ Analizam urmatorul rind de cod
 	url(r'^admin/', admin.site.urls)
 
 ```
+
 Acesta va analiza tot ce noi introducem in Browser si daca va gasi cuvintul cheie `admin` acesta va rederectiona spre URL-urile ale admin 
 
 Adaugam  urmatorul rind de cod 
+
 ```python
 
 from django.conf.urls import url
@@ -134,11 +140,30 @@ Deschidem fisierul **urls.py**  din folderul **mysite**, apasam **ctrl-A** si ap
 
 Si incepem sa editam acest fisier pentru ca sa cream URL-lul a aplicatiei noastre 
 
-Stergem `from django.contrib import admin` si adaugam in locul ei `from . import views` 
+Stergem 
 
-Stergem  `url(r'^admin/', admin.site.urls)` si `url(r'',('blog.urls'))`
+```python
+from django.contrib import admin
+```
 
-In locul lor adaugam  `url(r'^denumirea_urlui', views.blog_page)` 
+si adaugam in locul ei
+ 
+```python
+from . import views
+```
+
+Stergem  
+
+```python
+url(r'^admin/', admin.site.urls)` si `url(r'',('blog.urls'))
+```
+
+
+In locul lor adaugam  
+
+```python
+url(r'^denumirea_urlui', views.blog_page)
+``` 
 
 Dar totusi aplicatia noastra nu stie de nici o pagina cu denumirea **blog_page** in cazul dat. 
 
@@ -149,22 +174,27 @@ Dechidem fisierul **views.py** din folderul applicatiei(blog), aici noi declaram
 ```python
 from django.shortcuts import render
 
-
 # Create your views here.
 ```
-
 
 Pentru moment noi dorim ca pagina noastra sa ne afiseze un text, pentru aceasta trebuie sa importam o nous librarire `HttpResponse`, pe ea o vom folosi pentru ca sa putem afisa textul.
 
 ```python
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
+
 def blog_page():
 	return HttpResponse("You are Awesome")
 ```
+
 salvam fisierul 
 
-La final lansam serverul local. Ne intoarcem la linia de comanda si introducem urmatoarea comanda `python manage.py runserver`. Asigurativa ca linia de comanda este deschis din folderul proiectului.
+La final lansam serverul local. Ne intoarcem la linia de comanda si introducem urmatoarea comanda 
+
+```bash
+python manage.py runserver
+```
+
+Asigurativa ca linia de comanda este deschis din folderul proiectului.
 
 pentru inceput introduceti 127.0.0.1:8000, in browser, apoi 127.0.0`.1:8000/url in cazul dat **blog**. Pagina trebuie sa afiseze stringul care lati introdus in views.py 
