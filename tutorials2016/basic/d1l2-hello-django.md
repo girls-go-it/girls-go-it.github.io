@@ -9,7 +9,7 @@ category: basic
 ### 1. Instalarea Sublime Text
 ![Sublime Text](https://cdn.tutsplus.com/net/uploads/legacy/1140_st2plugins/200u.jpg)
 
-&nbsp; &nbsp;  ** Sublime Text** este un editor de cod util deoarece el ofera multe optiuni  ajutor programistului ca: auto-recunoastere de limbaj, evidentiere multi-colora a codului etc. 
+&nbsp; &nbsp;  **Sublime Text** este un editor de cod util deoarece el ofera multe optiuni  ajutor programistului ca: auto-recunoastere de limbaj, evidentiere multi-colora a codului etc. 
 &nbsp;  &nbsp;  Pentru ca sa il instalam, accesam linkul : [https://www.sublimetext.com/3](https://www.sublimetext.com/3) si alegem versiunea care coencide cu sistemul nostru de operare pentru descarcare.
 &nbsp;  &nbsp; Dupa descarare il instalam in locatia dorita ca ori si ce alta programa 
 
@@ -95,10 +95,9 @@ Haideti sa dechidem fisierul urls.py din folder-ul mysite in Sublime Text.  Vom 
 
 from django.conf.urls import url
 from django.contrib import admin
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
+]
 ```
 
 Analizam urmatorul rind de cod  
@@ -107,3 +106,65 @@ Analizam urmatorul rind de cod
 	url(r'^admin/', admin.site.urls)
 
 ```
+Acesta va analiza tot ce noi introducem in Browser si daca va gasi cuvintul cheie `admin` acesta va rederectiona spre URL-urile ale admin 
+
+Adaugam  urmatorul rind de cod 
+```python
+
+from django.conf.urls import url
+from django.contrib import admin
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'',('blog.urls'))
+]
+```
+  
+Dar daca ne uitam in folderul **blog** sau mai general folderul applicatiei in proiect
+
+![ProjectFolder](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13838298_1352282814799482_1426844409_o.png?oh=02bf6e530484150d50fa640bca89e726&oe=579AD32D) 
+
+Observam ca fisierul **urls.py** lipseste din folderul applicatiei blog. Inseamna ca trebuie sa il adaugam
+
+Apasam **Click Dreapta** pe folderul applicatiei, in cazul dat **blog** si dam click la ** New File**
+
+Apoi mai jos dam denumirea fisierului **urls.py**. Asa am creat un fisier python. 
+![URLS](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13639382_1352542781440152_90438662_o.png?oh=b1160c01d8d60f456c56ccca52c74652&oe=579AC43A)
+
+Deschidem fisierul **urls.py**  din folderul **mysite**, apasam **ctrl-A** si apoi **ctrl-C** pentru a copia continutul fisierului. In **urls.py** din folderul applicatiei(blog in cazul dat) apasti **ctrl-V** pentru a insera continutul in fisierul nou. Apoi **ctrl-S** pentru a salva fisierul.
+
+Si incepem sa editam acest fisier pentru ca sa cream URL-lul a aplicatiei noastre 
+
+Stergem `from django.contrib import admin` si adaugam in locul ei `from . import views` 
+
+Stergem  `url(r'^admin/', admin.site.urls)` si `url(r'',('blog.urls'))`
+
+In locul lor adaugam  `url(r'^denumirea_urlui', views.blog_page)` 
+
+Dar totusi aplicatia noastra nu stie de nici o pagina cu denumirea **blog_page** in cazul dat. 
+
+Observam ca inainte de **blog_page** avem **views** urmat de un punct. Prin asa metoda noi chemam o functie sau alte componente dintrun fisier, in cazul nostru **views**. 
+ 
+Dechidem fisierul **views.py** din folderul applicatiei(blog), aici noi declaram orice pagina in felul urmator
+
+```python
+from django.shortcuts import render
+
+
+# Create your views here.
+```
+
+
+Pentru moment noi dorim ca pagina noastra sa ne afiseze un text, pentru aceasta trebuie sa importam o nous librarire `HttpResponse`, pe ea o vom folosi pentru ca sa putem afisa textul.
+
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+def blog_page():
+	return HttpResponse("You are Awesome")
+```
+salvam fisierul 
+
+La final lansam serverul local. Ne intoarcem la linia de comanda si introducem urmatoarea comanda `python manage.py runserver`. Asigurativa ca linia de comanda este deschis din folderul proiectului.
+
+pentru inceput introduceti 127.0.0.1:8000, in browser, apoi 127.0.0`.1:8000/url in cazul dat **blog**. Pagina trebuie sa afiseze stringul care lati introdus in views.py 
