@@ -53,6 +53,7 @@ Putem folosi aceasta variabila in alte declaratii:
 ```javascript
 var otherNumber = number + 5;
 ```
+
 Desigur `otherNumber` va avea valoarea 15.
 
 Pentru a defini un sir de caractere doar punem in jurul textului ghilimele simple sau duble:
@@ -62,5 +63,18 @@ var h = "Hello "
 var w = 'World!'
 console.log(h + w)
 ```
+
 Observati ca nu am pus `;` la sfasitul instructiunilor de data asta, in javascript `;` la sfarsit sunt optionale, limbajul le cere doar in cazuri rare cand nu poate deduce singur cand se termina o instructiune si se incepe alta.
-`console.log()` e functie ce afiseaza la consola, in cazul dat ea va afisa `Hello World!`.
+Functia `console.log()` afiseaza ceva la consola, in cazul dat ea va afisa `Hello World!`.
+
+Variabilele de tip boolean (de logica) se definesc la fel de simplu:
+
+```javascript
+var test = true
+test = !test            // operatia NOT (negare)
+test = test || true     // operatia OR  (sau)
+test = test && false    // operatia AND (si)
+
+console.log(test == true)   // testam pentru egalitate
+console.log(test != true)   // testam pentru inegalitate
+```
