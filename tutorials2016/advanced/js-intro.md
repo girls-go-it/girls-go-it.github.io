@@ -65,7 +65,7 @@ console.log(h + w)
 ```
 
 Observati ca nu am pus `;` la sfasitul instructiunilor de data asta, in javascript `;` la sfarsit sunt optionale, limbajul le cere doar in cazuri rare cand nu poate deduce singur cand se termina o instructiune si se incepe alta.
-Functia `console.log()` afiseaza ceva la consola, in cazul dat ea va afisa `Hello World!`.
+<br>Functia `console.log()` afiseaza ceva la consola, in cazul dat ea va afisa `Hello World!`.
 
 Variabilele de tip boolean (de logica) se definesc la fel de simplu:
 
@@ -78,3 +78,17 @@ test = test && false    // operatia AND (si)
 console.log(test == true)   // testam pentru egalitate
 console.log(test != true)   // testam pentru inegalitate
 ```
+
+## IF (Conditionale)
+
+In javascript putem pune o conditie, care ne va permite sa executam diferite actiuni in dependenta daca conditia asta se adevereste sau nu:
+
+```javascript
+var a = 10;
+if (a < 20) {
+    console.log(a + ' e mai mic ca 20')
+}
+```
+
+> Hint: cand apasati [Enter] consola incearca sa execute instructiunea, si daca ea nu-i finisata, da eroare. 
+Ca sa scrieti o instructiune pe mai multe randuri, tastati [Shift + Enter]
