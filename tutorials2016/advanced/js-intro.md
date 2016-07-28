@@ -84,11 +84,49 @@ console.log(test != true)   // testam pentru inegalitate
 In javascript putem pune o conditie, care ne va permite sa executam diferite actiuni in dependenta daca conditia asta se adevereste sau nu:
 
 ```javascript
-var a = 10;
+var a = 10
 if (a < 20) {
     console.log(a + ' e mai mic ca 20')
 }
 ```
 
-> Hint: cand apasati [Enter] consola incearca sa execute instructiunea, si daca ea nu-i finisata, da eroare. 
+> Hint: cand apasati [Enter] consola, Chrome incearca sa execute instructiunea, si daca ea nu-i finisata, da eroare. 
 Ca sa scrieti o instructiune pe mai multe randuri, tastati [Shift + Enter]
+
+Observati ca e construit din cuvantul cheie `if`, intre `(...)` se pune conditia care o verificam, 
+dupa care intre `{ ... }` scriem instructiunile care sa se execute in caz ca conditia intre `(...)` e adevarata
+`
+
+Putem adauga `else` la conditia `if` pentru a specifica instructiuni care sa se execute in caz daca conditia nu e adevarata:
+
+```javascript 
+var b = 25
+if (b < 20) {
+    console.log(b + ' e mai mic ca 20')            // se executa daca b < 20
+} else {
+    console.log(b + ' e mai mare sau egal cu 20')  // se executa daca !(b < 20), adica b >=20
+}
+```
+
+Instructiunea `else if` ne permite sa adaugam o noua conditie in caz ca conditia `if` nu e adevarata:
+
+```javascript
+var c = 30
+if (c < 30) {
+    console.log(c + ' e mai mic ca 30')   // se executa daca c < 30
+} else if (c > 30) {
+    console.log(c + ' e mai mare ca 30')  // se executa daca c > 30
+} else {
+    console.log(c + ' este egal cu 30')   // se executa daca c == 30
+}
+```
+
+## Switch
+
+Instructiunea `switch` ne permite sa executam unul din mai multe blocuri in dependenta de conditie:
+
+```javascript
+
+```
+
+:smile: 
