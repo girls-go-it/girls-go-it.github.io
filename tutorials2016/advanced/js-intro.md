@@ -32,3 +32,32 @@ Sa testam cateva operatii matematice. Scrieti urmatoarea linie in consola si tas
 Obtinem raspunsul la univers si tot absolut:
 ![Console run](/images/js-intro/console-run.png)
 
+Desigur putem folosi consola din browser si javascript ca un calculator in continuare, dar... e totusi un limbaj intreg, poate mult mai multe!
+
+## Variabile
+
+Javascript e un limbaj de programare. Orice limbaj de programare are notiunea de variabila.
+Variabila este ceva ce poate sa se schimbe, e variabila :). Ii setati o valoare, apoi puteti sa-i setati alta, daca vreti. Puteti sa cititi valoarea ei accesandu-i numele, puteti s-o transmiteti ca parametru la functii, etc.
+Variabila e elementul cheie a oricarui limbaj de programare, in Pascal la fel aveti variabile, si au fix acelasi rol.
+
+Pentru a defini o variabila, cu valoarea 10, puteti scrie asa:
+```js
+var number = 10;
+```
+
+Aici am declarat variabila `number` cu valoarea `10`. Observati ca nu am zis de ce tip e `number` - Javascript e un limbaj dinamic, el incearca sa inteleaga automat de ce tip sunt variabilelel, in cazul dat - un numar.
+
+Putem folosi aceasta variabila in alte declaratii:
+```js
+var otherNumber = number + 5;
+```
+Desigur `otherNumber` va avea valoarea 15.
+
+Pentru a defini un sir de caractere doar punem in jurul textului ghilimele simple sau duble:
+```js
+var h = "Hello "
+var w = 'World!'
+console.log(h + w)
+```
+Observati ca nu am pus `;` la sfasitul instructiunilor de data asta, in javascript `;` la sfarsit sunt optionale, limbajul le cere doar in cazuri rare cand nu poate deduce singur cand se termina o instructiune si se incepe alta.
+`console.log()` e functie ce afiseaza la consola, in cazul dat ea va afisa `Hello World!`.
