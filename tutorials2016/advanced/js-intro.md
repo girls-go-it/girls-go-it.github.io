@@ -10,6 +10,7 @@ Stiati voi oare ca aveti un puterea unui limbaj de programare in aplicatia folos
 
 Acest limbaj se numeste `javascript`. Haideti sa incercam sa vedem cum il putem dresa sa ne asculte!
 
+[TOC]: # Teme adresate:
 
 ## Experiments
 
@@ -128,5 +129,3 @@ Instructiunea `switch` ne permite sa executam unul din mai multe blocuri in depe
 ```javascript
 
 ```
-
-:smile: 
