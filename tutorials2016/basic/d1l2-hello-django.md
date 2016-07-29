@@ -60,7 +60,7 @@ Aceasta comanda automat va genera toate fisierele necesare noua ca sa lucram in 
 
 Dupa rularea acestei comande, deschideti folderul in care lucrati, daca tot a decurs bine, folderul trebuie sa contina urmatoarele fisiere
 
-![Folder](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13662648_1351761801518250_1980309842_o.png?oh=2ebefbd79aadaa5fc5477d4ed8f4e42b&oe=579A9B8C)
+![Folder](/images/django/13639382_1352542781440152_90438662_o.png)
 
 
 Pentru momemnt deschideti editorul **Sublime Text**. In coltul sting sus accesati tabul File, acolo veti gasi optiunea Open Folder
