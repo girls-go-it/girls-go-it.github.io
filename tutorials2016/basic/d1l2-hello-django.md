@@ -60,7 +60,7 @@ Aceasta comanda automat va genera toate fisierele necesare noua ca sa lucram in 
 
 Dupa rularea acestei comande, deschideti folderul in care lucrati, daca tot a decurs bine, folderul trebuie sa contina urmatoarele fisiere
 
-![Folder](/images/django/13639382_1352542781440152_90438662_o.png)
+![img](/home/maylace/girls-go-it.github.io/images/django/img1.png) 
 
 
 Pentru momemnt deschideti editorul **Sublime Text**. In coltul sting sus accesati tabul File, acolo veti gasi optiunea Open Folder
