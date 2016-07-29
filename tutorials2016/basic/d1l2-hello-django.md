@@ -69,11 +69,11 @@ Pentru momemnt deschideti editorul **Sublime Text**. In coltul sting sus accesat
 
 Gasiti folderul care contine proiectul, evidentiati cu un click folderul si apasati Open. Important e doar sa evedentiati si sa nu faceti dublu click pe folder. 
 
-![OpenFolder](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13833096_1351771711517259_1251096350_o.png?oh=5a9f67188acbbe1af73c2a8bc58aa259&oe=5799966F)
+![OpenFolder](/images/django/img2.png)
 
 Dupa cum observati in stinga editorului sa deschis un tab unde este afisat continutul folderului care a fost selectat. Acesta ne ajuta mai usor sa ne orientam in fisierele noastre fara ca sa parasim editorul. 
 
-![FileHeriarchy](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13839755_1351777404850023_198335560_o.png?oh=9c1ba0f6c02e06fb8141fe9392e8d562&oe=579982AD)
+![FileHeriarchy](/images/django/img3.png)
 
 ## Partea de applicatie 
 
@@ -89,8 +89,7 @@ Acesta commanda va crea applicatie in proiectul dorit,  aici se vor contine toat
 
 In urma executarii acesteti comande , in folderul proiectului trebuie sa apara un nou folder
 
-![File](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13839876_1351807928180304_769299373_o.png?oh=a52181e45bb5f8ce5f83024f72d7f058&oe=579A75BB)
-
+![File](/images/django/img4.png)
 Fisierele cu denumirea **urls.py** sunt responsabile de de URL’urile din proiect si aplicatia care o creati. 
 
 Haideti sa dechidem fisierul urls.py din folder-ul mysite in Sublime Text.  Vom vedea urmatorul cod:
@@ -126,14 +125,14 @@ urlpatterns = [
   
 Dar daca ne uitam in folderul **blog** sau mai general folderul applicatiei in proiect
 
-![ProjectFolder](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13838298_1352282814799482_1426844409_o.png?oh=02bf6e530484150d50fa640bca89e726&oe=579AD32D) 
+![ProjectFolder](/images/django/img5.png) 
 
 Observam ca fisierul **urls.py** lipseste din folderul applicatiei blog. Inseamna ca trebuie sa il adaugam
 
 Apasam **Click Dreapta** pe folderul applicatiei, in cazul dat **blog** si dam click la ** New File**
 
 Apoi mai jos dam denumirea fisierului **urls.py**. Asa am creat un fisier python. 
-![URLS](https://scontent-frt3-1.xx.fbcdn.net/v/t35.0-12/13639382_1352542781440152_90438662_o.png?oh=b1160c01d8d60f456c56ccca52c74652&oe=579AC43A)
+![URLS](/images/django/img6.png)
 
 Deschidem fisierul **urls.py**  din folderul **mysite**, apasam **ctrl-A** si apoi **ctrl-C** pentru a copia continutul fisierului. In **urls.py** din folderul applicatiei(blog in cazul dat) apasti **ctrl-V** pentru a insera continutul in fisierul nou. Apoi **ctrl-S** pentru a salva fisierul.
 
