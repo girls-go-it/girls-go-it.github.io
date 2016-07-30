@@ -27,11 +27,11 @@ Sunt mai multe companii care ofera servicii de hosting, si mai multe tipuri de s
 
 Heroku este un serviciu care ofera un mediu prestabilit, si este gratis pentru utilizatorii care au cel mult 5 aplicatii web. Pentru a folosi acest serviciu este nevoie de a te inregistra pe link-ul de 
 
-[aici](https://www.heroku.com/).
+[](https://www.heroku.com/).
 
 Deasemenea, este nevoie de instalat un program care sa ruleze la noi in calculator. Astfel, vom descarca Heroku Toolbelt de pe acest 
 
-[link](https://toolbelt.heroku.com/windows)
+[](https://toolbelt.heroku.com/windows)
 
 Dupa ce am descarcat fisierul executabil de pe website, il rulam si instalam ca pe un program obisnuit pe windows. Un exemplu de cum ar trebui sa arate este in imaginea urmatoare:
 
