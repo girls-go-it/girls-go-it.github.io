@@ -59,7 +59,7 @@ python-3.5.1
 ```
 
 ####Procfile
-Procfile este un text file care deasemenea se afla in directoria principala a proiectului nostru ce defineste tipurile de procese si declara explicit ce comanda trebuie executate pentru a rula aplicatia noastra. Asadar cream un fisier "Procfile", si scrim in felul urmator:
+Procfile este un fisier de tip text care, deasemenea, se afla in directoria principala a proiectului nostru, ce defineste tipurile de procese si declara explicit ce comenzi trebuie executate pentru a rula aplicatia noastra. Asadar cream un fisier "Procfile", si scrim in felul urmator:
 
 ```web: gunicorn schoolproject.wsgi:application --log-file -```
 
@@ -91,14 +91,14 @@ application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
 ```
 
-Si mai este nevoie de a crea o directorie pentru a asigura utilizarea fileurilor statice asa ca imaginile si file-urile css.
+Si mai este nevoie de a crea o directorie pentru a asigura utilizarea fisierelor statice asa ca imaginile si fisierele .css si .javascript.
 Asadar, dupa exemplul de mai jos creati fisierele ca in imaginea urmatoare:
 
 [Directoriu static in directoriu principal al proiectului](/images/www/static_creation_deploy.png)
 
-Pentru a face posibila deployment-ul a mai multe versiuni, iterativ a websiteului este nevoie de utilizat un sistem care sa aiba grija de versionarea codului in mod corect. Cel mai raspandit sistem de versiune in prezent este GIT. De aceea deployment-ul pe platforma heroku este utilizat GIT pentru a crea o repositorie.
+Pentru a face posibil deployment-ul a mai multe versiuni, iterativ a websiteului este nevoie de utilizat un sistem care sa aiba grija de versionarea codului in mod corect. Cel mai raspandit sistem de versiune in prezent este GIT. De aceea deployment-ul pe platforma heroku este utilizat GIT ca forma de actualizare a aplicatiei web.
 
-Astfel pentru a initia repositoria scrim:
+Astfel pentru a initia repositoria scrim in linia de comanda:
 ```git init```
 
 Cream un fisier "`.gitignore`" in directoria principala a proiectului si in el scrim:
@@ -111,8 +111,8 @@ Cream un fisier "`.gitignore`" in directoria principala a proiectului si in el s
 
 Dupa care scrim urmatoarele comenzi:
 ```
-git add .
-git commit -m "Initial commit"
+	git add .
+	git commit -m "Initial commit"
 ```
 
 Dupa care mai scrim inca o data comanda ```heroku login```.
