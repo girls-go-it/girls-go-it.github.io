@@ -9,28 +9,9 @@ category: basic
 
 HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-Aici vei învăța cum să creezi propria pagină HTML. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Scrie în terminal următorul rând:
+Aici vei învăța cum să creezi propria pagină HTML. Pentru început trebuie doar să deschizi terminalul în directoriul proiectului, in folderul `static`. Crează un document și numește-l pagina.html
 
-In Windows 
-
-```bash
-copy nul pagina.html
-```
-
-In Linux
-
-```bash
-touch pagina.html
-```
-
-
-
-<div class="custom-image"><img src="https://67.media.tumblr.com/faaf3c0b73c7589bc96f50d634b56ad6/tumblr_oapijqOnCs1vb8jc0o1_1280.gif" /></div>
-
-
-
-
-În sublime, editati pagina creata si scrie următorul cod:
+În sublime, editează pagina creata si scrie următorul cod:
 
 ```html
 <!DOCTYPE html>
@@ -70,10 +51,10 @@ Mergi în browser și fă refresh la pagină, apăsând F5.
 <div class="custom-image"><img src="https://40.media.tumblr.com/608939367baa09e1eff7587c72bf58f3/tumblr_nt16zrdU6x1udztn8o1_1280.png" /></div>
 
 
-Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin mine, încadrată între tagurile `<p></p>`, precum în exemplul de mai jos:
+Următorul pas este învățarea paragrafelor. Pentru a scrie un paragraf, deschide sublime-ul și scrie orice secțiune de text care-ți trece prin minte, încadrată între tagurile `<p></p>`, precum în exemplul de mai jos:
 
 ```html
-<p>Savannah is the most beautiful place.</p>
+<p>We love HTML more than you think.</p>
 ```
 
 Stilizează acest paragraf, dându-i proprietățile:
@@ -82,57 +63,57 @@ Stilizează acest paragraf, dându-i proprietățile:
 <p style="color:blue; font-size: 24px; text-align: center">
 ```
 
-<div class="custom-image"><img src="https://41.media.tumblr.com/eb521c67b6c25039afbfc7b3ea11d5f2/tumblr_nt4t86jlRq1udztn8o2_1280.png" /></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/1.png" /></div>
 
 
 Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți cum se scriu așa numitele titluri, sau ”headings”. Pentru a scrie un heading, trebuie să incluzi între taguri denumirea acestuia. Reține, tagurile pentru heading încep de la 1 până la 6, iar dimensiunea este descrescătoare odată cu mărirea numărului de pe lângă h. Deci, pentru a vedea diferența, scrie următoarele rânduri în fișirul .html:
 
 ```html
-    <p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p> -->
-    <h1 style="color: #696969; font-family: Ubuntu">Lions</h1>
-    <h2 style="color: #500000 ; font-family: Ubuntu">Cheetah</h2>
-    <h3 style="color: #00CC33; font-family: Ubuntu">Leopards</h3>
-    <h4 style="color: #00FFFF; font-family: Ubuntu">Elephants</h4>
-    <h5 style="color: #6633CC; font-family: Ubuntu">Giraffe</h5>
-    <h6 style="color: #696969; font-family: Ubuntu">Zebra</h6>
+    <p style="color:blue; font-size: 24px; text-align: center">Lista de heading-uri:</p> -->
+    <h1 style="color: #696969; font-family: Ubuntu">Acesta este un Heading 1</h1>
+    <h2 style="color: #500000 ; font-family: Ubuntu">Acesta este un Heading 2</h2>
+    <h3 style="color: #00CC33; font-family: Ubuntu">Acesta este un Heading 3</h3>
+    <h4 style="color: #00FFFF; font-family: Ubuntu">Acesta este un Heading 4</h4>
+    <h5 style="color: #6633CC; font-family: Ubuntu">Acesta este un Heading 5</h5>
+    <h6 style="color: #696969; font-family: Ubuntu">Acesta este un Heading 6</h6>
 ```
 
 Observi că fiecărui heading i s-a atribuit proprietăți de culoare și family-font. Poți să le schimbi după propriul plac.
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/09808e0ed0f50c3b384825d5c09c0cb4/tumblr_ntao2jTvQa1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/2.png"/></div>
 
 Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate, neordonate cât și definiție.
 
 Liste ordonate sunt extrem de simple. Un exemplu îl ai chiar în față:
 
 ```html
-<p>Savannah animals I like:</p>
+<p>My hobbies:</p>
 <ol style="font-family: Sans-serif;  color: #993333">
-    <li>Lions</li>
-    <li>Elephants</li>
-    <li>Zebra</li>
+    <li>Writing</li>
+    <li>Reading</li>
+    <li>Dog Walking</li>
 </ol>
 ```
 
 Stilizează această listă cu proprietățile:   style="font-family: Sans-serif;  color: #993333".
 
-<div class="custom-image"><img src="https://40.media.tumblr.com/451fb93a55eda0e1a5636de40c221f3c/tumblr_ntao63ZWD71udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/ol.jpg" /></div>
 
 Drept provocare, te las să încerci și listele neordonate, prin înlocuirea tagurilor `<ol></ol>` cu `<ul></ul>`.
 
 Dacă curiozitatea este atributul tău principal, atunci poți să încerci și listele de definiție.
 
 ```html
-<p style="color:blue; font-size: 24px; text-align: center">Savannah animals I like:</p>
+<p style="color:blue; font-size: 24px; text-align: center">My hobbies:</p>
 <dl>
-    <dt>Lions :</dt>
-    <dd>Rapid</dd>
-    <dd>Strong</dd>
-    <dt>Elephants</dt>
-    <dd>Gray</dd>
+    <dt>Writing :</dt>
+    <dd>Short</dd>
+    <dd>Funny stuff</dd>
+    <dt>Reading :</dt>
+    <dd>Harry Potter</dd>
 </dl>
 ```
-<div class="custom-image"><img src="https://40.media.tumblr.com/51f7a2e741803079e74ddef9293f22c3/tumblr_ntao9cj9es1udztn8o1_1280.png" /></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/dt.jpg" /></div>
 
 Acum că ai însușit paragrafele, titlurile (header) și listele, poți să faci loc și link-urilor. În HTML link-urile sunt definite prin intermediul tag-ului `<a>` sub forma: `<a href="url">link text</a>`.
 
@@ -142,45 +123,9 @@ Exemplu:
 <a href="http://girls-go-it.github.io/tutorials2016/extra-html">Extra info</a>
 ```
 
-Link-urile sunt primul pas spre o pagină web dinamică. Următorul pas sunt formele HTML, care sunt utilizate pentru a transmite date între paginile accesate într-un mod securizat.
-Pentru a crea o formă, utilizezi tag-ul `form` :
+Link-urile sunt primul pas spre o pagină web dinamică. 
 
-```html
-<form action="test2.html" method="get"/>
-  Prenume:<br>
-  <input type="text" name="prenume" value="Mickey"><br>
-  Nume:<br>
-  <input type="text" name="nume" value="Mouse"><br><br>
-  <input type="submit" value="Trimite">
-</form>
-```
-
-Proprietatea `action` a unei forme arată către ce pagină este redirecționat utilizatorul după completarea ei, iar proprietatea `method` arată prin ce metodă aceasta informație este transmisă.
-Ea poate avea 2 valori: `get` și `post`.
-În cazul utilizării metodei `post` valorile selectate/introduse sunt transmise ca parametri ai request-ului HTTP către server și nu sunt afișate în browser.
-Dacă este utilizată metoda `get` atunci valorile formei sunt afișate la capărul URL-ului, ca de exemplu :
-
-```html
-file:///C:/Users/oxrc/test2.html?prenume=Mickey&nume=Mouse
-```
-Exemplu: Aceasta poate fi folositor dacă vrei să-i dai cuiva un link cu anumite valori dintr-o formă (de căutare de exemplu) setate.
-
-O formă poate conține elemente de mai multe tipuri (mai jos urmează o listă de tag-uri prin care sunt realizate acestea):
-
-- `input` - la rândul său poate fi de mai multe feluri (se specifică în atributul `type`)
-  - `text` - câmp scurt de text (cum ar fi numele/parola unui utilizator)
-  - `password` - un câmp pentru introducerea parolei (nu se vor afișa caracterele introduse)
-  - `submit` - buton de trimire a formei
-  - `radio` - mai multe opțiuni din care poți alege doar una (sunt legate între ele prin proprietate `name`)
-  - `checkbox` - zero sau mai multe opțiuni din care poți alege (la fel legate prin proprietatea `name`)
-  - `button` - un simplu buton care nu trimite forma, dar permite acțiuni asupra ei (prin JavaScript de exemplu)
-- `textarea` - oferă o zona mai mare de introducere a textului (de exemplu textul unui articol)
-- `button` - crează butoane simple, dar în care, spre deosebire de cele create utilizând tag-ul `input` poți insera imagini, text sau alt conținut
-- `select` - permite crearea listelor de opțiuni prin intermediul tag-ului `option`.
-
-Mai multă informație despre forme în HTML poți găsi aici: http://www.w3schools.com/html/html_forms.asp
-
-Mai mult decât atât, dacă vrei să adaugi o imagine pe pagina ta, poți să utilizezi:
+Dacă vrei să adaugi o imagine pe pagina ta, poți să utilizezi:
 
 ```html
 <img src="url " alt="Textul in cazul neaparitiei imaginii"/>
@@ -208,16 +153,12 @@ Clasa reprezintă un grup de taguri care au același stil. Avantajul, eficiența
 
 Înțelegerea claselor și a id-urilor pare destul de cețoasă. De aceea, aici se face un nou pas – introducerea CSS-ului. Ce reprezintă? CSS este acronimul pentru Cascading Style Sheets. CSS este un limbaj (style language) care definește "layout-ul" pentru documentele HTML. Acesta acoperă culori, font-uri, margini (borders), linii, înălțime, lățime, imagini de fundal, poziții avansate și multe alte opțiuni. În câteva cuvinte, CSS te ajută să stilizezi pagina după propriul plac.
 
-Deschide terminalul și, în directoriul proiectului, în folderul static, creează un fișier cu extensia .css:
+In folderul curent crează un fișier cu numele style.css
 
-```bash
-$ subl layout.css
-```
-
-Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul `.html`. Pentru a include layout.css în `index.html`, în head-ul fișierului din urmă scrie:
+Înainte de a scrie ceva în fișierul cu extensia .css, întoarce-te la fișierul `.html`. Pentru a include style.css în `index.html`, în head-ul fișierului din urmă scrie:
 
 ```html
-<link rel="stylesheet" type="text/css" href="layout.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 ```
 
 Următorul pas este crearea unui id și a unei clase. Pentru asta, ghidează-te după exemplul ce urmează:
