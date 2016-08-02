@@ -287,4 +287,79 @@ fruits.splice(3, 1)             // stergem al 4-lea element
 
 ## Objects
 
-.. To be defined :wink:
+In viata reala o masina e obiect, masa, scaun, etc.. Ele au proprietati (nume, marca, culoare, etc) , si actiuni (merge, opreste, etc) care poti face cu ele.
+
+Un obiect in javascript e un container pentru mai multe proprietati si functii. Functiile in cadrul obiectelor mai sunt numite si metode.
+
+Definirea unui obiect, ca si toate celelalte, e foarte simpla :wink: :
+
+```javascript
+var empty = {}      // obiect gol
+var car = {type:'Fiat', model:'500', color:'white'} // obiect cu mai multe proprietati
+```
+
+Observati ca proprietatile in obiect se seteaza sub forma de pereche: `cheie : valoare`, separate prin virgula.
+cheia e ca numele unei variabile din obiect, prin ea valoarea va fi accesata.
+
+Pentru a accesa proprietatile obiectului car creat, scriem:
+
+```javascript
+console.log(car.type)   // afiseaza 'Fiat'
+car.model = '600'       // setam o noua valoare pentru model
+car.engine = 2000       // adaugam o noua proprietate engine cu valoarea 2000 
+```
+
+Toate proprietatile si functiile obiectelor se acceseaza prin `.`. 
+In acest moment, probabil, incepeti sa va dati seama ca si la array am accesat functii prin `.` - da, un array este un obiect in javascript, si nu doar el!
+
+un sir de caractere, sau cum il vom numi in continuare - string, la fel e un obiect: 
+
+```javascript
+var string = 'Salut Lume! ce mai faceti?'
+console.log(string.length)                  // lungimea string'ului
+
+var pos = string.search("Lume") 
+console.log('cuvantul Lume se incepe pe pozitia ' + pos)
+
+var str2 = string.substring(6, 11)
+console.log(str2)                           // va afisa 'Lume!'
+
+string = string.replace("Lume", "Oameni")   // Trebuie sa atribuim rezultatul cuiva, 
+                                            // nu se schimba insasi string'ul sursa
+console.log(string)                         // va afisa string cu cuvantul 'Lume' inlocuit de 'Oameni'
+```
+
+Obiectul String are mult mai multe metode decat sunt prezentate aici, array la fel.
+Insa cel mai fain, e ca puteti sa extindeti orice obiect si cu functionalitatea voastra, dupa dorinta!
+
+Ca sa definim metode pentru un obiect nou: 
+
+```javascript
+var car = {
+    type: 'Fiat',
+    color: 'white',
+    repaint: function(color) { // 'repaint' va fi numele functiei, si va cere un parametru
+        this.color = color;    // 'this' permite sa accesam proprietatile si functiile din obiectul curent, 
+                               // ca o variabila catre sine
+    }
+    
+console.log(car.color)  // afiseaza 'white'
+car.repaint('red')
+console.log(car.color)  // afiseaza 'red'
+}
+```
+
+Ca sa definim metode si proprietati noi pentru un obiect existent:
+
+```javascript
+car.model = '500'   // doar scriem numele proprietatii dorite si-i dam o valoare,
+                    // se va adauga automat!
+
+car.drive = function(dist) {
+    console.log('brim brim brim, mergem ' + dist + ' km')
+}
+
+console.log(car.model)  // observam ca avem proprietatea noua 'model'
+car.drive(20)           // observam ca avem metoda noua 'drive()'
+```
+
