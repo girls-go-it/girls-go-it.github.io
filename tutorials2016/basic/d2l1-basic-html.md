@@ -63,7 +63,7 @@ Stilizează acest paragraf, dându-i proprietățile:
 <p style="color:blue; font-size: 24px; text-align: center">
 ```
 
-<div class="custom-image"><img src="/images/d5l3-basic-html/1.png" /></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/1.PNG" /></div>
 
 
 Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți cum se scriu așa numitele titluri, sau ”headings”. Pentru a scrie un heading, trebuie să incluzi între taguri denumirea acestuia. Reține, tagurile pentru heading încep de la 1 până la 6, iar dimensiunea este descrescătoare odată cu mărirea numărului de pe lângă h. Deci, pentru a vedea diferența, scrie următoarele rânduri în fișirul .html:
@@ -80,7 +80,7 @@ Fiindcă deja cunoști cum se face un paragraf, este exact timpul să înveți c
 
 Observi că fiecărui heading i s-a atribuit proprietăți de culoare și family-font. Poți să le schimbi după propriul plac.
 
-<div class="custom-image"><img src="/images/d5l3-basic-html/2.png"/></div>
+<div class="custom-image"><img src="/images/d5l3-basic-html/2.PNG"/></div>
 
 Un alt truc pe care-l poți face în HTML, este să creezi liste atât ordonate, neordonate cât și definiție.
 
