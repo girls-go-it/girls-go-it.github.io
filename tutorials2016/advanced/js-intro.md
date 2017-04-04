@@ -363,3 +363,12 @@ console.log(car.model)  // observam ca avem proprietatea noua 'model'
 car.drive(20)           // observam ca avem metoda noua 'drive()'
 ```
 
+Sa stergem proprietati si metode dintr-un obiect e la fel de simplu:
+
+```javascript
+delete car.model    // stergem proprietatea model din car
+
+delete car.drive    // stergem metoda drive() din car
+```
+
+

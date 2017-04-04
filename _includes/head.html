@@ -50,6 +50,21 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+            <div class="link-category">
+                2015
+            </div>
+
+            <ul>
+                {% for p in site.pages %}
+                {% if '2015' in p.url %}
+                <li>
+                    <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
         </div>
     </header>
     {% include side.html %}
