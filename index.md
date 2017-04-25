@@ -7,4 +7,4 @@ title: Hello People
 
 Bine aţi venit! :tulip:
 
-<img src="/images/index.jpg" alt="">
+![Girls Go IT](/images/index.png)
