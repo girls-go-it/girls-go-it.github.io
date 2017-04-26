@@ -3,13 +3,13 @@ layout: default
 title: Hello Flask
 ---
 
-#Hello Flask
+# Hello Flask
 
 Imaginează-ţi că te-aş ruga să tai o bucată de hârtie cu dimensiunile de 50 centimetri pe 50 centimetri. Bănuiesc că ai face asta destul de ușor. Acum taie 1000 de bucăți de hârtie de aceleași dimensiuni. Nu e foarte eficient să măsori bucățile de hârtie de 1000 de ori. O metodă de a soluţiona această problemă ar fi să faci un cadru al unei forme de 50 cm pe 50 cm ce ar permite tăierea hârtiei cu dimensiunile dorite fără măsurarea ei. Cam aceasta ar însemna să folosești un framework (cadru, schelet). Un framework permite efectuarea sarcinilor complicate sau repetitive rapid și eficient. Flask este un **web framework**, adică un framework ce facilitează crearea unui site web.
 
 În acest capitol vei învăța cum să instalezi și să utilizezi **Flask**-ul. Tot de ce este nevoie este un computer cu Python instalat pe el.
 
-###Utilizarea ”Mediului Virtual” *(Virtual Environments)*
+### Utilizarea ”Mediului Virtual” *(Virtual Environments)*
 
 Cea mai bună metodă de a instala Flask-ul este printr-un mediu virtual. Dar ce este un mediu virtual *(virtual environment)*? Pentru a înțelege mai bine acest concept, să facem o analogie cu viața reală. Gândeşte-te la un mediu virtual ca la situația când trebuie să-ţi alegi anumite lucruri în dependență de unde pleci. Un *contra-exemplu* a necesităţii unui mediu virtual este geanta (poşeta) unei fete - acolo, mereu, poţi găsi de toate.
 
@@ -122,7 +122,7 @@ from flask import Flask
 app = Flask(__name__)
 ```
 
-###Back in time - **URL**-uri
+### Back in time - **URL**-uri
 
 Înainte să continuăm analiza programului nostru, îţi mai aminteşti ce este un URL? <br>
 Întocmai, **URL** este un acronim pentru **U**niform **R**esource **L**ocator, și este utilizat pentru a specifica adresa (a unui fișier sau resursă) pe internet *(the World Wide Web)*.
@@ -142,7 +142,7 @@ def index():
 Aici, funcția `index()` este înregistrată la URL-ul de bază al aplicației: **`/`**. Dacă aplicația ar fi lansată pe un server asociat cu domeniul `www.exemplu.com` și veți naviga la `http://www.exemplu.com`, atunci funția `index()` va fi rulată pe server și va fi afișat *Hello World!*, aceasta fiind un **response** (răspuns) - valoare returnată de funcție. <br>
 Funcțiile, ca și `index()`, se numesc **view functions**, funcții care afișează. Un response returnat de o funcție view poate fi un simplu **string** (ca și în cazul nostru), sau poate fi ceva mai complicat, după cum veți vedea mai târziu.
 
-###Modul Debug
+### Modul Debug
 
 Fă o modificare la valoare returnată de funcția `index()`, salvează fișierul și să fă un refresh la pagina din browser. 
 După cum vezi, serverul nu a inclus schimbarea, deoarece el rulează după o versiune mai veche a fișierului `hello.py`. <br>
@@ -161,7 +161,7 @@ app.run(debug = True)
 
 Ambele procedee au exact același efect.
 
-###Adăugăm URL-uri
+### Adăugăm URL-uri
 
 Pentru început să adăugăm unul simplu, ca şi cel pe care l-avem deja. Adaugă următorul cod după funcţia `index()`.
 
@@ -248,7 +248,7 @@ if __name__ == '__main__':
 	app.run(debug = True)
 ```
 
-###Structura unui proiect Flask
+### Structura unui proiect Flask
 
 Acum, că fişierul a devenit atât de mare, cu mult cod şi funcţii, e timpul să vorbim despre structura recomandată a unui proiect Flask, altfel fişierul va continua să crească şi codul va deveni dificil de menţinut. <br>
 
@@ -322,8 +322,8 @@ După aceasta poţi accesa acest fișier la: `localhost:5000/static/<numele-fiș
 
 <div class="custom-image-shadow"><img src="/images/hello_flask/static_page.png" /></div>
 
-#Bonus
-###Zi-i vecinului să-ți acceseze site-ul
+# Bonus
+### Zi-i vecinului să-ți acceseze site-ul
 Pentru a face site-ul vizibil (și accesibil) tuturor **de pe rețeaua locală** trebuie să menționăm acest lucru lui Flask. Modifică ultima linie de cod ca să arate în felul următor:
 
 ```python
@@ -338,7 +338,7 @@ ifconfig
 
 Aceasta va afișa multă informație în consolă, caută ultima coloană, unde scrie `wlan0` și găseşte `inet addr`. Adresa pe care o poţi da vecinului este aceasta.
 
-###*Exerciții:*
+### *Exerciții:*
 Creează workspace-ul pentru proiectul tău
 
 1. Creează un folder unde o să păstrezi noul tău proiect

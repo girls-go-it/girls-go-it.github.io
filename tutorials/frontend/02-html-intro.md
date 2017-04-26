@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basic HTML & CSS
+title: HTML Intro
 category: basic
 ---
 

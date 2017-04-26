@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro to Javascript
+title: Javascript Intro
 category: advanced
 ---
 

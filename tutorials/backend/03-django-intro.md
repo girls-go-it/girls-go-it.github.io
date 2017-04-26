@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Django Project
+title: Django Intro
 category: basic
 ---
 

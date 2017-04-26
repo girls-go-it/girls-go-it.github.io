@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Basic Python Statements
+title: Python Intro
 ---
 
 #Basic Python Statements
