@@ -1,7 +1,7 @@
----
+<!---
 layout: default
 title: Introducere in baze de date
----
+--->
 
 # Introducere in baza de date [[slides](http://slides.com/glebtocarenco/introducere-in-baze-de-date/live#/)]
 In acest tutorial vei primi raspunsuri la sa inrebari ca:

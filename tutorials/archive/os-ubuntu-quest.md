@@ -3,8 +3,8 @@ layout: default
 title: Ubuntu Quest
 ---
 
-#Ubuntu Quest
-##Ce este un sistem de operare?
+# Ubuntu Quest
+## Ce este un sistem de operare?
 Zi de zi ne folosim de calculatoare, telfeoane, televizoare. Acestea sunt un set de piese electronice legate între ele. Ceia ce ne permite interacțiunea cu aceste gadgeturi este un **program** care contrololează dispozitivul. Și odată ce acest **program** devine destul de complex noi îl putem numi sistem de operare.
 
 Un exemplu bun ar fi **Android**. Acesta este un **sistem de operare** care ne permite să utilizăm majoritatea smartfonurilor. Un alt exemplu este **Windows**. Toți ați auzit de el și știeți ce face :smiley_cat:
@@ -23,7 +23,7 @@ Avantajele utilizării acestuia sunt următoarele:
 
 <div class="custom-image"><img src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png" /></div>
 
-##Cum interacționăm cu Ubuntu?
+## Cum interacționăm cu Ubuntu?
 Modul primar de interacționare cu acest sistem de operare este similar cu Windows. Avem Interfața de unde lansăm diferite programe. Navigăm prin directorii pentru a accesa pozele, muzica și fișierele prefereate. Pentru a asculta un cântec facem un dublu click pe acesta, foarte similar cu ce oferă windows.
 
 <div class="custom-image"><img src="http://2.bp.blogspot.com/-omfXnS75kuM/TjK-YxLqAZI/AAAAAAAACRQ/v3-g6RFsgEY/s1600/PCMan+file+manager+in+ubuntu+11.04.png" /></div>
@@ -32,10 +32,10 @@ O altă modalitate mai puțin tradițională este **terminalul**. Chiar dacă pa
 
 <div class="custom-image"><img src="http://i.imgur.com/C1lE1NK.png"></div>
 
-##Ce este un fișier?
+## Ce este un fișier?
 Un fișier este un bloc de informație identificată după o denumire. De exemplu un cântec, sau o poză. Pentru un sistem de operare ele reprezintă una și același lucru, fișier. Însă sunt deja programe speciale care permit ascultarea cântecului, sau vizualizarea pozei. Un exemplu de **nume** a unui fișier arată în următorul fel `song352.mp3` . Textul până la punct reprezintă numele propriu zis, iar textul după punct reprezintă numele formatului fișierului (adică este poză, sau film, sau cântec, sau text). Aceasta nu este nimic altecva decât o convenție pentru ca utilizatorii să înțeleagă mai simplu ce reprezintă fișierul. Extensia simplu poate fi schimbată, însă aceasta nu va schimba formatul fișierului.
 
-##Cum sunt structurate fișierele?
+## Cum sunt structurate fișierele?
 Dacă ai utilizat **Windows** probabil știi de **Discul C** și **Discul D**. Pe **Discul C** de obicei e instalat sistemul de operare propriuzis împreună cu setul de programe care le utilizeizi. Iar deja pe **Discult D** salvezi pozele, cântecele, filmele, și alte fișiere cu care lucrezi.
 
 Situația în Ubuntu este similară. Aici nu sunt prezente **discuri** ca pe Windows. Analogic spus este doar un singur disc și el se numește **/**. Toate fișierele sunt structurate în directorii (în Windows se numesc folders). Și directoriul părinte este **/**. Aici se află întregul sistem de operare împreună cu fișierele personale.
@@ -47,7 +47,7 @@ Toate directoriile marcate cu roșu reprezintă sistemul de operare împreună c
 Directoriile marcate cu albastru sunt la dispoziția ta pentru lucru. Aici vom lucra la poiectele noastre.
 
 
-##Terminal
+## Terminal
 <div class="custom-image"><img src="http://media.giphy.com/media/mwOein9vVjBLO/giphy.gif"></div>
 
 Terminalul este o programă ce permite interacțiunea cu sistemul de operare prin intermediul comenzilor textuale. Scrii ceva în el și primești un rezultat la ecran. Terminalul este folosit pentru un set divers de operații. Cel mai des pentru executarea programelor (ceia ce vom face cel mai des). Apoi pentru navigarea în directorii, crearea fișierelor, directoriilor, instalarea aplicațiilor și alte comenzi.
@@ -81,7 +81,7 @@ Nu ai observat nimic dubios? Dacă te uiți atent la lista de directorii ai să 
 
 <div class="custom-image"><img src="http://i.imgur.com/1UENgxh.png"></div>
 
-####Pro Tip
+#### Pro Tip
 :alien:
 Folosiți cât mai des TAB atunci când scrieti comenzi sau navigați prin directorii, pentru a putea folosi **autocomplete feature**
 
@@ -249,7 +249,7 @@ $ ls
 
 Și aici s-a terminat și sesiunea De **Ubuntu Quest**. Succes în continuare :bouquet:
 
-##Exercițiu
+## Exercițiu
 Executați următoarele comenzi:
 
 ```

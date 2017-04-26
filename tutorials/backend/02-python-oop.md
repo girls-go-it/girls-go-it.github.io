@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Back to Python
+title: Python OOP
 ---
 
 # Back to Python [[slides](http://www.slideshare.net/mihaiiachimovschi/girls-go-it-day-6-training-3-back-to-python)]

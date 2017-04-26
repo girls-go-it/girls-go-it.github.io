@@ -24,40 +24,11 @@
         <div id="sidenav" class="left-menu">
 
             <div class="link-category">
-                MAIN
+                FRONTEND
             </div>
-
             <ul>
                 {% for p in site.pages %}
-                    {% if p.category == "basic" %}
-                    <li>
-                        <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-            <div class="link-category">
-                MORE
-            </div>
-
-            <ul>
-                {% for p in site.pages %}
-                    {% if p.category == "advanced" %}
-                    <li>
-                        <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-
-            <div class="link-category">
-                2015
-            </div>
-
-            <ul>
-                {% for p in site.pages %}
-                {% if p.url contains "2015" %}
+                {% if p.url contains "tutorials/frontend" %}
                 <li>
                     <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
                 </li>
@@ -65,6 +36,31 @@
                 {% endfor %}
             </ul>
 
+            <div class="link-category">
+                BACKEND
+            </div>
+            <ul>
+                {% for p in site.pages %}
+                {% if p.url contains "tutorials/backend" %}
+                <li>
+                    <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+
+            <div class="link-category">
+                ARCHIVE
+            </div>
+            <ul>
+                {% for p in site.pages %}
+                {% if p.url contains "tutorials/archive" %}
+                <li>
+                    <a {% if p.url == page.url %}class="active" {% endif %} href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
         </div>
     </header>
     {% include side.html %}
