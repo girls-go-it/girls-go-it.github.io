@@ -6,73 +6,98 @@ category: basic
 
 
 
-# Cum lucreaza acest internet?
+# Ce este acel internet?
 
-Internetul e un lucru fascinant!
-De fiecare data cand va conectati la o retea, prin cablu sau wifi, va conectati la o retea enorma (si cand zic enorma am in vedere miliarde!) de calculatoare.
+Cu siguranță vă imaginați că internetul arată cam ca routerul wifi de acasă, data center gicante undeva prin lume, numerele care se rotesc printr-un tub.
 
-Cum arata aceasta retea?.. cam asa:
-![Cum arata internetul](http://www.myinsightmag.com/wp-content/uploads/2012/03/wired-610x250.gif)
-
-Daca va mirati ca nu intelegeti nimic,  credeti-ne, nimeni nu intelege :wink: Ba chiar expertii zic, ca daca oamenii ar studia cum lucreaza internetul, s-ar mira cum de el lucreaza in general!
-
-In realitate asta-i o retea de calculatoare conectate intre ele si kilometri de cablu in jurul lumii. Puteti sa vizitati [Submarine Cable Map](http://submarinecablemap.com/) ca sa vedeti cat de complicat e. Iata un mic exeplu: 
-![Internet map](http://tutorial.djangogirls.org/en/how_the_internet_works/images/internet_3.png) 
+![](../../images/hww/the-internet-imagined.jpg)   
 
 
+Care este, în principiu, adevărat dar deasemenea o mare parte a internetului arata cam așa:   
+![](../../images/hww/the-internet.jpg)   
+O rețea masivă ce ne conectează pe întreaga planetă, a cărei suprafață e 71% apă. Ca consecință marea parte a internetului este sub apă, care lucrează prin cabluri de internet subacvatice.
 
-## Dar cum accesez o pagina internet?
+![](../../images/hww/cable.jpg)  
+În mijlocul acestor cabluri se află niște fibre de sticlă extrem de mici, aproximativ de dimensiunea unui fir de păr. Acele fire minuscule sunt internetul. Modul în care lucrează este print transmiterea fotografiilor, videoclipurilor, paginile web ca impulsuri de lumină.   
+Deci **lumină + sticlă = internet**. Yeah, just like magic.
 
-In primul rand trebuie sa constientizam ca nu e posibil sa interconectam intre ele fiecare calculator, de aceea comunicarea se intampla prin intermediari, cam asa:
-![Request path](/images/www/internet_2.png)
+La moment sunt mai mult de 250 de astfel de cabluri active și chiar au și o [hartă](http://submarine-cable-map-2015.telegeography.com/) intercativă.
 
 
-Comunicarea are loc intotdeauna dupa modelul Intrebare - Raspuns. Si anume, calculatorul vostru intreaba un alt calculator din internet ceva fisiere, si el le transmite inapoi ca raspuns:
-![Communication](/images/www/get-response.png)
 
-Acest "alt" calculator, asa numitul server, e la fel ca si calculatorul vostru, doar ca mai puternic - el doar trebuie sa suporte multe multe cereri!
+## Deci cum accezes o pagină web?
 
-Ca sa accesati serverul GOOGLE, spre exemplu, scrieti adresa `www.google.com` in bara de adrese din browser si obtineti bine cunoscuta pagina de cautare.
+The easy way:   
+- Deschizi un browser
+- Scrii adresa ex: `google.com`
+- Și navighezi cu plăcere
 
-In spate se intampla multe lucruri interesante, dar mai intai haideti sa descurcam cateva detalii:
+Acum câteva processe care au loc de la deschiderea browserului până la utilizarea propriuzisă a pagini web.
 
-1. Calculatoarele se acceaseaza intre ele nu prin nume, ci prin o secventa de 4 numere separate prin punct, numita IP, un exemplu de IP ar fi: `212.0.195.168`
+Comunicarea între calculatorul vostru și cel care păstrează pagini web, imagini, video are loc prin modelul    
+- **cerere**
+- **răspuns**
 
-2. Numele (cum ar fi 'google.com') e la fel ca si numele care-l salvati la voi in telefon pentru fiecare numar al prietenilor, familie, etc. Si are doar rolul sa arate memorizabil pentru noi, oamenii, si sa faca legatura cu numarul de telefon sunat.
+Aceste cereri și răspunsuri au un format foarte asemănător cu acele ce le studiem la lecțile de limbă română.
 
-3. Reiese ca avem nevoie si de o "Carte de IP'uri" globala, care sa traduca un nume ca `google.com` intr-un ip ca `212.0.195.168` - aceasta carte globala se numeste DNS (Domain Name Server)
+**Cerere**
+![request](../../images/hww/request.jpg)
+- **User-Agent**: cine cere
+- **Request URL/Remote Address**: pe cine cere
+- **Reuest Method**: tipul cererii
 
-4. Noi putem apela o persoana atat dupa nume (cand e salvata), cat si dupa un numar direct de telefon. In acelasi mod putem accesa serverul google atat dupa numele 'google.com' cat si dupa ip'ul '212.0.195.168'. Recomand sa incercati `http://212.0.195.168` in browserul vostru :wink:
+**Răspuns**
+![response](../../images/hww/response.jpg)
+- **content-type**: tipul conținutului care lai primit
+- **date**: data și timpul când lai primit
+- **status**: o serie de coduri care determină tipul răspunsului
+
+
+Accesând o pagină web, comunicarea nu are loc direct intre `client`(*calculatorul vostru*) și `server`(*un calculator, data center care păstrează acele resurse*).
+![network model](../../images/hww/network.jpg)   
+Cererea este transmisă printr-o rețea de servere, fiecare din el verificând dacă are resursele cerute. Dacă le are, se crează răspunsul și resulsele sunt trimise înapoi către client, dacă nu cererea este transmisă serverului *vecin* până când unu din ele are resursele cerute sau cererea nu ajunge la ultima destinație, cazul dat fiind serverul de la google.
+
+Adresa resurselor cerute sau transmise este formată din o secvență de 4 numere separate prin punct numită **IP** address.   
+Numerele singure nu ne oferă nouă(utilizatorilor) foartă multă informație despre ce pagină web reprezină, unde și plus la asta ar fi ridicol să fii impus să memorizezi zeci de serii de numere pentru a naviga pe internet. De acea ele sunt utilizate doar de calculatoare, iar pentru utiliztor, acestor numere li se atribue un nume informativ și ușor de memorizat.
+
+Spre exemplu:
+- IP-ului `212.0.195.168` îi este atribuit numele `google.com`
+- IP-ului `157.240.11.35` îi este atribuit numele `facebook.com`
+
+Toate aceste sunt intr-o *carte de numere* numită **Domain Name Server(DNS)**. Acesta are rolul de a transforma un nume de genul `google.com` în IP-ul acestuia `212.0.195.168` pentru a fi transmis mai departe până când resursele cerute sunt găsite.
 
 ## URL
 
-Haideti sa luam un URL generic si sa-i analizam structura:
+Cunoaștem deja că URL-ul este adresa folosită pentru obținearea unei pagini web, imagini etc. 
 
+Acesta are și el câteva elemente care joacă un rol diferit în creare unei cereri:   
 `https://example.com:8000/group/resource`
 
-* `https://` - este protocolul comunicarii
-* `example.com` - este numele resursei
-* `8000` - este portul catre resursa
-* `/group/resoure` - este calea catre pagina concreta a resursei
+* `https://` - protocolul comunicarii
+* `example.com` - numele resursei
+* `8000` - portul catre resursa
+* `/group/resoure` - este calea *locală* către o pagina sau resursă numită **path**
 
-Protocolul - este doar un set de reguli, o intelegere cum sa comunice intre ele calculatoarele, tot asa cum avem un protocol de a ne saluta cand ne intalnim intre oameni.
-⋅⋅⋅`https://` e varianta securizata a protocului `http://`, care la randul sau e un set de reguli de comunicare a textelor prin web
+**Protocolul** - un set de reguli ce determină cum are loc transmiterea datelor între `client` și `server`.
+Numele resursei -  nume dupa care un DNS gaseste IP'ul acelei resurse.
 
-Numele resursei -  este acel nume dupa care un DNS gaseste IP'ul concret al serverului
+**Portul** - definește un *tunel* cu anumite restriții și posibilități destinate pentru un scop anume care va fi folosit de un oarecare tip de cere. De exemplu:  
+- Pentru obțtinearea unei pagine web se va folosi portul `80`.   
+- Pentru a obține **Citatul zilei(Quote of the Day)** se va folosi portul `17`.
 
-Portul -  este doar un numar. Puteti sa-l interpretati ca numarul apartamentului intr-un bloc locativ. 
-⋅⋅⋅ El permite mai multor aplicatii in paralel sa ruleze pef server si sa primeasca mesaje fara se incurce una pe alta (e.g. skype, torrent, web server, etc). Browserele implicit comunica pe portul `80`, dar noi intotdeauna putem "forta" portul comunicarii specificandu-l.
-
-Calea catre pagina concreta -  e deja structura interna a paginilor in cadrul unei aplicatii. In aplicatia creata de noi, aceasta cale o vom defini in dependenta de cum vom dori sa fie apelate diferite pagini create de noi.
+**Path** - structura interna a paginilor in cadrul unei aplicatii. Elementele acesteia reprezintă nume de măpi, fișiere sau pagină a unei aplicații.
 
 ## Localhost
 
-Calculatorul vostru personal tot poate actiona ca un web server, caci un web server e doar o aplicatie care ruleaza pe calculator.
-Fiecare calculator are o adresa care inseamna "eu insumi":
-![Request path](/images/www/laptop.png)
+E evident deja că pentru obținerea unei pagini web este necesar să fiți conectați la o rețea de internet. Ceia ce ar însemna că în timpul dezvoltării unei pagini web ar trebui de la început să păstrați acea pagină web pentru a o putea vizualiza în browser.
 
-Portul `8000` e portul pe care va rula implicit Django, serverul care il vom porni noi.
+Din fericire acesta nu este cazul deoarece fiecare calculator poate funcționa ca un web server.
+- este numit **Localhost**
+- ip address **127.0.0.1**
 
-Deci, pentru a apela la serverul care va rula la noi local, vom apela: `http://127.0.0.1:8000/` sau `http://localhost:8000/`
+Și îl accesezi folosind url-ul `http://localhost`.
 
-Dar ajunge atata vorba, cred ca ar fi timpul sa vedem ceva actiune!
+Pentru al putea folosi trebuie să aveți instalat pe calculator una din programele care iar permite să funcționeze ca un web server.
+Unele din acestea fiind:
+- [wamp](http://www.wampserver.com/en/)
+- [mamp](https://www.mamp.info/en/)
