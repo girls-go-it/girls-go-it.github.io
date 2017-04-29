@@ -8,17 +8,17 @@ category: basic
 
 # Ce este acel internet?
 
-Cu siguranță vă imaginați că internetul arată cam ca routerul wifi de acasă, data center gicante undeva prin lume, numerele care se rotesc printr-un tub.
+Posibil vă imaginați că internetul este routerul wifi de acasă, data centers gigante undeva prin lume, numerele care se rotesc printr-un tub.
 
 ![](/images/hww/the-internet-imagined.jpg)   
 
 
-Care este, în principiu, adevărat dar deasemenea o mare parte a internetului arata cam așa:   
+Ceea ce este, în principiu, adevărat dar, deasemenea, o mare parte a internetului arata cam așa:   
 ![](/images/hww/the-internet.jpg)   
 O rețea masivă ce ne conectează pe întreaga planetă, a cărei suprafață e 71% apă. Ca consecință marea parte a internetului este sub apă, care lucrează prin cabluri de internet subacvatice.
 
 ![](/images/hww/cable.jpg)  
-În mijlocul acestor cabluri se află niște fibre de sticlă extrem de mici, aproximativ de dimensiunea unui fir de păr. Acele fire minuscule sunt internetul. Modul în care lucrează este print transmiterea fotografiilor, videoclipurilor, paginile web ca impulsuri de lumină.   
+În mijlocul acestor cabluri se află niște fibre de sticlă extrem de mici, aproximativ de dimensiunea unui fir de păr. Acele fire minuscule sunt internetul. Modul în care lucrează este print transmiterea fotografiilor, videoclipurilor, paginilor web ca impulsuri de lumină.   
 Deci **lumină + sticlă = internet**. Yeah, just like magic.
 
 La moment sunt mai mult de 250 de astfel de cabluri active și chiar au și o [hartă](http://submarine-cable-map-2015.telegeography.com/) intercativă.
