@@ -141,6 +141,6 @@ Mă bucur să te văd la sfârșitul acestui articol. Acestea sunt cele 20% din 
 Te invit să vizitezi următoarea secțiune pentru a afla ce-i aia CSS și cum să dai viață paginii tale aplicând noi culori și forme.
 
 ## Exemplu
-Pentu a vedea un exemplu de o pagina creată pur cu HTML (desigur că are și ceva stilizare ascunsă), descărcați [HTML Template](https://github.com/sarguvlad/HTML-Template/archive/master.zip)
+Pentu a vedea un exemplu de o pagina creată pur cu HTML (desigur că are și ceva stilizare ascunsă), descarcă [HTML Template](https://github.com/sarguvlad/HTML-Template/archive/master.zip)
 
-Dezarhivezi fișierul zip într-un folder, și deschide `index.html` pentru a-l vedea 
+Dezarhivezi fișierul zip într-un folder, și deschide `index.html` pentru a-l vedea
