@@ -139,3 +139,8 @@ Pe lângă toate aceste tag-uri care definesc secțiuni specifice ale paginii ma
 Mă bucur să te văd la sfârșitul acestui articol. Acestea sunt cele 20% din limbajul de marcare HTML, care-ți permit să realizezi 80% din posibilitățile acestui, tot de ce ai nevoie este doar răbdare și curiozitate. 
 
 Te invit să vizitezi următoarea secțiune pentru a afla ce-i aia CSS și cum să dai viață paginii tale aplicând noi culori și forme.
+
+## Exemplu
+Pentu a vedea un exemplu de o pagina creată pur cu HTML (desigur că are și ceva stilizare ascunsă), descărcați [HTML Template](https://github.com/sarguvlad/HTML-Template/archive/master.zip)
+
+Dezarhivezi fișierul zip într-un folder, și deschide `index.html` pentru a-l vedea 
