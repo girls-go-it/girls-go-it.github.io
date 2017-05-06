@@ -148,14 +148,14 @@ h1 {
 Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css_font.asp)
 Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele proprietăți:
 
-Proprietatea | Descrierea
------------- | -------------
-color | Setează culoarea textului
-letter-spacing	| Mărește sau micșoreaza spatiul între litere
-line-height	Sets the line height
-text-align | Specifică alinierea oriznotală a textului
-text-decoration	| Specifică modul de decorare a textului
-text-indent	| Setează indentarea textului
+|Proprietatea | Descrierea|
+|------------ | -------------|
+|color | Setează culoarea textului|
+|letter-spacing	| Mărește sau micșoreaza spatiul între litere|
+|line-height | Sets the line height|
+|text-align | Specifică alinierea oriznotală a textului|
+|text-decoration | Specifică modul de decorare a textului|
+|text-indent | Setează indentarea textului |
 
 Mai multe despre proprietățile CSS care specifică cum va arăta textul tău poți să afli [aici](https://www.w3schools.com/css/css_text.asp)
 
