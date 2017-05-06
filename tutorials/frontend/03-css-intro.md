@@ -73,8 +73,8 @@ Ca și în cazul precedent creaza un element div folosind următoarea sintaxă.
 La fel ca și pentru elementul HTML precedent este nevoie sa a definești stilurile noi pentru elementul nou creat.
 ```css
 #my-id {
-background-color: blue;
-font-size: 40px;
+    background-color: blue;
+    font-size: 40px;
 }
 ```
 ![Selector id](/images/css-intro/selector_id.png)
@@ -83,9 +83,9 @@ Un selector poate fi și unul mai specific spre exemplu putem folosi combinație
 Spre exemplu acest selector css va selecta toate elementele cu clasa `.my-paragraph` a caror parinte este un `div` cu clasa `.my-class`
 ```css
 div.my-class .my-paragraph-class {
-color: red;
-background-color: cian;
-text-align: center;
+    color: red;
+    background-color: cian;
+    text-align: center;
 }
 ```
 ```html
@@ -111,9 +111,9 @@ La fel poți specifica coloare prin codul hexadecimal `#ff00ff` sau rgb `rgb(255
 
 ```css
 p {
-color: #ff00ff;
-color: rgb(255, 0, 0);
-color: red;
+    color: #ff00ff;
+    color: rgb(255, 0, 0);
+    color: red;
 }
 ```
 
@@ -126,7 +126,7 @@ div {
 În caz ca dorești să setezi o imagine pe fundal, ai la îndemină proprietatea `background-image` unde trebuie sa specifici adresa imaginii.
 ```css
 div {
-background-image: url("paper.gif");
+    background-image: url("paper.gif");
 }
 ```
 
@@ -147,6 +147,7 @@ h1 {
 ```
 Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css_font.asp)
 Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele proprietăți:
+
 Proprietatea | Descrierea
 ------------ | -------------
 color | Setează culoarea textului
