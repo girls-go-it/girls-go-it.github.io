@@ -93,7 +93,7 @@ div.my-class .my-paragraph-class {
   <p class="my-paragraph-class">Bonjour</p>
 <div>
 ```
-Mai multe despre selectore poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp)
+Mai multe despre selectore poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp).
 
 ## Cum sa folosesc CSS
 Sunt 3 metode de a include stilurile in pagina ta HTML.
@@ -105,7 +105,7 @@ Sunt 3 metode de a include stilurile in pagina ta HTML.
 `<p style="text-indent: 25px">Hola!</p>`
 Trebuie sa ții minte ca stilurile care sunt declarate inline au o prioritate mai mare, apoi se aplica cele declarate cu ajutorului tagului `style` sau din fișier extern după ordinea declarării.
 
-##Culori și background
+## Culori și background
 Pentru ca să setezi coloarea unui text poți folosi proprietatea `color` care poate să primeasca valori ca numele culorii `red`, `green`, `blue`.
 La fel poți specifica coloare prin codul hexadecimal `#ff00ff` sau rgb `rgb(255, 0, 0)`.
 
@@ -139,7 +139,7 @@ p {
 }
 ```
 Aceasta va seta fontul *Times New Roman* pentru elementul tau. In caz ca acest font lipsește pe calculatorul utilizatorului se va aplica fontul *Times*, si apoi se va recurge la familia de fonutri *serif* în cazul ca nici ultimul font nu este prezent pe calculatorul utilizatorului.
-În caz ca vrei sa modifici marimea fontului folosește proprietatea `font-size`
+În caz ca vrei sa modifici marimea fontului folosește proprietatea `font-size`.
 ```css
 h1 {
     font-size: 40px;
@@ -152,7 +152,7 @@ Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele pro
 |------------ | -------------|
 |color | Setează culoarea textului|
 |letter-spacing	| Mărește sau micșoreaza spatiul între litere|
-|line-height | Sets the line height|
+|line-height | Setează înălțimea liniei|
 |text-align | Specifică alinierea oriznotală a textului|
 |text-decoration | Specifică modul de decorare a textului|
 |text-indent | Setează indentarea textului |
@@ -160,6 +160,7 @@ Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele pro
 Mai multe despre proprietățile CSS care specifică cum va arăta textul tău poți să afli [aici](https://www.w3schools.com/css/css_text.asp)
 
 ## Box model
+![Box mode](/images/css-intro/box-model.png)
 
 ## Poziționare
 
