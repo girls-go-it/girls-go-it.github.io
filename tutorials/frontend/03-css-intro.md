@@ -80,7 +80,7 @@ font-size: 40px;
 ![Selector id](/images/css-intro/selector_id.png)
 
 Un selector poate fi și unul mai specific spre exemplu putem folosi combinație de selectori pentru unele elemente.
-Spre exemplu acest selector css va selecta toate elementele cu clasa `.my-paragraph` a caror parinte este un `div` cu clasa `.myclass`
+Spre exemplu acest selector css va selecta toate elementele cu clasa `.my-paragraph` a caror parinte este un `div` cu clasa `.my-class`
 ```css
 div.my-class .my-paragraph-class {
 color: red;
@@ -88,3 +88,4 @@ background-color: cian;
 text-align: center;
 }
 ```
+Mai multe despre selectore poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp)
