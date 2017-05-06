@@ -47,33 +47,44 @@ Apoi adaugă în interiorului tagul head urmatorul text.
 
 Dupa de deschizi pagina ta HTML în browser poti sa vezi urmatorul rezultat.
 ![Selector tag](/images/css-intro/selector_tag.png)
+
 Drept selector poate servi o clasa, care defapt inseamna un grup de elemente care vor avea proprietăți comune.
 Pentru a crea o un element HTML cu o clasa poti folosi urmatoare sintaxă.
 
 ```html
-    <div class='my-class'>Hello</div>
+<div class='my-class'>Hello</div>
 ```
 
 Apoi folosește sintaxa css pentru a defini stilul clasei tale.
 ```css
-    .my-class {
-        background-color: orange;
-        font-size: 30px;
-    }
+.my-class {
+    background-color: orange;
+    font-size: 30px;
+}
 ```
-Rezultatul va arăta in felul următor
+Rezultatul va arăta in felul următor.
 ![Selector class](/images/css-intro/selector_class.png)
 
 Ca selector poate fi folosit si id (identificator unic unui element HTML)
 Ca și în cazul precedent creaza un element div folosind următoarea sintaxă.
 ```html
-    <div id='my-id'>¡Hola!</div>
+<div id='my-id'>¡Hola!</div>
 ```
 La fel ca și pentru elementul HTML precedent este nevoie sa a definești stilurile noi pentru elementul nou creat.
-```
-    #my-id {
-        background-color: blue;
-        font-size: 40px;
-    }
+```css
+#my-id {
+background-color: blue;
+font-size: 40px;
+}
 ```
 ![Selector id](/images/css-intro/selector_id.png)
+
+Un selector poate fi și unul mai specific spre exemplu putem folosi combinație de selectori pentru unele elemente.
+Spre exemplu acest selector css va selecta toate elementele cu clasa `.my-paragraph` a caror parinte este un `div` cu clasa `.myclass`
+```css
+div.my-class .my-paragraph-class {
+color: red;
+background-color: cian;
+text-align: center;
+}
+```
