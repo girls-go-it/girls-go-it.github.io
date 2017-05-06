@@ -88,4 +88,80 @@ background-color: cian;
 text-align: center;
 }
 ```
+```html
+<div class="my-class">
+  <p class="my-paragraph-class">Bonjour</p>
+<div>
+```
 Mai multe despre selectore poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp)
+
+## Cum sa folosesc CSS
+Sunt 3 metode de a include stilurile in pagina ta HTML.
+1. Fișier extern css declarat în tagul
+`<link rel="stylesheet" type="text/css" href="style.css">`
+2. Tagul `style` în `head` al documentului HTML
+`<style> p { text-indent: 25px; }</style>`
+3. Inline style
+`<p style="text-indent: 25px">Hola!</p>`
+Trebuie sa ții minte ca stilurile care sunt declarate inline au o prioritate mai mare, apoi se aplica cele declarate cu ajutorului tagului `style` sau din fișier extern după ordinea declarării.
+
+##Culori și background
+Pentru ca să setezi coloarea unui text poți folosi proprietatea `color` care poate să primeasca valori ca numele culorii `red`, `green`, `blue`.
+La fel poți specifica coloare prin codul hexadecimal `#ff00ff` sau rgb `rgb(255, 0, 0)`.
+
+```css
+p {
+color: #ff00ff;
+color: rgb(255, 0, 0);
+color: red;
+}
+```
+
+Pentru a seta culoarea background unui element folosește proprietatea `background-color`.
+```css
+div {
+    background-color: lightblue;
+}
+```
+În caz ca dorești să setezi o imagine pe fundal, ai la îndemină proprietatea `background-image` unde trebuie sa specifici adresa imaginii.
+```css
+div {
+background-image: url("paper.gif");
+}
+```
+
+## Stilizarea textelor și fonturi
+
+Pentru a seta un font pentru textul poți folosi proprietatea `font-family`.
+```css
+p {
+    font-family: "Times New Roman", Times, serif;
+}
+```
+Aceasta va seta fontul *Times New Roman* pentru elementul tau. In caz ca acest font lipsește pe calculatorul utilizatorului se va aplica fontul *Times*, si apoi se va recurge la familia de fonutri *serif* în cazul ca nici ultimul font nu este prezent pe calculatorul utilizatorului.
+În caz ca vrei sa modifici marimea fontului folosește proprietatea `font-size`
+```css
+h1 {
+    font-size: 40px;
+}
+```
+Mai multe despre fonturi poți să afli [aici](https://www.w3schools.com/css/css_font.asp)
+Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele proprietăți:
+Proprietatea | Descrierea
+------------ | -------------
+color | Setează culoarea textului
+letter-spacing	| Mărește sau micșoreaza spatiul între litere
+line-height	Sets the line height
+text-align | Specifică alinierea oriznotală a textului
+text-decoration	| Specifică modul de decorare a textului
+text-indent	| Setează indentarea textului
+
+Mai multe despre proprietățile CSS care specifică cum va arăta textul tău poți să afli [aici](https://www.w3schools.com/css/css_text.asp)
+
+## Box model
+
+## Poziționare
+
+## Elemente plutitoare
+
+## Exercițiu
