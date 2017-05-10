@@ -238,3 +238,49 @@ div.fixed {
 ![Fixed element](/images/css-intro/fixed_element.png)
 
 ## Elemente plutitoare
+Proprietatea CSS *float* ne permite să creăm elemente plutitoare poziționate unul lîngă altul, orizontal. Cu ajutorul acestei
+ proprietăți putem sa creăm galerii de imagini, listă de noutăți și alte elemente.
+Astfel elementele HTML cu propietatea `float: left` se vor aranja orizontal unul după altul.
+```css
+.float {
+ 	width: 100px;
+ 	height: 100px;
+ 	border: 1px solid red;
+ 	margin: 10px;
+ 	float: left;
+ }
+```
+```html
+<div class='float'></div>
+<div class='float'></div>
+```
+![Float element](/images/css-intro/float_elements.png)
+În caz ca adaugam un element *<div>* după elementele cu clasa *float* el se va suprapune cu elementel plutitoare.
+
+![Fixed element](/images/css-intro/fixed_element.png)
+Pentru a evită aceasta este nevoie de a atribui elementului care urmează dupa elementele flotante, prorietatea `clear: both`.
+```css
+.float {
+ 	width: 100px;
+ 	height: 100px;
+ 	border: 1px solid red;
+ 	margin: 10px;
+ 	float: left;
+ }
+ .element {
+ 	height: 200px;
+ 	width: 200px;
+ 	background-color: orange;
+ 	clear: both;
+ }
+```
+```html
+<div class='float'></div>
+<div class='float'></div>
+<div class='element'></div>
+```
+![Clear element](/images/css-intro/float_elements.png)
+ ## Resurse utile despre CSS
+ 
+ - https://www.w3schools.com/css/default.asp
+ - https://css-tricks.com/
