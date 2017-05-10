@@ -160,10 +160,78 @@ Pentru ca să schimbi modul în care aratp textului poți folosi urmatoarele pro
 Mai multe despre proprietățile CSS care specifică cum va arăta textul tău poți să afli [aici](https://www.w3schools.com/css/css_text.asp)
 
 ## Box model
-![Box mode](/images/css-intro/box-model.png)
+![Box model](/images/css-intro/box-model.png)
+Box model este concept care ne permite usor să vizualizăm și întelegem conceptul de margin, padding, border și width / height a unui element.
+Un element HTML poate fi reprezentat în forma de niște *cutii* care îl înconjoară, ele fiind:
+* margin - distanța în jurul elementului, este transparentă
+* border - chenarul elementului
+* padding - distanța între conținutul elementului și chenar
+* conținutul - spațuil unde este afișat textul interior / imaginea
+
+Înaltimea și lungimea elemetului HTML se calculează în dependeță de cele 4 componente, spre exemplu daca am avea un element cu următoarele proprietăți:
+```css
+div {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
+}
+```
+Lățimea lui va fi de 350px, 320px + 20px (left + padding right) + 10px (left + right border) + 0px (left + right margin).
 
 ## Poziționare
 
-## Elemente plutitoare
+Proprietatea CSS *position* specifică metoda prin care un element HTML va fi poziționat în pagină.
+Există 4 posibile valori pentru proprietatea *position*:
+ 1. static (elementul este poziționat după setarea implicită a browserlui)
+ ```css
+ div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+ ```
+![Static element](/images/css-intro/static_element.png)
 
-## Exercițiu
+2. relative (elementul este poziționat relativ față de poziția lui inițială, însa ocupa spațiul rezervat)
+```css
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid red;
+}
+```
+![Relative element](/images/css-intro/relative_element.png)
+
+3. absolute (elementul este poziționat absolut față de primul părinte cu poziția *relative* sau dacă acesta nu este față de elemntul body al documentului HTML).
+```css
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+```
+![Absolute element](/images/css-intro/absolute_element.png)
+
+4. fixed (specifică poziționarea fixă pe pagină, asta înseamnă ca elemntul va ramîne constant pe ecran, chiar dacă facem scroll).
+```css
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+```
+![Fixed element](/images/css-intro/fixed_element.png)
+
+## Elemente plutitoare
