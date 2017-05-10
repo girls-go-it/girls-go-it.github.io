@@ -183,7 +183,7 @@ Lățimea lui va fi de 350px, 320px + 20px (left + padding right) + 10px (left +
 
 Proprietatea CSS *position* specifică metoda prin care un element HTML va fi poziționat în pagină.
 Există 4 posibile valori pentru proprietatea *position*:
-   1. static (elementul este poziționat după setarea implicită a browserlui)
+ 1. static (elementul este poziționat după setarea implicită a browserlui)
  ```css
  div.static {
     position: static;
@@ -224,7 +224,7 @@ div.absolute {
 
 ![Absolute element](/images/css-intro/absolute_element.png)
 
-4. fixed (specifică poziționarea fixă pe pagină, asta înseamnă ca elemntul va ramîne constant pe ecran, chiar dacă facem scroll).
+ 4. fixed (specifică poziționarea fixă pe pagină, asta înseamnă ca elemntul va ramîne constant pe ecran, chiar dacă facem scroll).
 ```css
 div.fixed {
     position: fixed;
