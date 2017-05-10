@@ -281,7 +281,7 @@ Pentru a evită aceasta este nevoie de a atribui elementului care urmează dupa 
 ```
 ![Clear element](/images/css-intro/float_elements.png)
 
- ## Resurse utile despre CSS
+## Resurse utile despre CSS
  
  - [https://www.w3schools.com/css/default.asp](https://www.w3schools.com/css/default.asp)
  - [https://css-tricks.com/](https://css-tricks.com/)
