@@ -280,6 +280,7 @@ Pentru a evită aceasta este nevoie de a atribui elementului care urmează dupa 
 <div class='element'></div>
 ```
 ![Clear element](/images/css-intro/float_elements.png)
+
  ## Resurse utile despre CSS
  
  - https://www.w3schools.com/css/default.asp
