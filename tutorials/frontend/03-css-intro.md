@@ -183,7 +183,7 @@ Lățimea lui va fi de 350px, 320px + 20px (left + padding right) + 10px (left +
 
 Proprietatea CSS *position* specifică metoda prin care un element HTML va fi poziționat în pagină.
 Există 4 posibile valori pentru proprietatea *position*:
- 1. static (elementul este poziționat după setarea implicită a browserlui)
+   1. static (elementul este poziționat după setarea implicită a browserlui)
  ```css
  div.static {
     position: static;
@@ -192,7 +192,8 @@ Există 4 posibile valori pentru proprietatea *position*:
  ```
 ![Static element](/images/css-intro/static_element.png)
 
-2. relative (elementul este poziționat relativ față de poziția lui inițială, însa ocupa spațiul rezervat)
+ 2. relative (elementul este poziționat relativ față de poziția lui inițială, însa ocupa spațiul rezervat)
+
 ```css
 div.relative {
     position: relative;
@@ -202,7 +203,8 @@ div.relative {
 ```
 ![Relative element](/images/css-intro/relative_element.png)
 
-3. absolute (elementul este poziționat absolut față de primul părinte cu poziția *relative* sau dacă acesta nu este față de elemntul body al documentului HTML).
+ 3. absolute (elementul este poziționat absolut față de primul părinte cu poziția *relative* 
+sau dacă acesta nu este față de elemntul body al documentului HTML).
 ```css
 div.relative {
     position: relative;
@@ -210,7 +212,6 @@ div.relative {
     height: 200px;
     border: 3px solid #73AD21;
 } 
-
 div.absolute {
     position: absolute;
     top: 80px;
@@ -220,6 +221,7 @@ div.absolute {
     border: 3px solid #73AD21;
 }
 ```
+
 ![Absolute element](/images/css-intro/absolute_element.png)
 
 4. fixed (specifică poziționarea fixă pe pagină, asta înseamnă ca elemntul va ramîne constant pe ecran, chiar dacă facem scroll).
@@ -232,6 +234,7 @@ div.fixed {
     border: 3px solid #73AD21;
 }
 ```
+
 ![Fixed element](/images/css-intro/fixed_element.png)
 
 ## Elemente plutitoare
