@@ -6,9 +6,32 @@ category: basic
 
 ## Ce este HTML?
 
+Hai sa incepem tutorialul prin a arata ce pasi simpli facem noi pentru a vedea de exemplu starea meteo de pe www.meteo.md.
+
+1. Deschid browser-ul (ex. FireFox, Chrome, etc.)
+2. Scriu in casuta de cautare www.meteo.md
+3. Vizualizez rezultatul cautarii mele (niste text, imagini etc.)
+
+Pentru a clarifica lucrurile trebuie sa intelegem cit mai simplu ce are loc in spatele acestor simpli 3 pasi pe care i-am facut. 
+
+In primul rind browser-ul nu este nimic altceva decat o aplicatie care ne permite sa accesam pe internet anumite link-uri in urma carora noi obtinem ceva.
+Acest ceva sa il numim - resursa, este transmisa noua in urma accesarii link-ului, iar browser-ul stie cum sa ne prezinte aceasta.
+
+Aceasta resursa nu este nimic "wow" pe intelesul doar a celor mai mari hackeri, este foarte simplu - doar un fisier cu text. Desigur acel text are o anumita structura bine definita dupa anumite standarde si are extensia `.html`. 
+
+La baza oricarei pagini web pe care am dori sa o accesam sta un fisier cu extensia `.html` sau simplu sa il numim fisier `HTML`, iar dupa cum am spus browser-ul stie cum sa ne reprezinte acest tip de fisier.
+
+Dupa cum ai aflat din lectia precedenta internetul lucreaza la nivel inalt pe principiul "eu cer tu imi raspunzi" (Client-Server connection, clientul cere - serverul ii da un raspuns). In cazul nostru eu(Clientul - browserul) accesind www.meteo.md cer o resursa iar Serverul ce raspunde de adresa data (in caz ca nu sunt erori) imi returneaza o resursa `index.html` care contine toate detaliile ce tine de pagina pe care eu am vizualizat-o in final. 
+
+Intrucit am spus ca acest fisier cu extensia `.html` reprezinta doar niste text scris dupa anumite reguli, desigur ca si noi il putem simplu crea si deschide cu browser-ul nostru care poate citi orice fisier cu acest format. Ceea ce ne ramine noua este sa studiem care sunt aceste reguli - ceea ce urmeaza sa facem putin mai jos.
+
+***
+#### Cum se descifreaza HTML?
+
 HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-De fapt fișierele HTML nu sunt nimic altceva decât simple fișiere text, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult decât un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume și numele-i este `Sublime Text`. 
+#### Ce reprezinta fisierele HTML?
+De fapt fișierele HTML nu sunt nimic altceva decât simple fișiere text cum am spus, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult decât un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume și numele-i este `Sublime Text`. 
 
 Te rugăm să parcurgi următorii pași
 
@@ -22,7 +45,8 @@ Te rugăm să parcurgi următorii pași
 ```html
 I love HTML!
 ```
-După, salvează acest fișier și numește-l `index.html`
+După, salvează acest fișier și numește-l `index.html` 
+(Ca o conventie -  intr-un proiect Web fisierul de baza il numim index.html)
 
 Acest mic `index.html` este prima ta pagină web. Pentru a vizualiza rezultatul trebuie să deschizi acest document `html` în browser-ul tău preferat (ex. Chrome, Firefox, Safari, Opera sau Internet Explorer).
 
