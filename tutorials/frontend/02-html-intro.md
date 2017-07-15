@@ -8,7 +8,9 @@ category: basic
 
 HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
-De fapt fișierele HTML nu sunt nimic altceva de cât simple fișiere text, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult de cât de un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume și numele-i este `Sublime Text`. Te rog să parcurgi pașii care urmează.
+De fapt fișierele HTML nu sunt nimic altceva decât simple fișiere text, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult decât un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume și numele-i este `Sublime Text`. 
+
+Te rugăm să parcurgi următorii pași
 
  1. Descarcă `Sublime Text` de pe [site-ul oficial](https://www.sublimetext.com/3).
  2. Parcurge procedura standard de instalare (next, next, next, install).
@@ -39,7 +41,7 @@ Mai jos găsești structura generală a unui document HTML.
 	</body>
 </html>
 ```
-Interpretarea acestui cod este mult mai simplă de cât pare la prima vedere. 
+Interpretarea acestui cod este mult mai simplă decât pare la prima vedere. 
 
 Documentele HTML trebuie să înceapă cu așa numitul `Doctype`, el se scrie în felul următor `<!DOCTYPE html>` și definește versiunea codului HTML, în cazul dat versiunea 5. Astfel browser-ul înțelege cum exact trebuie să interpreteze codul ce urmează.
 
@@ -72,7 +74,7 @@ Textele care au un rol mai important pe pagină sunt definite cu ajutorul tag-ur
 ```
 În acest caz, ierarhia este strictă și obligatorie. Tag-ul `<li>` poate fi doar copilul imediat al tag-ului `<ul>` sau `<ol>` și nu poate exista în afara acestora. 
 
-Ce poate fi mai interesant în construirea unei pagini web de cât crearea link-urilor? Pentru a crea un link nou folosește tag-ul `<a>` și în conținutul acestuia scrie textul link-ului.
+Ce poate fi mai interesant în construirea unei pagini web decât crearea link-urilor? Pentru a crea un link nou folosește tag-ul `<a>` și în conținutul acestuia scrie textul link-ului.
 
 ```html
 <a>Go to Google</a>
