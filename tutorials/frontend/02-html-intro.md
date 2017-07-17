@@ -6,24 +6,24 @@ category: basic
 
 ## Ce este HTML?
 
-Hai sa incepem tutorialul prin a arata ce pasi simpli facem noi pentru a vedea de exemplu starea meteo de pe www.meteo.md.
+Hai sa incepem tutorialul prin a arata pașii simpli pe care îi facem pentru a verifica de exemplu starea vremii pe www.meteo.md.
 
 1. Deschid browser-ul (ex. FireFox, Chrome, etc.)
 2. Scriu in casuta de cautare www.meteo.md
 3. Vizualizez rezultatul cautarii mele (niste text, imagini etc.)
 
-Pentru a clarifica lucrurile trebuie sa intelegem cit mai simplu ce are loc in spatele acestor simpli 3 pasi pe care i-am facut. 
+Pentru a clarifica lucrurile trebuie sa intelegem cit mai simplu ce sta in spatele acestor simpli 3 pasi pe care i-am facut.
 
-In primul rind browser-ul nu este nimic altceva decat o aplicatie care ne permite sa accesam pe internet anumite link-uri in urma carora noi obtinem ceva.
-Acest ceva sa il numim - resursa, este transmisa noua in urma accesarii link-ului, iar browser-ul stie cum sa ne prezinte aceasta.
+In primul rind browser-ul nu este nimic altceva decat o aplicatie care ne permite sa accesam pe internet anumite link-uri in urma carora noi obtinem “ceva".
+Acest “ceva" il numim - resursa si ea este obtinuta in rezultatul accesarii link-ului, iar browser-ul stie cum sa prezinte aceasta resursa.
 
-Aceasta resursa nu este nimic "wow" pe intelesul doar a celor mai mari hackeri, este foarte simplu - doar un fisier cu text. Desigur acel text are o anumita structura bine definita dupa anumite standarde si are extensia `.html`. 
+Aceasta resursa nu reprezinta nimic complicat, este foarte simplu - doar un fisier cu text. Desigur acel fisier cu text are o anumita structura bine definita dupa anumite standarde si are extensia `.html`.
 
 La baza oricarei pagini web pe care am dori sa o accesam sta un fisier cu extensia `.html` sau simplu sa il numim fisier `HTML`, iar dupa cum am spus browser-ul stie cum sa ne reprezinte acest tip de fisier.
 
-Dupa cum ai aflat din lectia precedenta internetul lucreaza la nivel inalt pe principiul "eu cer tu imi raspunzi" (Client-Server connection, clientul cere - serverul ii da un raspuns). In cazul nostru eu(Clientul - browserul) accesind www.meteo.md cer o resursa iar Serverul ce raspunde de adresa data (in caz ca nu sunt erori) imi returneaza o resursa `index.html` care contine toate detaliile ce tine de pagina pe care eu am vizualizat-o in final. 
+Dupa cum ai aflat din lectia precedenta internetul lucreaza la nivel inalt pe principiul "eu cer tu imi raspunzi" (Client-Server connection, clientul cere - serverul ii ofera un raspuns). In cazul nostru eu(Clientul - browserul) accesind www.meteo.md cer o resursa iar Serverul ce raspunde de adresa data (in caz ca nu sunt erori) imi returneaza o resursa `index.html` care contine toate detaliile paginii pe care eu am vizualizat-o in final.
 
-Intrucit am spus ca acest fisier cu extensia `.html` reprezinta doar niste text scris dupa anumite reguli, desigur ca si noi il putem simplu crea si deschide cu browser-ul nostru care poate citi orice fisier cu acest format. Ceea ce ne ramine noua este sa studiem care sunt aceste reguli - ceea ce urmeaza sa facem putin mai jos.
+Cunoscand deja ca acest fisier cu extensia `.html` reprezinta doar text scris conform anumitor reguli, desigur ca si noi il putem simplu crea si deschide cu browser-ul nostru care poate citi orice fisier cu acest format. Ceea ce ne ramine este sa studiem care sunt aceste reguli - ceea ce urmeaza sa facem in continuare.
 
 ***
 #### Cum se descifreaza HTML?
@@ -31,9 +31,10 @@ Intrucit am spus ca acest fisier cu extensia `.html` reprezinta doar niste text 
 HTML sau HyperText Markup Language este unul dintre cele mai vechi limbaje de marcare web. Un limbaj de marcare (în engleză: markup language) este o metodă de formatare a unui text de pe o pagină web, care combină textul cu informațiile suplimentare despre acel text.
 
 #### Ce reprezinta fisierele HTML?
-De fapt fișierele HTML nu sunt nimic altceva decât simple fișiere text cum am spus, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult decât un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume și numele-i este `Sublime Text`. 
 
-Te rugăm să parcurgi următorii pași
+De fapt fișierele HTML nu sunt nimic altceva decât simple fișiere text cum am spus, respectiv pentru a începe a scrie cod HTML nu ai nevoie de nimic mai mult decât un editor de text. Toate sistemele de operare au deja unul preinstalat. Spre exemplu Notepad pe sistemul de operare Windows și TextEdit pe sistemul de operare Mac OSX. Noi vom folosi un editor de text larg utilizat de developerii din întreaga lume `Sublime Text`.
+
+Te rugăm să parcurgi următorii pași:
 
  1. Descarcă `Sublime Text` de pe [site-ul oficial](https://www.sublimetext.com/3).
  2. Parcurge procedura standard de instalare (next, next, next, install).
@@ -69,7 +70,7 @@ Interpretarea acestui cod este mult mai simplă decât pare la prima vedere.
 
 Documentele HTML trebuie să înceapă cu așa numitul `Doctype`, el se scrie în felul următor `<!DOCTYPE html>` și definește versiunea codului HTML, în cazul dat versiunea 5. Astfel browser-ul înțelege cum exact trebuie să interpreteze codul ce urmează.
 
-Până a trece la cea de-a doua linie, trebuie să menționez că în procesul învățării limbajului de marcare HTML va trebuie să ții minte doar două noțiuni. Prima este noțiunea de `Tag` și a doua — noțiunea de `Atribut`.
+Până a trece la cea de-a doua linie, trebuie să menționăm că în procesul învățării limbajului de marcare HTML va trebuie să ții minte doar două noțiuni. Prima este noțiunea de `Tag` și a doua — noțiunea de `Atribut`.
 
 HTML-ul dispune de o gamă largă de tag-uri care marchează începutul și sfârșitul unui tip de conținut. În exemplul precedent avem tag-ul `<html>` care marchează începutul documentului HTML și tag-ul de închidere `</html>` care marchează sfârșitul documentului HTML. Totul ce se află între tag-ul `<body>` și `</body>` este conținutul principal al documentului care se va afișa în browser, iar tag-ul `<head>` conține informație despre pagina curentă și codul amplasat înăuntrul acestui tag nu se va afișa pe pagină.
 
@@ -105,13 +106,14 @@ Ce poate fi mai interesant în construirea unei pagini web decât crearea link-u
 ``` 
 Totul arată bine, doar că browser-ul nu are de unde să știe spre ce adresă trebuie să fie redirecționat utilizatorul care dă click pe textul `Go to Google`. Și dacă-ți aduci aminte, la începutul acestui articol am spus că trebuie să ții minte doar două noțiuni — `tag` și `atribut`. Păi uite că a venit timpul să vorbim și despre a doua noțiune. Atributele sunt de fapt mici segmente informaționale care se aplică asupra tag-ului de deschidere pentru a caracteriza mai bine tag-ul curent. În cazul dat vom folosi atributul `href=""` pentru a seta adresa de redirecționare a utilizatorului.
 
+
 ```html
 <a href="https://www.google.com">Go to Google</a>
 ``` 
+
 În timp ce există o listă de atribute comune, atributul `href=""` nu poate fi aplicat pe orice alt tag.
 
 Dacă să revenim la tag-uri, trebuie să menționez că sunt două tipuri de tag-uri, care au sau nu tag de închidere. Toate tag-urile care le-am enumerat până acum au fost tag-uri care pot avea conținut, dar un exemplu de tag care nu poate avea conținut și care respectiv nu se închide este tag-ul `<br>` care este folosit pentru a trece textul pe următorul rând.
-
 ```html
 <p>
 	— I love HTML!<br>
@@ -162,7 +164,7 @@ Pe lângă toate aceste tag-uri care definesc secțiuni specifice ale paginii ma
 	<div>Right side of the header</div>
 </header>
 ```
-Mă bucur să te văd la sfârșitul acestui articol. Acestea sunt cele 20% din limbajul de marcare HTML, care-ți permit să realizezi 80% din posibilitățile acestui, tot de ce ai nevoie este doar răbdare și curiozitate. 
+Mă bucur că ai ajuns la sfârșitul acestui articol. Acestea sunt cele 20% din limbajul de marcare HTML, care-ți permit să realizezi 80% din posibilitățile acestui, tot de ce ai nevoie este doar răbdare și curiozitate.
 
 Te invit să vizitezi următoarea secțiune pentru a afla ce-i aia CSS și cum să dai viață paginii tale aplicând noi culori și forme.
 
