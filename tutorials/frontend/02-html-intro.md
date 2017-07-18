@@ -6,24 +6,24 @@ category: basic
 
 ## Ce este HTML?
 
-Hai sa incepem tutorialul prin a arata pașii simpli pe care îi facem pentru a verifica de exemplu starea vremii pe www.meteo.md.
+Hai să începem tutorialul prin a arăta paşii simpli pe care îi facem pentru a verifica de exemplu starea vremii pe www.meteo.md.
 
-1. Deschid browser-ul (ex. FireFox, Chrome, etc.)
-2. Scriu in casuta de cautare www.meteo.md
-3. Vizualizez rezultatul cautarii mele (niste text, imagini etc.)
+1. Deschid browser-ul (ex. FireFox, Chrome, etc.) 
+2. Scriu în căsuţa de căutare www.meteo.md 
+3. Vizualizez rezultatul căutării mele (nişte text, imagini etc.)
+ 
+Pentru a clarifica lucrurile trebuie să înţelegem cât mai simplu ce stă în spatele acestor 3 simpli paşi pe care i-am făcut.
 
-Pentru a clarifica lucrurile trebuie sa intelegem cit mai simplu ce sta in spatele acestor simpli 3 pasi pe care i-am facut.
+În primul rând browser-ul nu este nimic altceva decât o aplicaţie care ne permite să accesăm pe internet anumite link-uri în urma cărora noi obţinem “ceva". 
+Acest “ceva" îl numim - resursă şi ea este obţinută în rezultatul accesării link-ului, iar browser-ul ştie cum să prezinte această resursă. 
 
-In primul rind browser-ul nu este nimic altceva decat o aplicatie care ne permite sa accesam pe internet anumite link-uri in urma carora noi obtinem “ceva".
-Acest “ceva" il numim - resursa si ea este obtinuta in rezultatul accesarii link-ului, iar browser-ul stie cum sa prezinte aceasta resursa.
+Această resursă nu reprezintă nimic complicat, este foarte simplu - doar un fişier cu text. Desigur acest fişier cu text are o anumită structura bine definită după anumite standarde şi are extensia `.html`. 
 
-Aceasta resursa nu reprezinta nimic complicat, este foarte simplu - doar un fisier cu text. Desigur acel fisier cu text are o anumita structura bine definita dupa anumite standarde si are extensia `.html`.
+La baza oricărei pagini web pe care am dori să o accesăm stă un fişier cu extensia `.html` sau simplu să îl numim fişier `HTML`, iar după cum am spus browser-ul ştie cum să ne reprezinte acest tip de fişier. 
 
-La baza oricarei pagini web pe care am dori sa o accesam sta un fisier cu extensia `.html` sau simplu sa il numim fisier `HTML`, iar dupa cum am spus browser-ul stie cum sa ne reprezinte acest tip de fisier.
+După cum ai aflat din lecţia precedentă internetul lucrează la nivel înalt pe principiul "eu cer tu îmi răspunzi" (Client-Server connection, clientul cere - serverul îi oferă un răspuns). În cazul nostru eu (Clientul - browserul) accesând www.meteo.md cer o resursă, iar Serverul ce răspunde de adresa dată (în caz că nu sunt erori) îmi returnează o resursă `index.html` care conţine toate detaliile paginii pe care eu am vizualizat-o în final. 
 
-Dupa cum ai aflat din lectia precedenta internetul lucreaza la nivel inalt pe principiul "eu cer tu imi raspunzi" (Client-Server connection, clientul cere - serverul ii ofera un raspuns). In cazul nostru eu(Clientul - browserul) accesind www.meteo.md cer o resursa iar Serverul ce raspunde de adresa data (in caz ca nu sunt erori) imi returneaza o resursa `index.html` care contine toate detaliile paginii pe care eu am vizualizat-o in final.
-
-Cunoscand deja ca acest fisier cu extensia `.html` reprezinta doar text scris conform anumitor reguli, desigur ca si noi il putem simplu crea si deschide cu browser-ul nostru care poate citi orice fisier cu acest format. Ceea ce ne ramine este sa studiem care sunt aceste reguli - ceea ce urmeaza sa facem in continuare.
+Cunoscând deja că acest fişier cu extensia `.html` reprezintă doar text scris conform anumitor reguli, desigur că şi noi îl putem simplu crea şi deschide cu browser-ul nostru care poate citi orice fişier cu acest format. Ceea ce ne rămâne este să studiem care sunt aceste reguli - ceea ce urmează să facem în continuare. 
 
 ***
 #### Cum se descifreaza HTML?
