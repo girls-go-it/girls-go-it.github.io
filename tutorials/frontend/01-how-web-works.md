@@ -13,7 +13,7 @@ Posibil vă imaginați că internetul este routerul wifi de acasă, data centers
 ![](/images/hww/the-internet-imagined.jpg)   
 
 
-Ceea ce este, în principiu, adevărat dar, deasemenea, o mare parte a internetului arata cam așa:   
+Ceea ce este, în principiu, adevărat dar, de asemenea, o mare parte a internetului arată cam așa:   
 ![](/images/hww/the-internet.jpg)   
 O rețea masivă ce ne conectează pe întreaga planetă, a cărei suprafață e 71% apă. Ca consecință marea parte a internetului este sub apă, care lucrează prin cabluri de internet subacvatice.
 
@@ -25,25 +25,25 @@ La moment sunt mai mult de 250 de astfel de cabluri active și chiar au și o [h
 
 
 
-## Deci cum accezes o pagină web?
+## Deci cum accesez o pagină web?
 
 The easy way:   
-- Deschizi un browser
-- Scrii adresa ex: `google.com`
+- Deschizi un browser (Chrome, Firefox, Opera, Internet Explorer etc.)
+- Scrii adresa, ex: `google.com`
 - Și navighezi cu plăcere
 
-Acum câteva processe care au loc de la deschiderea browserului până la utilizarea propriu-zisă a pagini web.
+Acum câteva procese care au loc de la deschiderea browserului până la utilizarea propriu-zisă a paginii web.
 
 Comunicarea între calculatorul vostru și cel care păstrează pagini web, imagini, video are loc prin modelul    
 - **cerere**
 - **răspuns**
 
-Aceste cereri și răspunsuri au un format foarte asemănător cu acele ce le studiem la lecțile de limbă română.
+Aceste cereri și răspunsuri au un format foarte asemănător cu cele studiate la lecțiile de limbă română.
 
 **Cerere**
 ![request](/images/hww/request.jpg)
 - **User-Agent**: cine cere
-- **Request URL/Remote Address**: pe cine cere
+- **Request URL/Remote Address**: de la cine cere / cui i se adresează
 - **Reuest Method**: tipul cererii
 
 **Răspuns**
@@ -53,22 +53,22 @@ Aceste cereri și răspunsuri au un format foarte asemănător cu acele ce le st
 - **status**: o serie de coduri care determină tipul răspunsului
 
 
-Accesând o pagină web, comunicarea nu are loc direct intre `client`(*calculatorul vostru*) și `server`(*un calculator, data center care păstrează acele resurse*).
+Accesând o pagină web, comunicarea nu are loc direct între `client` (*calculatorul vostru*) și `server` (*un calculator, data center care păstrează acele resurse*).
 ![network model](/images/hww/network.jpg)   
-Cererea este transmisă printr-o rețea de servere, fiecare din el verificând dacă are resursele cerute. Dacă le are, se crează răspunsul și resursele sunt trimise înapoi către client, dacă nu cererea este transmisă serverului *vecin* până când unu din ele are resursele cerute sau cererea nu ajunge la ultima destinație, cazul dat fiind serverul de la google.
+Cererea este transmisă printr-o rețea de servere, fiecare verificând dacă are resursele cerute. Dacă le are, se creează răspunsul și resursele sunt trimise înapoi către client, dacă nu - cererea este transmisă serverului *vecin* până când unul din aceștia are resursele cerute sau cererea nu ajunge la ultima destinație, cazul dat fiind serverul de la google.
 
 Adresa resurselor cerute sau transmise este formată din o secvență de 4 numere separate prin punct numită **IP** address.   
-Numerele singure nu ne oferă nouă(utilizatorilor) foartă multă informație despre ce pagină web reprezină, unde și plus la asta ar fi ridicol să fii impus să memorizezi zeci de serii de numere pentru a naviga pe internet. De acea ele sunt utilizate doar de calculatoare, iar pentru utilizator, acestor numere li se atribue un nume informativ și ușor de memorizat.
+Numerele singure nu ne oferă nouă (utilizatorilor) foartă multă informație despre ce pagină web reprezină, nemaivorbind cât de ridicol ar fi să fii impus să memorizezi zeci de serii de numere pentru a naviga pe internet. De aceea ele sunt utilizate doar de calculatoare, iar pentru utilizator, acestor numere li se atribue un nume informativ și ușor de memorizat.
 
 Spre exemplu:
 - IP-ului `172.217.22.78` îi este atribuit numele `google.com`
 - IP-ului `185.60.218.35` îi este atribuit numele `facebook.com`
 
-Toate aceste sunt intr-o *carte de numere* numită **Domain Name Server(DNS)**. Acesta are rolul de a transforma un nume de genul `google.com` în IP-ul acestuia `172.217.22.78` pentru a fi transmis mai departe până când resursele cerute sunt găsite.
+Toate aceste sunt intr-o *carte de numere* numită **Domain Name Server (DNS)**. Acesta are rolul de a transforma un nume de genul `google.com` în IP-ul acestuia `172.217.22.78` pentru a fi transmis mai departe până când resursele cerute sunt găsite.
 
 ## URL
 
-Cunoaștem deja că URL-ul este adresa folosită pentru obținearea unei pagini web, imagini etc. 
+Cunoaștem deja că URL-ul este adresa folosită pentru obținearea unei pagini web, imagini etc.
 
 Acesta are și el câteva elemente care joacă un rol diferit în crearea unei cereri:   
 `https://example.com:8000/group/resource`
@@ -76,28 +76,28 @@ Acesta are și el câteva elemente care joacă un rol diferit în crearea unei c
 * `https://` - protocolul comunicarii
 * `example.com` - numele resursei
 * `8000` - portul catre resursa
-* `/group/resource` - este calea *locală* către o pagina sau resursă numită **path**
+* `/group/resource` - este calea *locală* către o pagină sau resursă numită **path**
 
 **Protocolul** - un set de reguli ce determină cum are loc transmiterea datelor între `client` și `server`.
-Numele resursei - nume dupa care un DNS gaseste IP'ul acelei resurse.
+**Numele resursei** - nume după care un DNS găsește IP-ul acelei resurse.
 
 **Portul** - definește un *tunel* cu anumite restricții și posibilități destinate pentru un scop anume care va fi folosit de un oarecare tip de cerere. De exemplu:  
 - Pentru obținearea unei pagine web se va folosi portul `80`.   
-- Pentru a obține **Citatul zilei(Quote of the Day)** se va folosi portul `17`.
+- Pentru a obține **Citatul zilei (Quote of the Day)** se va folosi portul `17`.
 
-**Path** - structura interna a paginilor in cadrul unei aplicatii. Elementele acesteia reprezintă nume de măpi, fișiere sau pagină a unei aplicații.
+**Path** - structura internă a paginilor în cadrul unei aplicații. Elementele acesteia reprezintă nume de mape, fișiere sau pagină a unei aplicații.
 
 ## Localhost
 
-E evident deja că pentru obținerea unei pagini web este necesar să fiți conectați la o rețea de internet. Ceia ce ar însemna că în timpul dezvoltării unei pagini web ar trebui de la început să păstrați acea pagină web pentru a o putea vizualiza în browser.
+E evident deja că pentru obținerea unei pagini web este necesar să fiți conectați la o rețea de internet. Ceea ce ar însemna că în timpul dezvoltării unei pagini web ar trebui de la început să păstrați acea pagină web pentru a o putea vizualiza în browser.
 
 Din fericire acesta nu este cazul deoarece fiecare calculator poate funcționa ca un web server.
 - este numit **Localhost**
-- ip address **127.0.0.1**
+- IP address: **127.0.0.1**
 
-Și îl accesezi folosind url-ul `http://localhost`.
+Și îl accesezi folosind URL-ul `http://localhost`.
 
-Pentru al putea folosi trebuie să aveți instalat pe calculator una din programele care iar permite să funcționeze ca un web server.
+Pentru a-l putea folosi trebuie să aveți instalat pe calculator una din programele care i-ar permite să funcționeze ca un web server.
 Unele din acestea fiind:
 - [wamp](http://www.wampserver.com/en/)
 - [mamp](https://www.mamp.info/en/)
