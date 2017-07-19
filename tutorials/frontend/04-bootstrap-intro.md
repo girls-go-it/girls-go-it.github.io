@@ -45,7 +45,7 @@ Vezi rezultatul în navigatorul web preferat:
 
 Implicit, navigatorul tău stilizează elementele HTML fundamentale. Hai să-i dăm o aromă de bootstrap!
 
-Stai! Nu trebuie să downloadezi nimic! Vom încărca stilurile bootsrap de pe CDN-ul oficial. Ah, nu ți-am povestit ce-i aia **CDN**. CDN este **C**ontent **D**elivery **N**etwork, sau **C**ontent **D**istribution **N**etwork. Sună complicat? În practică nu e, cel puțin din perspectivă de utilizator. CDN este un sistem distribuit care servește fișiere statice. Pe lângă simplitatea de utilizare, CDN-urile mai au și alte avantaje, ele însă nu sunt în scopul acestui tutorial.
+Stai! Nu trebuie să downloadezi nimic! Vom încărca stilurile bootstrap de pe CDN-ul oficial. Ah, nu ți-am povestit ce-i aia **CDN**. CDN este **C**ontent **D**elivery **N**etwork, sau **C**ontent **D**istribution **N**etwork. Sună complicat? În practică nu e, cel puțin din perspectivă de utilizator. CDN este un sistem distribuit care servește fișiere statice. Pe lângă simplitatea de utilizare, CDN-urile mai au și alte avantaje, ele însă nu sunt în scopul acestui tutorial.
 
 Adăugăm legătura spre stilurile bootstrap, undeva în interiorul tag-ului head:
 
@@ -53,7 +53,7 @@ Adăugăm legătura spre stilurile bootstrap, undeva în interiorul tag-ului hea
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 ```
 
-Adăugăm și librăria JavaScript pentru bootstrap. Nu ne trebuie la moment dar vom avea nevoie în viitor de ea. Așa cum Bootstrap se bazează pe jQuery, includem ambele surse din CDN.
+Adăugăm și librăria JavaScript pentru bootstrap. Nu ne trebuie la moment, dar vom avea nevoie în viitor de ea. Așa cum Bootstrap se bazează pe jQuery, includem ambele surse din CDN.
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -191,7 +191,7 @@ Următorul pas ar fi calcularea dimensiunilor coloanelor. Le calculăm folosind 
 ```
 
 ## Fin
-Cam atât de pe meleagurile componentelor Twitter bootstrap. Ca o provocare, zic să experimentezi cu elementele, stilurile, icon-urile și alte detalii bootstrap. Îți pun la dispoziție documentația:
+Cam atât de pe meleagurile componentelor Twitter bootstrap. Ca o provocare, zic să experimentezi cu elementele, stilurile, iconițele și alte detalii bootstrap. Îți pun la dispoziție documentația:
 
 - [Getting Started](http://getbootstrap.com/getting-started/)
 - [CSS](http://getbootstrap.com/css/)
