@@ -1,6 +1,8 @@
+---
 layout: default
 title: Milligram Intro
 category: basic
+---
 
 # Intro
 
