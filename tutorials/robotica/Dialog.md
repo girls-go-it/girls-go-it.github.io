@@ -20,7 +20,8 @@ Alte referințe:  name,  language
 O regulă asociază un Human input (ce spune omul) cu un Robot ouptut (ce raspunde robotul) corespunzător.
 Delimitatorii (Delimiters), Caracterele speciale (Special characters) și Rule functions and properties (Funcțiie si proprietățile regulilor) dau posibilitatea de a crea reguli puternice, care conțin într-o linie mai multe cazuri.
 Exista 3 tipuri de reguli: 
-![tipuri de reguli](https://github.com/girls-go-it/girls-go-it.github.io/tree/master/tutorials/robotica/img/rules.png)
+
+![tipuri de reguli](https://github.com/girls-go-it/girls-go-it.github.io/blob/master/tutorials/robotica/img/rules.png)
 
 
 
