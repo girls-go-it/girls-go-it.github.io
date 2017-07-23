@@ -1,8 +1,8 @@
 # Dialog - QiChat 
 
 
-## Topic (Tema)
-Un Topic este un script(sau fișier) care conține o regulă (Rule).
+## Topic 
+Un Topic (Tema) este un script(sau fișier) care conține o regulă (Rule).
 Antetul său conține obligatoriu numele și limba Topic-ului.
 
 Exemplu:
@@ -203,6 +203,8 @@ Un Skin este o meta regulă, ce definește transformările care vor fi aplicate 
 Un Skin poate fi plasat în orice Topic și este activat când un Robot output se potrivește.
 Referințe: Transformation rules
  
+# Anexe:
+![Cheat Sheet](https://github.com/girls-go-it/girls-go-it.github.io/blob/master/tutorials/robotica/img/cheat_sheet_dialog.png)
 
 ### Resurse utile:
 #### Website oficial:
@@ -216,3 +218,5 @@ Referințe: Transformation rules
 - http://doc.aldebaran.com/2-1/family/robots/languages.html#dialog-supported-languages
 #### Tutorial YouTube:
 https://youtu.be/vyEGRs3pnQE
+
+
