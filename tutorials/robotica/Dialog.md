@@ -179,12 +179,8 @@ I am not an alien, I am a humanoid robot
 ```
 
 ### Prioritatea regulilor
-| Ordinea       |Toate regulile situate în...  |
-| ------------- |----------------------------|
-|   1 - Focus   | Secțiunea principală a Topicului care are Focus |
-| 2 – Toate Topicurile | Secțiunea principală a tuturor celorlalte Topicuri activate, cu excepția ^fallback, ordonate aleator  |
-| 3 - Recover | Secțiunea de recover a tuturot Topicurilor activate |
-| 4 – Fallback (retragere) | Secțiunea principală a Topicurilor activate care au proprietatea ^fallback |
+![Cheat Sheet](https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/tutorials/robotica/img/prioritatea_regulilor.png)
+
 
 ## Refolosirea Human input
 Este posibil să salvezi o parte din Human input(ce spune omul) pentru a o folosi in răspunsul robotului (Robot output).
