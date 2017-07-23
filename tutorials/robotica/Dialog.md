@@ -2,8 +2,15 @@
 
 
 ## Topic 
-Un Topic (Tema) este un script(sau fișier) care conține o regulă (Rule).
+Un Topic este o tema, o idee principală despre care vrem să vorbim cu robotul.
+Tehnic vorbind, un Topic este un script(fișier) care conține o regulă (Rule), despre care vorbim mai târziu.
 Antetul său conține obligatoriu numele și limba Topic-ului.
+
+Sintaxă:
+```
+topic: ~introduction ()
+language: enu
+```
 
 Exemplu:
 ```
@@ -18,8 +25,9 @@ Alte referințe:  name,  language
 ## Rule (Regulă)
 
 O regulă asociază un Human input (ce spune omul) cu un Robot ouptut (ce raspunde robotul) corespunzător.
-Delimitatorii (Delimiters), Caracterele speciale (Special characters) și Rule functions and properties (Funcțiie si proprietățile regulilor) dau posibilitatea de a crea reguli puternice, care conțin într-o linie mai multe cazuri.
-Exista 3 tipuri de reguli: 
+Delimitatorii (Delimiters), Caracterele speciale (Special characters) și Funcțiie si proprietățile regulilor( Rule functions and properties) dau posibilitatea de a crea reguli puternice, care conțin într-o linie mai multe cazuri.
+
+Există 3 tipuri de reguli: 
 
 ![tipuri de reguli](https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/tutorials/robotica/img/rules.png)
 
@@ -43,23 +51,7 @@ Exemple:
 ```
 Conceptele pot fi utilizate atât la Human input, cât și la Robot output.
 Exista 2 tipuri de concepte:
-Tip
-Vizibilitate
-În timpul execuției...
-Poate conține
-* Static
-globală
-Nu poate fi modificat
-- Alegeri: []
-- Părți opționale: ()
-- Concepte (statice și dinamice)
-- Funcții (^rand, ^first)
-- Variabile: $
-- Condiții:  == > <> <
-* Dinamic
-locală pentru un Topic
-Trebuie să fie modificat
-O listă de cuvinte și fraze - o singură alegere(Choice): []
+![concept types](https://github.com/girls-go-it/girls-go-it.github.io/blob/master/tutorials/robotica/img/concept_types.png?raw=true)
 
 
 Exemple:
@@ -198,7 +190,11 @@ Un Skin poate fi plasat în orice Topic și este activat când un Robot output s
 Referințe: Transformation rules
  
 # Anexe:
+### Rezumat:
 ![Cheat Sheet](https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/tutorials/robotica/img/cheat_sheet_dialog.png)
+
+### Lista de limbi în care poate vorbi Nao:
+![tipuri de reguli](https://raw.githubusercontent.com/girls-go-it/girls-go-it.github.io/master/tutorials/robotica/img/supported_languages.png)
 
 ### Resurse utile:
 #### Website oficial:
