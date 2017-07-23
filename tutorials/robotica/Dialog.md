@@ -99,12 +99,12 @@ Execuție:
 ```
 > hey there
 hello
-> do you have white wine?
-yes, I have white wine
-> I want to drink something
-do you want beer?
-> I want to drink something
-do you want red wine?
+> do you have strawberry icecream?
+yes, I have strawberry icecream
+> I want to eat something
+do you want cookies?
+> I want to eat something
+do you want chocolate icecream?
 ```
 
 
