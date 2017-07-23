@@ -1,4 +1,4 @@
-# Dialog - QiChat – Introducere
+# Dialog - QiChat 
 
 
 ## Topic (Tema)
