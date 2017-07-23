@@ -19,7 +19,8 @@ Alte referințe:  name,  language
 
 O regulă asociază un Human input (ce spune omul) cu un Robot ouptut (ce raspunde robotul) corespunzător.
 Delimitatorii (Delimiters), Caracterele speciale (Special characters) și Rule functions and properties (Funcțiie si proprietățile regulilor) dau posibilitatea de a crea reguli puternice, care conțin într-o linie mai multe cazuri.
-Exista 3 tipuri de reguli: User rule ,User subrule și Proposal . 
+Exista 3 tipuri de reguli: 
+![tipuri de reguli](https://github.com/girls-go-it/girls-go-it.github.io/tree/master/tutorials/robotica/img/rules.png)
 
 
 
@@ -177,19 +178,15 @@ I am not an alien, I am a humanoid robot
 ```
 
 ### Prioritatea regulilor
-Ordinea
-Toate regulile situate în...
-1 - Focus
-Secțiunea principală a Topicului care are Focus
-2 – Toate Topicurile
-Secțiunea principală a tuturor celorlalte Topicuri activate, cu excepția ^fallback, ordonate aleator 
-3 - Recover
-Secțiunea de recover a tuturot Topicurilor activate
-4 – Fallback (retragere)
-Secțiunea principală a Topicurilor activate care au proprietatea ^fallback 
+| Ordinea       |Toate regulile situate în...  |
+| ------------- |----------------------------|
+|   1 - Focus   | Secțiunea principală a Topicului care are Focus |
+| 2 – Toate Topicurile | Secțiunea principală a tuturor celorlalte Topicuri activate, cu excepția ^fallback, ordonate aleator  |
+| 3 - Recover | Secțiunea de recover a tuturot Topicurilor activate |
+| 4 – Fallback (retragere) | Secțiunea principală a Topicurilor activate care au proprietatea ^fallback |
 
-## Refolosirea Human input(ce spune omul)
-Este posibil să salvezi o parte din Human input pentru a o folosi in Răspunsul robotului (Robot output).
+## Refolosirea Human input
+Este posibil să salvezi o parte din Human input(ce spune omul) pentru a o folosi in răspunsul robotului (Robot output).
 Referințe:  Input storing: _ 
 
 
