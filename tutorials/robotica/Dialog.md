@@ -39,40 +39,51 @@ Cand un Human input se potrivește, adică mesajul este recunoscut, o Regulă (R
 Cand o regula este acționată, se întâmplă următoarele:
 - Robot output se execută (spus și/sau făcut).
 - Focusul este setat pe Tema(Topicul) ce conține regulile.
-Robot output (ce spune robotul)
+
+## Robot output (ce spune robotul)
 Este o parte a User rule, User subrule, sau Proposal, ce conține ce va spune sau face robotul cand regula este acționată. 
-Concept
+
+## Concept
 Conceptul este o listă de cuvinte și/sau fraze care se referă la o idee.
+
 Exemple:
+
 ```
 - o listă de țări
 - o listă de nume
 - sinonimele unui cuvânt
 ```
+
 Conceptele pot fi utilizate atât la Human input, cât și la Robot output.
 Exista 2 tipuri de concepte:
 ![concept types](https://github.com/girls-go-it/girls-go-it.github.io/blob/master/tutorials/robotica/img/concept_types.png?raw=true)
 
 
 Exemple:
+
 ```
 concept:(want) ^rand {"i'd * like" "i want {"a lot"}"}
 dynamic:want
 python:
 setConcept("want","enu", ["i'd like" "i want" "i want a lot"]
 ```
+
 Sintaxă:
+
 - Pentru a declara un concept static:
+
 ```
 concept:(name) [word1 word2 "word3 word4"]
 ```
 
 unde:
-word1 și word2 sunt cuvinte izolate
-“word3 word4” este o frază, adică un grup de câteva cuvinte
-name este numele conceptului static
+
+- word1 și word2 sunt cuvinte izolate
+- “word3 word4” este o frază, adică un grup de câteva cuvinte
+- name este numele conceptului static
 
 Exemplu:
+
 ```
 topic: ~introduction ()
 language:enu
@@ -124,14 +135,15 @@ In Choregraphe, un Topic se activează sau dezactivează când Dialog topic box 
 ```
 - ALDialogProxy::activateTopic()
 - ALDialogProxy::deactivateTopic()
-- Activarea unei reguli
 ```
-Toate Regulile unui Topic dezactivat sunt dezactivate.
-Toate Regulile unui Topic activat sunt activate, cu excepția situațiilor în care:
-este un User subrule și nu este atașată de ultima regula activată
-este un Proposal deja executat
-conține o eticheta(tag) dezactivată
-conține funcția ^private, iar Topic nu are Focusul.
+
+### Activarea unei reguli
+- Toate Regulile unui Topic dezactivat sunt dezactivate.
+- Toate Regulile unui Topic activat sunt activate, cu excepția situațiilor în care:
+   * este un User subrule și nu este atașată de ultima regula activată
+   * este un Proposal deja executat
+   * conține o eticheta(tag) dezactivată
+   * conține funcția ^private, iar Topic nu are Focusul.
 
 ## Focus
 Mai multe Topicuri pot fi activate simultan, dar numai unul poate avea Focus.
