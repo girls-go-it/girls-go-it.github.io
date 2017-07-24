@@ -235,3 +235,20 @@ Referințe: Transformation rules
 [https://youtu.be/vyEGRs3pnQE](https://youtu.be/vyEGRs3pnQE)
 
 
+
+# Exerciții practice:
+1.Creează un program ce folosește Dialog și poate avea o discuție despre tipuri de mâncare
+2.Transformă-l pe Frank într-o persoană foarte amabilă care lucrează la serviciul clientelă pentru un operator de telefonie.
+El poate răspunde la următoarele întrebări:
+- Câți bani am în cont?
+- Care este numărul meu de telefon?
+- La ce ora a fost ultimul apel?
+*Nivel de dificultate:
+1. Folosește valori prestabilile de la început(de ex. u:(întrebare):3, 4.5, 203)
+2. Folosește delimitatorul choice și random să aleagă dintr-o listă de răspunsuri
+3. Folosește boxele random int si random float*
+
+3.Creează un program ce folosește Dialog, astfel încît să poți întreba roboțica ce este Choregraphe și despre ce boxe ați învățat până acum.
+
+
+
