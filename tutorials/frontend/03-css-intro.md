@@ -4,13 +4,13 @@ title: CSS Intro
 category: basic
 ---
 
-## Ce este CSS
+## Ce este CSS ?
 
-Lecția trecută am studiat cum să cream o pagină web cu ajutorul HTML. Însă HTML este limbajul care definește structura documentului și nu ne oferă posibilitatea de a face pagina noastră să arate frumos.
+Lecția trecută am studiat cum să creăm o pagină web cu ajutorul HTML. Însă HTML este limbajul care definește structura documentului și nu ne oferă posibilitatea de a face pagina noastră să arate frumos.
 
-În ajutor ne poate veni CSS—Cascading style sheet.
+În ajutor ne poate veni CSS—Cascading style sheets.
 
-CSS este un standard care definește modul vor fi afișate elementele din pagina noastră. 
+CSS este un standard care definește modul în care vor fi afișate elementele din pagina noastră. 
 
 Pentru început să creăm un document HTML `index.html` pe care îl vom folosi în calitate de bază pentru site-ul tău.
 
@@ -28,7 +28,7 @@ Documentul tău HTML va arăta în felul următor:
 ```
 
 ## Sintaxa CSS
-### Selectoare
+### Selectori
 Pentru a începe lucrul, trebuie să înțelegem sintaxa CSS.
 
 Aceasta este una simplă și arată în felul următor:
@@ -65,7 +65,7 @@ Acum deschide fișierul `index.html` în browser-ul tău preferat și vei vedea 
 
 Arată mai bine decât fără stil, așa-i?
 
-### Selectoare utilizând clase
+### Selectori utilizând clase
 
 Pe motiv că în calitate de selector am luat tag-ul `p`, deocamdată oricare tag `p` din documentul HTML va fi stilizat utilizând definiția noastră în CSS.
 Dacă dorim să aplicăm un anumit stil doar elementelor care au careva proprietăți comune, în calitate de selector putem să luăm o clasă. 
@@ -89,7 +89,7 @@ Fă refresh la pagina din browser și vei vedea următorul rezultat:
 
 ![Selector class](/images/css-intro/selector_class.png)
 
-### Selectoare utilizând ID
+### Selectori utilizând ID
 
 În calitate de selector poate fi utilizat și un ID (identificator unic pentru orice element HTML).
 
@@ -113,9 +113,9 @@ Reactualizează pagina din browser și vei vedea următorul rezultat:
 
 ![Selector id](/images/css-intro/selector_id.png)
 
-### Selectoare multiple
+### Selectori multipli
 
-Până acum definițiile noastre pentru stil erau identice pentru toate elementele cu același tag și clasă. De aceea, pentru a putea fi și mai specifici, putem să combinăm mai multe selectoare într-unul. 
+Până acum definițiile noastre pentru stil erau identice pentru toate elementele cu același tag și clasă. De aceea, pentru a putea fi și mai specifici, putem să combinăm mai mulți selectori într-unul. 
 
 De exemplu, următorul selector va stiliza în mod corespunzător toate elementele cu clasa `my-paragraph-class` ale căror părinte este un element `div` cu clasa `my-class`:
 
@@ -140,17 +140,17 @@ parent child {
 }
 ```
 
-Mai multe despre selectoare poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp).
+Mai multe despre selectori poți să afli [aici](https://www.w3schools.com/cssref/css_selectors.asp).
 
-## Cum să folosesc CSS
+## Cum să folosesc CSS ?
 
 Sunt 3 metode cum poți stiliza HTML-ul cu CSS:
 
- 1. Incluzi CSS-ul într-un fișier extern cu extensia `.css` (external style).
+ 1. Incluzi CSS-ul într-un fișier extern cu extensia `.css` (external style sheet).
 
- De asemenea, vei *lega* documentul CSS `style.css` de cel HTML, folosind tagul `<link rel="stylesheet" type="text/css" href="style.css">`. Atrage atenția la atributul `href`---acesta arată calea spre fișierul `.css`.
+ De asemenea, vei *lega* documentul CSS `style.css` de cel HTML, folosind tag-ul `<link rel="stylesheet" type="text/css" href="style.css">`. Atrage atenția la atributul `href`---acesta arată calea spre fișierul `.css`.
 
- 2. Folosești tagul `style` în `head`-ul al documentului HTML (internal style):
+ 2. Folosești tagul `style` în `head`-ul al documentului HTML (internal style sheet):
 
  ```css
  <style> p { text-indent: 25px; } </style>
@@ -179,7 +179,7 @@ Pentru a seta culoarea unui text, poți folosi proprietatea `color` care poate s
 De exemplu, poți seta culoarea roșie a textului în trei metode:
 ```css
 p {
-	color: #ff00ff;
+	color: #ff0000;
 	color: rgb(255, 0, 0);
 	color: red;
 }
@@ -205,7 +205,7 @@ div {
 ## Stilizarea textelor și fonturi
 ### Fontul
 
-Pentru a seta un font pentru textul, poți folosi proprietatea `font-family`.
+Pentru a seta un font pentru text, poți folosi proprietatea `font-family`.
 
 ```css
 p {
@@ -244,7 +244,7 @@ Dacă dorești să schimbi modul în care arată textul, poți folosi următoare
 |color | Setează culoarea textului|
 |letter-spacing	| Mărește sau micșoreaza spațiul între litere|
 |line-height | Setează înălțimea liniei|
-|text-align | Specifică alinierea oriznotală a textului|
+|text-align | Specifică alinierea orizontală a textului|
 |text-decoration | Specifică modul de decorare a textului|
 |text-indent | Setează indentarea primei linii a textului|
 
@@ -254,7 +254,7 @@ Mai multe despre proprietățile CSS care specifică cum va arăta textul poți 
 
 ![Box model](/images/css-intro/box-model.png)
 
-Box model este concept care ne permite ușor să vizualizăm și să înțelegem conceptul de margin, padding, border și width / height a unui element.
+Box model este un concept care ne permite ușor să vizualizăm și să înțelegem conceptul de margin, padding, border și width / height a unui element HTML.
 
 În box model un element HTML este reprezentat prin niște *cutii*, ele fiind:
 	* margin - distanța în jurul elementului, este transparentă;
@@ -262,7 +262,7 @@ Box model este concept care ne permite ușor să vizualizăm și să înțelegem
 	* padding - distanța între conținutul elementului și chenar;
 	* conținutul - spațiul unde este afișat textul interior / imaginea.
 
-Înăltimea și lungimea elementului HTML se calculează în dependență de cele 4 componente.
+Înălțimea și lungimea elementului HTML se calculează în dependență de cele 4 componente.
 
 De exemplu, avem un element cu următoarele proprietăți:
 ```css
@@ -328,7 +328,7 @@ div.absolute {
 
 ![Absolute element](/images/css-intro/absolute_element.png)
 
- - *fixed*---specifică poziționarea fixă pe pagină, asta înseamnă ca elementul va rămâne constant pe ecran, chiar dacă facem scroll.
+ - *fixed*---specifică poziționarea fixă pe pagină, asta înseamnă că elementul va rămâne constant pe ecran, chiar dacă facem scroll.
 
 ```css
 div.fixed {
@@ -348,7 +348,7 @@ Cu toate că avem deja posibilitatea să mișcăm elementele în pagină, este f
 
 Soluția ușoară pentru această problemă este proprietatea CSS *float*.
 Aceasta ne permite să creăm elemente plutitoare poziționate unul lângă altul, orizontal. 
-Cu ajutorul acestei proprietăți putem crea galerii de imagini, listă de noutăți și alte elemente.
+Cu ajutorul acestei proprietăți putem crea galerii de imagini, liste de noutăți și alte elemente.
 
 Astfel, elementele HTML cu proprietatea `float: left` se vor aranja orizontal unul după altul.
 
@@ -375,7 +375,7 @@ De exemplu, dacă la exemplul de mai sus adăugăm un element *<div>* după elem
 
 ![Fixed element](/images/css-intro/fixed_element.png)
 
-Pentru a evită această suprapunere trebuie să atribuim elementului care urmează după elementele flotante proprietatea `clear: both`:
+Pentru a evita această suprapunere trebuie să atribuim elementului care urmează după elementele plutitoare proprietatea `clear: both`:
 
 ```css
 .float {
