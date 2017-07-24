@@ -1,5 +1,18 @@
 # Dialog - QiChat 
 
+#### Link-uri de care avem nevoie:
+- [Cum creez boxe de Dialog](https://github.com/girls-go-it/girls-go-it.github.io/blob/master/tutorials/robotica/Dialog_box_how_to_create.md)
+- [Sintaxa Dialog](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html)
+- [Sintaxa completă](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html)
+
+
+#### Resurse în limba engleză:
+- [Website oficial](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog.html)
+- [How to create Dialog boxes](http://doc.aldebaran.com/2-1/software/choregraphe/tutos/dialog_topic.html)
+- [QiDialog CheatSheet](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_cheat_sheet.html)
+- [Dialog Syntax](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html)
+- [Full Syntax Dialog](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html)
+
 
 ## Topic 
 Un Topic este o tema, o idee principală despre care vrem să vorbim cu robotul.
