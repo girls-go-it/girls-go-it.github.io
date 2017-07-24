@@ -230,8 +230,8 @@ Referințe: Transformation rules
 [http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_cheat_sheet.html](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_cheat_sheet.html)
 [http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html)
 #### Limbi disponibile:
-- http://doc.aldebaran.com/2-1/family/robots/languages.html#dialog-supported-languages
+[http://doc.aldebaran.com/2-1/family/robots/languages.html#dialog-supported-languages](http://doc.aldebaran.com/2-1/family/robots/languages.html#dialog-supported-languages)
 #### Tutorial YouTube:
-https://youtu.be/vyEGRs3pnQE
+[https://youtu.be/vyEGRs3pnQE](https://youtu.be/vyEGRs3pnQE)
 
 
