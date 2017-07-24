@@ -48,14 +48,14 @@ u:(Good morning) Let's start a wonderful day
 
 2. Apasă butonul Play ![](http://doc.aldebaran.com/2-1/_images/beginning_play_button.png)
 
-![](http://doc.aldebaran.com/2-1/_images/dialog_tuto2.png)
+
 
 3. 	În panelul Dialog, scrie “Hello” și apasă Enter.
 
 Poți vedea rezultatul în panelul Dialog sau în Robot view.
 
+![](http://doc.aldebaran.com/2-1/_images/dialog_tuto2.png)
 
-![](http://doc.aldebaran.com/2-1/_images/dialog_tuto3.png)
 
 
 ## Testarea pe un robot real
@@ -81,8 +81,8 @@ Poți vedea răspunsul și în Dialog panel și Robot view.
 u:([hi hello wassup]) hello young padawan
 u:(["tell me" "give me"] your name) of course, my name is NAO
 ```
+![](http://doc.aldebaran.com/2-1/_images/dialog_tuto3.png)
 
-![](http://doc.aldebaran.com/2-1/_images/dialog_tuto4.png)
 
 
 ## Conectarea QiChat cu animații
@@ -96,7 +96,8 @@ u:(["can you" please] stand up {now}) ok i stand up $standup=1
 - una care se numește "sit"
 - una care se numește "standup"
 
-![](http://doc.aldebaran.com/2-1/_images/dialog_tuto5.png)
+![](http://doc.aldebaran.com/2-1/_images/dialog_tuto4.png)
+
 
 Pentru mai multe detalii cum să adaugi sau să ștergi intrări, ieșori sau parametri într-o boxă, vezi http://doc.aldebaran.com/2-1/software/choregraphe/objects/box_optional_components.html#choregraphe-howto-add-remove-box-in-out-param
 
@@ -104,7 +105,8 @@ Pentru mai multe detalii cum să adaugi sau să ștergi intrări, ieșori sau pa
 
 4. Adaugă și conectează 2 boxe Motion > Sit Down și Motion > Stand Up
 
-![](http://doc.aldebaran.com/2-1/_images/dialog_tuto6.png)
+![](http://doc.aldebaran.com/2-1/_images/dialog_tuto5.png)
+
 
 ## Schimbarea topicurilor. 
 
@@ -133,9 +135,12 @@ u:^private(do you like yoga) yes, would you like to do yoga with me?
 ```
 
 Creează legăturile așa:
-![]()
+![](http://doc.aldebaran.com/2-1/_images/dialog_tuto6.png)
 
+Testează programul.
+Pentru a trece de la un topic la altul și să-i dai focusul, folosește una dintre regulile:
+În exemplul nostru, “Let’s talk about food” sau “Let’s talk about sport”.
 
-![]()
-![]()
-![]()
+Atunci când un topic (food sau sport) are focusul, se întâmplă următoarele:
+- toate **user rules private** ale **acestui topic** sunt **activate**
+- toate **user rules private** ale **altor topice** sunt **dezactivate**
