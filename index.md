@@ -3,7 +3,7 @@ layout: default
 title: Hello People
 ---
 
-## Ghid Girls Go IT
+# Ghid GirlsGoIT
 
 Bine aţi venit! :tulip:
 
