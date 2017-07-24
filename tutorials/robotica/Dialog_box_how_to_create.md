@@ -35,7 +35,7 @@ Se va deschide editorul care arată așa:
 
 7. Scrie aceste reguli:
 ```
-u:(Hello) Hello, young Padawan
+u:(Hello) Hello, young lady
 
 u:(Good morning) Let's start a wonderful day
 ```
@@ -68,7 +68,7 @@ Dacă nu știi cum să te conectezi la robot, vezi (http://doc.aldebaran.com/2-1
 3.Așteaptă până auzi semnalul “bip” care indică faptul că robotul te ascultă.
 
 4.Spune “Hello”.
-Robotul răspunde: “hello young padavan”.
+Robotul răspunde: “hello young lady”.
 
 Poți vedea răspunsul și în Dialog panel și Robot view.
 
@@ -79,7 +79,7 @@ Poți vedea răspunsul și în Dialog panel și Robot view.
 1. Pentru a face prima regulă un pic mai complexă, schimbă scriptul așa:
 
 ```
-u:([hi hello wassup]) hello young padawan
+u:([hi hello wassup]) hello young lady
 u:(["tell me" "give me"] your name) of course, my name is NAO
 ```
 
