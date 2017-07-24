@@ -4,19 +4,20 @@ http://doc.aldebaran.com/2-1/software/choregraphe/tutos/dialog_topic.html
 
 ## 1-Hello World
 
-1. Pornește Choregraphe
+1.Pornește Choregraphe
 
-2. Gasește boxa **Set Language** din **Audio -> Voice**
+2.Gasește boxa **Set Language** din **Audio -> Voice**
+
 Intră în setări și setează limba - English
 
 ![](http://doc.aldebaran.com/2-1/_images/helloworld_cho_dlg_00.png)
 
 
-3. Fă cluck de dreapta pe suprafața de lucru și alege, din meniul deschis **Create a new Box > Dialog....** 
+3.Fă click de dreapta pe suprafața de lucru și alege, din meniul deschis **Create a new Box > Dialog....** 
 
 ![](http://doc.aldebaran.com/2-1/_images/helloworld_cho_dlg_01.png)
 
-4. 	Apasă pe butonul **Add new topic**, apoi scrie numele topicului **fară spații**, de exemplu HelloWorld.
+4.Apasă pe butonul **Add new topic**, apoi scrie numele topicului **fară spații**, de exemplu HelloWorld.
 Apasă pe butonul **Add**, apoi pe butonul **OK**.
 
 ![](http://doc.aldebaran.com/2-1/_images/helloworld_cho_dlg_02.png)
