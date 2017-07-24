@@ -44,13 +44,13 @@ u:(Good morning) Let's start a wonderful day
 
 
 ### Testarea pe un robot virtual(simulare)
-1. Fii sigură că ești conectată la robot1
+1.Fii sigură că ești conectată la robot
 
-2. Apasă butonul Play ![](http://doc.aldebaran.com/2-1/_images/beginning_play_button.png)
+2.Apasă butonul Play ![](http://doc.aldebaran.com/2-1/_images/beginning_play_button.png)
 
 
 
-3. 	În panelul Dialog, scrie “Hello” și apasă Enter.
+3.În panelul Dialog, scrie “Hello” și apasă Enter.
 
 Poți vedea rezultatul în panelul Dialog sau în Robot view.
 
@@ -60,14 +60,14 @@ Poți vedea rezultatul în panelul Dialog sau în Robot view.
 
 ## Testarea pe un robot real
 	
-1. Fii sigur că ești conectat la robot.
+1.Fii sigur că ești conectat la robot.
 Dacă nu știi cum să te conectezi la robot, vezi (http://doc.aldebaran.com/2-1/software/choregraphe/connection_widget.html#chore-howto-connect)
 
-2. Apasă butonul Play(rulează programul)
+2.Apasă butonul Play(rulează programul)
 
-3. Așteaptă până auzi semnalul “bip” care indică faptul că robotul te ascultă.
+3.Așteaptă până auzi semnalul “bip” care indică faptul că robotul te ascultă.
 
-4. Spune “Hello”.
+4.Spune “Hello”.
 Robotul răspunde: “hello young padavan”.
 
 Poți vedea răspunsul și în Dialog panel și Robot view.
@@ -77,22 +77,27 @@ Poți vedea răspunsul și în Dialog panel și Robot view.
 
 ## “Hi”, “Hello”.. într-o singură regulă
 1. Pentru a face prima regulă un pic mai complexă, schimbă scriptul așa:
+
 ```
 u:([hi hello wassup]) hello young padawan
 u:(["tell me" "give me"] your name) of course, my name is NAO
 ```
+
 ![](http://doc.aldebaran.com/2-1/_images/dialog_tuto3.png)
 
 
 
 ## Conectarea QiChat cu animații
 1. Adaugă aceste reguli noi:
+
 ```
 u:(["can you" please] sit down {now}) ok i sit down $sit=1
 u:(["can you" please] stand up {now}) ok i stand up $standup=1
 ```
 
+
 2. Adaugă 2 ieșiri la boxa Hello world:
+
 - una care se numește "sit"
 - una care se numește "standup"
 
@@ -110,10 +115,11 @@ Pentru mai multe detalii cum să adaugi sau să ștergi intrări, ieșori sau pa
 
 ## Schimbarea topicurilor. 
 
-	1. Creează un proiect nou.
+1.Creează un proiect nou.
 Adaugă o boxă **Audio > Voice > Set Language**.
 
 Creează 2 topicuri:
+
 ```
 topic: ~Food()
 language: enu
@@ -123,6 +129,7 @@ u:(let's talk about food) OK, guess what I like
 u:^private(do you like fish) yes and sea food too
 u:^private(do you like meat) no, I don't
 ```
+
 
 ```
 topic: ~Sport()
@@ -138,6 +145,7 @@ Creează legăturile așa:
 ![](http://doc.aldebaran.com/2-1/_images/dialog_tuto6.png)
 
 Testează programul.
+
 Pentru a trece de la un topic la altul și să-i dai focusul, folosește una dintre regulile:
 În exemplul nostru, “Let’s talk about food” sau “Let’s talk about sport”.
 
