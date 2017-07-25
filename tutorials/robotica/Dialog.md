@@ -13,6 +13,9 @@
 - [Dialog Syntax](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html)
 - [Full Syntax Dialog](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html)
 
+#### Lista de animații:
+[http://doc.aldebaran.com/2-1/naoqi/audio/alanimatedspeech_advanced.html#animated-speech-list-behaviors-nao](http://doc.aldebaran.com/2-1/naoqi/audio/alanimatedspeech_advanced.html#animated-speech-list-behaviors-nao)
+
 # Exemple discutate:
 ## Reguli, alegere [], optional {} , ^rand
 ```
