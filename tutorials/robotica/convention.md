@@ -1,4 +1,4 @@
-# Convenția de scris cod
+# Convenția GirlsGoIT Robotics Choregraphe
 
 ## Reguli generale
 - toate **conceptele** și **proposalurile** se scriu la **începutul programului**
