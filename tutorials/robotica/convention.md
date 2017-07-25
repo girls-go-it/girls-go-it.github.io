@@ -2,7 +2,7 @@
 
 ## Reguli generale
 - toate **conceptele** și **proposalurile** se scriu la **începutul programului**
-- toate **denumirile** de concepte, taguri, etc. trebuie să fie formate din **maxim 3 cuvinte**, dar este preferabil să fie **doar un cuvânt**, dacă este posibil.
+- toate **denumirile** de concepte, taguri, etc. pot să fie formate din **maxim 3 cuvinte**, dar este preferabil să fie **doar un cuvânt**, dacă este posibil.
 - dacă o denumire este formată din **2 sau 3 cuvinte**, trebuie să fie în formatul **cuvantCuvantCuvant**, de exemplu *poeziiDespreArta*, *GirlsGoTech* etc.
 
 Exemplu: (Atrageți atenția că toate **proposalurile și conceptele** sunt la **începutul programului**)
