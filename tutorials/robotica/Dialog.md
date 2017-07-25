@@ -13,6 +13,64 @@
 - [Dialog Syntax](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/aldialog_syntax_overview.html)
 - [Full Syntax Dialog](http://doc.aldebaran.com/2-1/naoqi/audio/dialog/dialog-syntax_full.html)
 
+# Exemple discutate:
+## Reguli, alegere [], optional {} , ^rand
+```
+topic: ~robots()
+language: enu
+
+u:(hello) hello
+
+u:(hello) [hi hello "good morning"]
+
+u:(what do you like?) I like {^rand[chocolate vanilla red]} icecream
+
+```
+
+## Variabile
+```
+topic: ~robots()
+language: enu
+
+concept:(name) [Diana Ana Ileana]
+
+u:(My name is _~name and I like
+ _ music) Hello $1 you like $2 $myname=$1
+u:($myname, how are you?) good
+```
+## Proposal 
+```
+topic: ~robots()
+language: enu
+
+proposal: What do you like?
+proposal: proposal2
+proposal: proposal3
+
+u:(what do you like?) ^nextproposal 
+^firstproposal ^sameproposal
+
+```
+
+## Proposal cu taguri
+```
+topic: ~robots()
+language: enu
+
+proposal: %tag1 How do you feel?
+proposal: %tag2 Do you like the weather?
+proposal: %tag3 Do you like the sun?
+			
+
+u:(speak) ^goto(tag1)
+u:(good) ^goto(tag2)
+u:(understand) ^goto(tag1)
+```
+
+
+
+
+# Teorie
 
 ## Topic 
 Un Topic este o tema, o idee principală despre care vrem să vorbim cu robotul.
