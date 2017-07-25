@@ -2,12 +2,15 @@
 
 ## Reguli generale
 - toate **conceptele** și **proposalurile** se scriu la **începutul programului**
-Exemplu:
+- toate **denumirile** de concepte, taguri, etc. trebuie să fie formate din **maxim 3 cuvinte**, dar este preferabil să fie **doar un cuvânt**, dacă este posibil.
+- dacă o denumire este formată din **2 sau 3 cuvinte**, trebuie să fie în formatul **cuvantCuvantCuvant**, de exemplu *poeziiDespreArtă*, *GirlsGoTech* etc.
+
+Exemplu: (Atrageți atenția că toate **proposalurile și conceptele** sunt la **începutul programului**)
 ```
 topic: ~robots()
 language: enu
 
-proposal: Do you like arts? </span>
+proposal: Do you like arts? 
 proposal: Which type of art do you like the most?
 concept:(arts) [music painting sculpture]
 
@@ -35,8 +38,23 @@ Regulile se scriu cat mai clar.
 Cuvintele spuse de om trebuie să fie **în mod ideal maxim 3**, nu este de dorit, dar se poate 4, si doar în cazuri extrem de critice 5 cuvinte. Mai mult de 5 cuvinte consideră că din start nu se vor recunoaște.
 
 ## Subregulile
+Subregulile se scriu **pe nivele** și se lasă spațiu înainte de regulile de pe nivelurile de mai jos, ca în exemplu:
+![http://doc.aldebaran.com/2-1/_images/dialog_scope.png](http://doc.aldebaran.com/2-1/_images/dialog_scope.png)
 
-## Proposal-urile
+## Proposal-urile și tagurile
+Tagurile se numesc clar, sugestiv (**NU le numim tag1, tag2, etc**)
+Exemple:
+```
+proposal: %questionBanana Do you like bananas?
+proposal: %rightAnswer Yes, that's right
+proposal: %wrongAnswer No, that's wrong
+```
 
 ## Variabilele
-
+Variabilele se numesc **sugestiv, clar, pe înțelesul tuturor**. Se aplică regula generală, ori scriem un cuvânt, ori o denumire formată din maxim 3 cuvinte, în formatul cuvantCuvantCuvant.
+Exemple:
+```
+- nume
+- numePrenume
+- poezie
+```
