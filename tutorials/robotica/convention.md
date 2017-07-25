@@ -7,9 +7,10 @@ Exemplu:
 topic: ~robots()
 language: enu
 
-<span style="color:blue"> proposal: Do you like arts? </span>
-proposal: Which type of art do you like the most?
-concept:(arts) [music painting sculpture]
+<span style="color:red"> proposal: Do you like arts? </span>
+
+<span style="color:red"> proposal: Which type of art do you like the most?</span>
+<span style="color:red"> concept:(arts) [music painting sculpture]</span>
 
 u:(hi) hello. ^nextProposal
 u:(yes) ^nextProposal
