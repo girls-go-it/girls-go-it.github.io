@@ -1,6 +1,6 @@
 # Finalizarea proiectelor
 
-Pentru
+Proiectul final va consta din 2 parti - partea 1 va fi dansul și partea 2 dialogul
 
 
 # Proiectul final 
@@ -21,6 +21,6 @@ Autor: Nume Prenume
   - SubIntrebarea 1 (echivalent cu u1)
     - SubIntrebarea 2 (echivalent cu u2)
 - Intrebarea 2
-...**
+...
 ```
 
