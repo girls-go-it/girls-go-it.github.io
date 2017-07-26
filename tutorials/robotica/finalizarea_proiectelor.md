@@ -28,8 +28,8 @@ Autor: Nume Prenume
 **Exemplu de fișier gata pentru prezentare**:
 ```
 Lista de întrebări
-Tematica: <pre><b>Floricele</b></pre>
-Autor: <pre><b>Diana Marusic</b></pre>
+Tematica: Floricele
+Autor: Diana Marusic
 
 - Hello/Hi/Hello/Hello Nao
 - How are you / How are you Nao?
