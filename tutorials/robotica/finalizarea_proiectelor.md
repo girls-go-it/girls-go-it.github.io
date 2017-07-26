@@ -12,24 +12,14 @@ Conține:
 - **1.Mapa proiectului**
 - **2.Un document word în formatul**:
 
-
-```
-Lista de întrebări
-Tematica: NumeTematica
-Autor: Nume Prenume
-
-- Intrebarea 1
-  - SubIntrebarea 1 (echivalent cu u1)
-    - SubIntrebarea 2 (echivalent cu u2)
-- Intrebarea 2
-...
-```
+[DESCARCĂ AICI MODELUL](https://github.com/girls-go-it/girls-go-it.github.io/raw/master/tutorials/robotica/img/template%20proiect%20final.docx)
 
 **Exemplu de fișier gata pentru prezentare**:
-```
-Lista de întrebări
-Tematica: Floricele
-Autor: Diana Marusic
+<p style="text-align: center; font-weight:bold`">Floricele</p>`
+Autor: <p style="font-weight: bold;`">Floricele</p>` Diana Marusic
+
+<p style="text-align: center;`">Lista de întrebări</p>`
+
 
 - Hello/Hi/Hello/Hello Nao
 - How are you / How are you Nao?
@@ -41,7 +31,6 @@ Autor: Diana Marusic
             - I also like roses
 - Bye
 
-```
 
 
 *Exemplu de discuție:*
