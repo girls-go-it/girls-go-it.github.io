@@ -12,12 +12,12 @@ Conține:
 - **1.Mapa proiectului**
 - **2.Un document word în formatul**:
 
-**
-[DESCARCĂ AICI MODELUL](https://github.com/girls-go-it/girls-go-it.github.io/raw/master/tutorials/robotica/img/template%20proiect%20final.docx)
-**
 
-**[Exemplu de fișier gata pentru prezentare](https://github.com/girls-go-it/girls-go-it.github.io/raw/master/tutorials/robotica/img/proiect%20final%20exemplu.docx)
-**
+[DESCARCĂ AICI MODELUL](https://github.com/girls-go-it/girls-go-it.github.io/raw/master/tutorials/robotica/img/template%20proiect%20final.docx)
+
+
+[Exemplu de fișier gata pentru prezentare](https://github.com/girls-go-it/girls-go-it.github.io/raw/master/tutorials/robotica/img/proiect%20final%20exemplu.docx)
+
 
 *Exemplu de discuție:*
 
