@@ -16,9 +16,10 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
 
 #### Descărcare locală
-1. Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
 
-2. După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
++ Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
+
++ După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
 
     ```
     milligram/
@@ -30,7 +31,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
     ├── license
     └── readme.md
     ```
-3. Loacalizează fișierele CSS din dosarul *milligram/dist.*
++ Loacalizează fișierele CSS din dosarul *milligram/dist.*
 
     *milligram.min.css* - este versiunea minimizată care ocupă mai puțin spațiu, dar este mai puțin lizibilă.
 
@@ -38,9 +39,9 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
     De obicei, includem în pagini versiunea minimizată. Versiunea necomprimată poate fi utilizată atunci când e nevoie de modificat sau analizat stilurile folosite de framework.
 
-4. În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
++ În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
 
-5. În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
++ În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
 
   ```html
   <head>
@@ -48,7 +49,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
   </head>
   ```
   
-6. Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
++ Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
 
 
 #### Cu ajutorul unei rețele de distribuție a conținutului
