@@ -17,6 +17,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
 #### Descărcare locală
 1. Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
+
 2. După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
 
     ```
@@ -46,7 +47,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
       <link rel="stylesheet" type="text/css" href="css/milligram.min.css">
   </head>
   ```
-
+  
 6. Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
 
 
