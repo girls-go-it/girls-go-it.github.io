@@ -19,7 +19,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 1. Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
 2. După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
 
-```
+    ```
     milligram/
     ├── examples/
     │   └── index.html
@@ -28,7 +28,7 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
     │   └── milligram.min.css
     ├── license
     └── readme.md
-```
+    ```
 
 3. Loacalizează fișierele CSS din dosarul *milligram/dist.*
 
@@ -38,7 +38,9 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
     De obicei, includem în pagini versiunea minimizată. Versiunea necomprimată poate fi utilizată atunci când e nevoie de modificat sau analizat stilurile folosite de framework.
 
+
 4. În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
+
 
 5. În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
 
