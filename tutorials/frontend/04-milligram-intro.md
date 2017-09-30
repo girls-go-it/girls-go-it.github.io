@@ -17,9 +17,11 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
 #### Descărcare locală
 
-+ Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
+1.
+Descărcă de [**aici**](http://milligram.io/) pachetul de instalare
 
-+ După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
+2.
+După descărcare, dezarhivează dosarul. Dosarul dezarhivat are următoarea structură
 
     ```
     milligram/
@@ -31,7 +33,8 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
     ├── license
     └── readme.md
     ```
-+ Loacalizează fișierele CSS din dosarul *milligram/dist.*
+3.
+Loacalizează fișierele CSS din dosarul *milligram/dist.*
 
     *milligram.min.css* - este versiunea minimizată care ocupă mai puțin spațiu, dar este mai puțin lizibilă.
 
@@ -39,9 +42,11 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
     De obicei, includem în pagini versiunea minimizată. Versiunea necomprimată poate fi utilizată atunci când e nevoie de modificat sau analizat stilurile folosite de framework.
 
-+ În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
+4.
+În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
 
-+ În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
+5.
+În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
 
   ```html
   <head>
@@ -49,7 +54,8 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
   </head>
   ```
   
-+ Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
+6.
+Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
 
 
 #### Cu ajutorul unei rețele de distribuție a conținutului
@@ -96,7 +102,7 @@ Citatele pot fi adăugate cu ajutorul tag-ului ```<blockquote>```
 
 ![blockquote image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500542085031_blockquote.png)
 
-```HTML
+```html
 <blockquote>
     <p><em>Milligram e cool!</em></p>
 </blockquote>
@@ -108,7 +114,7 @@ Butoanele sunt parte esențială a experienței unui utilizator. [**Milligram**]
 
 ![buttons image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500541670294_buttons2.png)
 
-```HTML
+```html
 <!-- Buton implicit -->
 <a class="button" href="#">Button Implicit</a>
 
@@ -125,7 +131,7 @@ Listele sunt o metodă versatilă și comodă pentru afișarea elementelor. List
 
 ![lists image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500543628540_liste.png)
 
-```HTML
+```html
 <!-- Listă neordonată -->
 <ul>
     <li>Element neordonat 1</li>
@@ -157,7 +163,7 @@ Mai jos e demonstrată utilizarea acestor tag-uri.
 
 ![table image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500544636350_table.png)
 
-```HTML
+```html
 <table>
  <thead>
      <tr>
@@ -201,7 +207,7 @@ Față de alte framework-uri, în Milligram pot fi adăugate orice număr de col
 
 ![grid image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500548096634_grid.png)
 
-```HTML
+```html
 <!-- .container este clasa ambalaj (wrapper) de bază care centrează conținutul -->
 <div class="container">
   <div class="row">
