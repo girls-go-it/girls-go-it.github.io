@@ -29,7 +29,6 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
     ├── license
     └── readme.md
     ```
-
 3. Loacalizează fișierele CSS din dosarul *milligram/dist.*
 
     *milligram.min.css* - este versiunea minimizată care ocupă mai puțin spațiu, dar este mai puțin lizibilă.
@@ -38,17 +37,15 @@ Una din cele mai plăcute ocupații este să studiezi [**HTML**](http://girls-go
 
     De obicei, includem în pagini versiunea minimizată. Versiunea necomprimată poate fi utilizată atunci când e nevoie de modificat sau analizat stilurile folosite de framework.
 
-
 4. În dosarul unde sunt sau vor fi paginile HTML, crează un dosar nou cu numele *css* și mută în el fișierul *milligram.min.css* sau *milligram.css.*
-
 
 5. În paginile HTML, în secțiunea ```<head>``` indică calea către fișierul CSS. De exemplu, dacă dosarul unde se află paginile HTML se numește *my-cool-website* și în el avem un fișier *index.html*, vom indica
 
-    ```html
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/milligram.min.css">
-    </head>
-    ```
+```html
+<head>
+    <link rel="stylesheet" type="text/css" href="css/milligram.min.css">
+</head>
+```
 
 6. Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul căre fișierul CSS vor fi stilizate de [**Milligram**](http://milligram.io).
 
@@ -67,7 +64,7 @@ De obicei, includem în pagini versiunea minimizată. Versiunea necomprimată po
 **Versiunea necomprimată**
 ```
 <head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
 </head>
 ```
 Felicitări! Acum toate elementele HTML din paginile unde ai adăugat link-ul către fișierul CSS vor fi stilizate de Milligram.
@@ -99,7 +96,7 @@ Citatele pot fi adăugate cu ajutorul tag-ului ```<blockquote>```
 
 ```HTML
 <blockquote>
-  <p><em>Milligram e cool!</em></p>
+    <p><em>Milligram e cool!</em></p>
 </blockquote>
 ```
 
@@ -107,7 +104,7 @@ Citatele pot fi adăugate cu ajutorul tag-ului ```<blockquote>```
 
 Butoanele sunt parte esențială a experienței unui utilizator. [**Milligram**](http://milligram.io/) poate stiliza butoanele în 3 feluri cu ajutorul claselor ```.button```, ```.button-outline``` și ```.button-clear``` . Aceste clase pot fi aplicate oricărui din tag-urile ```<button>```, ```<input>``` sau ```<a>``` . Mai jos sunt câteva exemple. 
 
-![buttons image] (https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500541670294_buttons2.png)
+![buttons image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500541670294_buttons2.png)
 
 ```HTML
 <!-- Buton implicit -->
@@ -124,7 +121,7 @@ Butoanele sunt parte esențială a experienței unui utilizator. [**Milligram**]
 
 Listele sunt o metodă versatilă și comodă pentru afișarea elementelor. Listele neordonate ```<ul>``` sunt marcate cu cercuri, cele ordonate ```<ol>``` cu numere, iar cele descriptive ```<dl>``` cu spații. Mai jos sunt câteva exemple.
 
-![lists image] (https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500543628540_liste.png)
+![lists image](https://d2mxuefqeaa7sj.cloudfront.net/s_B462AB980EA85B737E04B441011D535E772BEFD41FC10791E4447313B73E06A5_1500543628540_liste.png)
 
 ```HTML
 <!-- Listă neordonată -->
@@ -222,4 +219,3 @@ Față de alte framework-uri, în Milligram pot fi adăugate orice număr de col
 
 <!-- Orice .column adăugat într-un .row va ocupa un spațiu egal ca și celelalte coloane. -->
 ```
-
